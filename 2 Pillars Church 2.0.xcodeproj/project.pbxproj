@@ -1,0 +1,450 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D8220C351610D20700803763 /* LearnCustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D8220C341610D20700803763 /* LearnCustomCell.m */; };
+		D8220C3A1610D53100803763 /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = D8220C391610D53100803763 /* 1.png */; };
+		D8220C3D1610DC4600803763 /* Sermons.m in Sources */ = {isa = PBXBuildFile; fileRef = D8220C3C1610DC4600803763 /* Sermons.m */; };
+		D82DF71516137DE2004D5170 /* LearnCustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D82DF71416137DE1004D5170 /* LearnCustomCell.xib */; };
+		D82DF71A1613A937004D5170 /* bg_rust-circle.png in Resources */ = {isa = PBXBuildFile; fileRef = D82DF7191613A937004D5170 /* bg_rust-circle.png */; };
+		D831C9B515E7F72F0034197D /* WebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D831C9B415E7F72F0034197D /* WebViewController.xib */; };
+		D85050951625F7F6003C5597 /* backgroundMatte.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = D85050941625F7F6003C5597 /* backgroundMatte.jpeg */; };
+		D850509816260132003C5597 /* SermonCustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D850509716260132003C5597 /* SermonCustomCell.m */; };
+		D850509A16260184003C5597 /* SermonCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D850509916260184003C5597 /* SermonCell.xib */; };
+		D862D5E9160BE00A0064F5E4 /* DarkBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = D862D5E8160BE00A0064F5E4 /* DarkBackground.png */; };
+		D862D5EB160BE0100064F5E4 /* LightBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = D862D5EA160BE0100064F5E4 /* LightBackground.png */; };
+		D88DF450161F66C30063809A /* SermonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D88DF44E161F66C30063809A /* SermonViewController.m */; };
+		D88DF451161F66C30063809A /* SermonViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D88DF44F161F66C30063809A /* SermonViewController.xib */; };
+		D89189C11627416D00AAEA59 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D89189C01627416D00AAEA59 /* Default-568h@2x.png */; };
+		D8D86199161F6ACB00EFE852 /* Nehemiahs-Wall.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = D8D86198161F6ACB00EFE852 /* Nehemiahs-Wall.jpeg */; };
+		D8E0BC6215D43C1F00B91F61 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8E0BC6115D43C1F00B91F61 /* UIKit.framework */; };
+		D8E0BC6415D43C1F00B91F61 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8E0BC6315D43C1F00B91F61 /* Foundation.framework */; };
+		D8E0BC6615D43C1F00B91F61 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8E0BC6515D43C1F00B91F61 /* CoreGraphics.framework */; };
+		D8E0BC6C15D43C1F00B91F61 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D8E0BC6A15D43C1F00B91F61 /* InfoPlist.strings */; };
+		D8E0BC6E15D43C1F00B91F61 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D8E0BC6D15D43C1F00B91F61 /* main.m */; };
+		D8E0BC7215D43C1F00B91F61 /* IIAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D8E0BC7115D43C1F00B91F61 /* IIAppDelegate.m */; };
+		D8E0BC7515D43C1F00B91F61 /* LearnViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8E0BC7415D43C1F00B91F61 /* LearnViewController.m */; };
+		D8E0BC7715D43C1F00B91F61 /* first.png in Resources */ = {isa = PBXBuildFile; fileRef = D8E0BC7615D43C1F00B91F61 /* first.png */; };
+		D8E0BC7C15D43C1F00B91F61 /* InfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8E0BC7B15D43C1F00B91F61 /* InfoViewController.m */; };
+		D8E0BC8315D43C1F00B91F61 /* LearnViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D8E0BC8115D43C1F00B91F61 /* LearnViewController.xib */; };
+		D8E0BC8615D43C1F00B91F61 /* InfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D8E0BC8415D43C1F00B91F61 /* InfoViewController.xib */; };
+		D8E0BCA915D587F000B91F61 /* L.png in Resources */ = {isa = PBXBuildFile; fileRef = D8E0BCA815D587F000B91F61 /* L.png */; };
+		D8E0BCAD15D5884500B91F61 /* MoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8E0BCAB15D5884500B91F61 /* MoreViewController.m */; };
+		D8E0BCAE15D5884500B91F61 /* MoreViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D8E0BCAC15D5884500B91F61 /* MoreViewController.xib */; };
+		D8E0BCB015D5895200B91F61 /* i.png in Resources */ = {isa = PBXBuildFile; fileRef = D8E0BCAF15D5895200B91F61 /* i.png */; };
+		D8F5C9EB15DC19F900EBC61A /* 2PC App Icon.57.png in Resources */ = {isa = PBXBuildFile; fileRef = D8F5C9EA15DC19F900EBC61A /* 2PC App Icon.57.png */; };
+		D8F5C9ED15DC1A2800EBC61A /* 2PC App Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = D8F5C9EC15DC1A2800EBC61A /* 2PC App Icon.png */; };
+		D8F5C9F515DC6B1300EBC61A /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = D8F5C9F415DC6B1300EBC61A /* Default.png */; };
+		D8F5C9F715DC6B1B00EBC61A /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D8F5C9F615DC6B1B00EBC61A /* Default@2x.png */; };
+		D8F5CAE415DD677D00EBC61A /* Learn Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = D8F5CAE315DD677D00EBC61A /* Learn Icon.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		D8220C331610D20700803763 /* LearnCustomCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LearnCustomCell.h; path = ../LearnCustomCell.h; sourceTree = "<group>"; };
+		D8220C341610D20700803763 /* LearnCustomCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LearnCustomCell.m; path = ../LearnCustomCell.m; sourceTree = "<group>"; };
+		D8220C391610D53100803763 /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
+		D8220C3B1610DC4600803763 /* Sermons.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Sermons.h; sourceTree = "<group>"; };
+		D8220C3C1610DC4600803763 /* Sermons.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Sermons.m; sourceTree = "<group>"; };
+		D82DF71416137DE1004D5170 /* LearnCustomCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LearnCustomCell.xib; sourceTree = "<group>"; };
+		D82DF7191613A937004D5170 /* bg_rust-circle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg_rust-circle.png"; sourceTree = "<group>"; };
+		D831C9B415E7F72F0034197D /* WebViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WebViewController.xib; sourceTree = "<group>"; };
+		D85050941625F7F6003C5597 /* backgroundMatte.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = backgroundMatte.jpeg; sourceTree = "<group>"; };
+		D850509616260132003C5597 /* SermonCustomCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SermonCustomCell.h; sourceTree = "<group>"; };
+		D850509716260132003C5597 /* SermonCustomCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SermonCustomCell.m; sourceTree = "<group>"; };
+		D850509916260184003C5597 /* SermonCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SermonCell.xib; sourceTree = "<group>"; };
+		D862D5E8160BE00A0064F5E4 /* DarkBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DarkBackground.png; sourceTree = "<group>"; };
+		D862D5EA160BE0100064F5E4 /* LightBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LightBackground.png; sourceTree = "<group>"; };
+		D88DF44D161F66C30063809A /* SermonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SermonViewController.h; sourceTree = "<group>"; };
+		D88DF44E161F66C30063809A /* SermonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SermonViewController.m; sourceTree = "<group>"; };
+		D88DF44F161F66C30063809A /* SermonViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SermonViewController.xib; sourceTree = "<group>"; };
+		D89189C01627416D00AAEA59 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		D8D86198161F6ACB00EFE852 /* Nehemiahs-Wall.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Nehemiahs-Wall.jpeg"; sourceTree = "<group>"; };
+		D8E0BC5D15D43C1F00B91F61 /* 2 Pillars Church.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "2 Pillars Church.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D8E0BC6115D43C1F00B91F61 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		D8E0BC6315D43C1F00B91F61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D8E0BC6515D43C1F00B91F61 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		D8E0BC6915D43C1F00B91F61 /* 2 Pillars Church-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "2 Pillars Church-Info.plist"; sourceTree = "<group>"; };
+		D8E0BC6B15D43C1F00B91F61 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D8E0BC6D15D43C1F00B91F61 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D8E0BC6F15D43C1F00B91F61 /* 2 Pillars Church-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "2 Pillars Church-Prefix.pch"; sourceTree = "<group>"; };
+		D8E0BC7015D43C1F00B91F61 /* IIAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IIAppDelegate.h; sourceTree = "<group>"; };
+		D8E0BC7115D43C1F00B91F61 /* IIAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IIAppDelegate.m; sourceTree = "<group>"; };
+		D8E0BC7315D43C1F00B91F61 /* LearnViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LearnViewController.h; sourceTree = "<group>"; };
+		D8E0BC7415D43C1F00B91F61 /* LearnViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LearnViewController.m; sourceTree = "<group>"; };
+		D8E0BC7615D43C1F00B91F61 /* first.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = first.png; sourceTree = "<group>"; };
+		D8E0BC7A15D43C1F00B91F61 /* InfoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InfoViewController.h; sourceTree = "<group>"; };
+		D8E0BC7B15D43C1F00B91F61 /* InfoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InfoViewController.m; sourceTree = "<group>"; };
+		D8E0BC8215D43C1F00B91F61 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/LearnViewController.xib; sourceTree = "<group>"; };
+		D8E0BC8515D43C1F00B91F61 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/InfoViewController.xib; sourceTree = "<group>"; };
+		D8E0BCA815D587F000B91F61 /* L.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = L.png; sourceTree = "<group>"; };
+		D8E0BCAA15D5884500B91F61 /* MoreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoreViewController.h; sourceTree = "<group>"; };
+		D8E0BCAB15D5884500B91F61 /* MoreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoreViewController.m; sourceTree = "<group>"; };
+		D8E0BCAC15D5884500B91F61 /* MoreViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MoreViewController.xib; sourceTree = "<group>"; };
+		D8E0BCAF15D5895200B91F61 /* i.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = i.png; sourceTree = "<group>"; };
+		D8F5C9EA15DC19F900EBC61A /* 2PC App Icon.57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "2PC App Icon.57.png"; path = "../2PC App Icon.57.png"; sourceTree = "<group>"; };
+		D8F5C9EC15DC1A2800EBC61A /* 2PC App Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "2PC App Icon.png"; path = "../2PC App Icon.png"; sourceTree = "<group>"; };
+		D8F5C9F415DC6B1300EBC61A /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = ../Default.png; sourceTree = "<group>"; };
+		D8F5C9F615DC6B1B00EBC61A /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "../Default@2x.png"; sourceTree = "<group>"; };
+		D8F5CAE315DD677D00EBC61A /* Learn Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Learn Icon.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D8E0BC5A15D43C1F00B91F61 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8E0BC6215D43C1F00B91F61 /* UIKit.framework in Frameworks */,
+				D8E0BC6415D43C1F00B91F61 /* Foundation.framework in Frameworks */,
+				D8E0BC6615D43C1F00B91F61 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D8220C3E1610DC4B00803763 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				D8220C3B1610DC4600803763 /* Sermons.h */,
+				D8220C3C1610DC4600803763 /* Sermons.m */,
+			);
+			name = Data;
+			sourceTree = "<group>";
+		};
+		D862D5EF160BEA970064F5E4 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				D82DF71416137DE1004D5170 /* LearnCustomCell.xib */,
+				D8220C331610D20700803763 /* LearnCustomCell.h */,
+				D8220C341610D20700803763 /* LearnCustomCell.m */,
+				D850509616260132003C5597 /* SermonCustomCell.h */,
+				D850509716260132003C5597 /* SermonCustomCell.m */,
+				D850509916260184003C5597 /* SermonCell.xib */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
+		D8E0BC5215D43C1E00B91F61 = {
+			isa = PBXGroup;
+			children = (
+				D89189C01627416D00AAEA59 /* Default-568h@2x.png */,
+				D8E0BC6715D43C1F00B91F61 /* 2 Pillars Church */,
+				D8E0BC6015D43C1F00B91F61 /* Frameworks */,
+				D8E0BC5E15D43C1F00B91F61 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D8E0BC5E15D43C1F00B91F61 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D8E0BC5D15D43C1F00B91F61 /* 2 Pillars Church.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D8E0BC6015D43C1F00B91F61 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D8E0BC6115D43C1F00B91F61 /* UIKit.framework */,
+				D8E0BC6315D43C1F00B91F61 /* Foundation.framework */,
+				D8E0BC6515D43C1F00B91F61 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D8E0BC6715D43C1F00B91F61 /* 2 Pillars Church */ = {
+			isa = PBXGroup;
+			children = (
+				D8E0BC7015D43C1F00B91F61 /* IIAppDelegate.h */,
+				D8E0BC7115D43C1F00B91F61 /* IIAppDelegate.m */,
+				D8220C3E1610DC4B00803763 /* Data */,
+				D8F5CAE715DD91EB00EBC61A /* Images */,
+				D8F5CAE615DD91D900EBC61A /* ViewControllrs */,
+				D8E0BC6815D43C1F00B91F61 /* Supporting Files */,
+			);
+			path = "2 Pillars Church";
+			sourceTree = "<group>";
+		};
+		D8E0BC6815D43C1F00B91F61 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D8E0BC6915D43C1F00B91F61 /* 2 Pillars Church-Info.plist */,
+				D8E0BC6A15D43C1F00B91F61 /* InfoPlist.strings */,
+				D8E0BC6D15D43C1F00B91F61 /* main.m */,
+				D8E0BC6F15D43C1F00B91F61 /* 2 Pillars Church-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D8F5CAE615DD91D900EBC61A /* ViewControllrs */ = {
+			isa = PBXGroup;
+			children = (
+				D8E0BC7315D43C1F00B91F61 /* LearnViewController.h */,
+				D8E0BC7415D43C1F00B91F61 /* LearnViewController.m */,
+				D8E0BCAA15D5884500B91F61 /* MoreViewController.h */,
+				D8E0BCAB15D5884500B91F61 /* MoreViewController.m */,
+				D8E0BC7A15D43C1F00B91F61 /* InfoViewController.h */,
+				D8E0BC7B15D43C1F00B91F61 /* InfoViewController.m */,
+				D88DF44D161F66C30063809A /* SermonViewController.h */,
+				D88DF44E161F66C30063809A /* SermonViewController.m */,
+				D8F5CAE815DD920100EBC61A /* Xibs */,
+				D862D5EF160BEA970064F5E4 /* Cells */,
+			);
+			name = ViewControllrs;
+			sourceTree = "<group>";
+		};
+		D8F5CAE715DD91EB00EBC61A /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				D8D86198161F6ACB00EFE852 /* Nehemiahs-Wall.jpeg */,
+				D82DF7191613A937004D5170 /* bg_rust-circle.png */,
+				D85050941625F7F6003C5597 /* backgroundMatte.jpeg */,
+				D8220C391610D53100803763 /* 1.png */,
+				D8F5C9F615DC6B1B00EBC61A /* Default@2x.png */,
+				D862D5EA160BE0100064F5E4 /* LightBackground.png */,
+				D8F5C9F415DC6B1300EBC61A /* Default.png */,
+				D8F5C9EC15DC1A2800EBC61A /* 2PC App Icon.png */,
+				D862D5E8160BE00A0064F5E4 /* DarkBackground.png */,
+				D8F5C9EA15DC19F900EBC61A /* 2PC App Icon.57.png */,
+				D8F5CAE315DD677D00EBC61A /* Learn Icon.png */,
+				D8E0BCA815D587F000B91F61 /* L.png */,
+				D8E0BCAF15D5895200B91F61 /* i.png */,
+				D8E0BC7615D43C1F00B91F61 /* first.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		D8F5CAE815DD920100EBC61A /* Xibs */ = {
+			isa = PBXGroup;
+			children = (
+				D831C9B415E7F72F0034197D /* WebViewController.xib */,
+				D8E0BC8115D43C1F00B91F61 /* LearnViewController.xib */,
+				D8E0BC8415D43C1F00B91F61 /* InfoViewController.xib */,
+				D8E0BCAC15D5884500B91F61 /* MoreViewController.xib */,
+				D88DF44F161F66C30063809A /* SermonViewController.xib */,
+			);
+			name = Xibs;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D8E0BC5C15D43C1F00B91F61 /* 2 Pillars Church */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D8E0BC8915D43C1F00B91F61 /* Build configuration list for PBXNativeTarget "2 Pillars Church" */;
+			buildPhases = (
+				D8E0BC5915D43C1F00B91F61 /* Sources */,
+				D8E0BC5A15D43C1F00B91F61 /* Frameworks */,
+				D8E0BC5B15D43C1F00B91F61 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "2 Pillars Church";
+			productName = "2 Pillars Church";
+			productReference = D8E0BC5D15D43C1F00B91F61 /* 2 Pillars Church.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D8E0BC5415D43C1E00B91F61 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = D8E0BC5715D43C1E00B91F61 /* Build configuration list for PBXProject "2 Pillars Church 2.0" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = D8E0BC5215D43C1E00B91F61;
+			productRefGroup = D8E0BC5E15D43C1F00B91F61 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D8E0BC5C15D43C1F00B91F61 /* 2 Pillars Church */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D8E0BC5B15D43C1F00B91F61 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8E0BC6C15D43C1F00B91F61 /* InfoPlist.strings in Resources */,
+				D8E0BC7715D43C1F00B91F61 /* first.png in Resources */,
+				D8E0BC8315D43C1F00B91F61 /* LearnViewController.xib in Resources */,
+				D8E0BC8615D43C1F00B91F61 /* InfoViewController.xib in Resources */,
+				D8E0BCA915D587F000B91F61 /* L.png in Resources */,
+				D8E0BCAE15D5884500B91F61 /* MoreViewController.xib in Resources */,
+				D8E0BCB015D5895200B91F61 /* i.png in Resources */,
+				D8F5C9EB15DC19F900EBC61A /* 2PC App Icon.57.png in Resources */,
+				D8F5C9ED15DC1A2800EBC61A /* 2PC App Icon.png in Resources */,
+				D8F5C9F515DC6B1300EBC61A /* Default.png in Resources */,
+				D8F5C9F715DC6B1B00EBC61A /* Default@2x.png in Resources */,
+				D8F5CAE415DD677D00EBC61A /* Learn Icon.png in Resources */,
+				D831C9B515E7F72F0034197D /* WebViewController.xib in Resources */,
+				D862D5E9160BE00A0064F5E4 /* DarkBackground.png in Resources */,
+				D862D5EB160BE0100064F5E4 /* LightBackground.png in Resources */,
+				D8220C3A1610D53100803763 /* 1.png in Resources */,
+				D82DF71516137DE2004D5170 /* LearnCustomCell.xib in Resources */,
+				D82DF71A1613A937004D5170 /* bg_rust-circle.png in Resources */,
+				D88DF451161F66C30063809A /* SermonViewController.xib in Resources */,
+				D8D86199161F6ACB00EFE852 /* Nehemiahs-Wall.jpeg in Resources */,
+				D85050951625F7F6003C5597 /* backgroundMatte.jpeg in Resources */,
+				D850509A16260184003C5597 /* SermonCell.xib in Resources */,
+				D89189C11627416D00AAEA59 /* Default-568h@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D8E0BC5915D43C1F00B91F61 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8E0BC6E15D43C1F00B91F61 /* main.m in Sources */,
+				D8E0BC7215D43C1F00B91F61 /* IIAppDelegate.m in Sources */,
+				D8E0BC7515D43C1F00B91F61 /* LearnViewController.m in Sources */,
+				D8E0BC7C15D43C1F00B91F61 /* InfoViewController.m in Sources */,
+				D8E0BCAD15D5884500B91F61 /* MoreViewController.m in Sources */,
+				D8220C351610D20700803763 /* LearnCustomCell.m in Sources */,
+				D8220C3D1610DC4600803763 /* Sermons.m in Sources */,
+				D88DF450161F66C30063809A /* SermonViewController.m in Sources */,
+				D850509816260132003C5597 /* SermonCustomCell.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D8E0BC6A15D43C1F00B91F61 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D8E0BC6B15D43C1F00B91F61 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		D8E0BC8115D43C1F00B91F61 /* LearnViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D8E0BC8215D43C1F00B91F61 /* en */,
+			);
+			name = LearnViewController.xib;
+			sourceTree = "<group>";
+		};
+		D8E0BC8415D43C1F00B91F61 /* InfoViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D8E0BC8515D43C1F00B91F61 /* en */,
+			);
+			name = InfoViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D8E0BC8715D43C1F00B91F61 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		D8E0BC8815D43C1F00B91F61 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D8E0BC8A15D43C1F00B91F61 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "2 Pillars Church/2 Pillars Church-Prefix.pch";
+				INFOPLIST_FILE = "2 Pillars Church/2 Pillars Church-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		D8E0BC8B15D43C1F00B91F61 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "2 Pillars Church/2 Pillars Church-Prefix.pch";
+				INFOPLIST_FILE = "2 Pillars Church/2 Pillars Church-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D8E0BC5715D43C1E00B91F61 /* Build configuration list for PBXProject "2 Pillars Church 2.0" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D8E0BC8715D43C1F00B91F61 /* Debug */,
+				D8E0BC8815D43C1F00B91F61 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D8E0BC8915D43C1F00B91F61 /* Build configuration list for PBXNativeTarget "2 Pillars Church" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D8E0BC8A15D43C1F00B91F61 /* Debug */,
+				D8E0BC8B15D43C1F00B91F61 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D8E0BC5415D43C1E00B91F61 /* Project object */;
+}
