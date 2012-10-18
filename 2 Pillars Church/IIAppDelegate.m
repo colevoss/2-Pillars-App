@@ -15,8 +15,6 @@
 @implementation IIAppDelegate
 
 @synthesize window = _window;
-@synthesize tabBar;
-@synthesize NavController;
 
 //- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 //{
@@ -55,22 +53,33 @@
     UITabBarController *tabBar = [[UITabBarController alloc] init];
     
     
-    // Create the tabBar buttons
+    //Learn View Controller creation
+    //
+    
     UIViewController *viewController1 = [[LearnViewController alloc] initWithNibName:@"LearnViewController" bundle:nil];
     UINavigationController *navController1 = [[UINavigationController alloc] initWithRootViewController:viewController1];
-    //set style of navController1 to black solid
     navController1.navigationBar.barStyle = UIBarStyleBlack;
     
-    UIViewController *viewController2 = [[InfoViewController alloc] initWithNibName:@"InfoViewController"               bundle:nil];
+    
+    //Info View Controller creation
+    //
+    
+    UIViewController *viewController2 = [[InfoViewController alloc] initWithNibName:@"InfoViewController" bundle:nil];
     UINavigationController *navController2 = [[UINavigationController alloc] initWithRootViewController:viewController2];
-    //set style of navController1 to black solid
     navController1.navigationBar.barStyle = UIBarStyleBlack;
     
-    UIViewController *viewController3 = [[MoreViewController alloc] initWithNibName:@"MoreViewController"
-                                                                             bundle:nil];
+    
+    
+    //More View Controller creation
+    //
+    
+    UIViewController *viewController3 = [[MoreViewController alloc] initWithNibName:@"MoreViewController" bundle:nil];
     UINavigationController *navController3 = [[UINavigationController alloc] initWithRootViewController:viewController3];
     //set style of navController1 to black solid
     navController1.navigationBar.barStyle = UIBarStyleBlack;
+    
+    
+    
     
     tabBar.viewControllers = @[navController1, navController2, navController3];
     self.window.rootViewController = tabBar;
