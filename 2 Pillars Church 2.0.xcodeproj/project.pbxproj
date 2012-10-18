@@ -10,6 +10,7 @@
 		D8220C351610D20700803763 /* LearnCustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D8220C341610D20700803763 /* LearnCustomCell.m */; };
 		D8220C3A1610D53100803763 /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = D8220C391610D53100803763 /* 1.png */; };
 		D8220C3D1610DC4600803763 /* Sermons.m in Sources */ = {isa = PBXBuildFile; fileRef = D8220C3C1610DC4600803763 /* Sermons.m */; };
+		D82759A016307C9600BA8DB1 /* SermonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = D827599F16307C9500BA8DB1 /* SermonParser.m */; };
 		D82DF71516137DE2004D5170 /* LearnCustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D82DF71416137DE1004D5170 /* LearnCustomCell.xib */; };
 		D82DF71A1613A937004D5170 /* bg_rust-circle.png in Resources */ = {isa = PBXBuildFile; fileRef = D82DF7191613A937004D5170 /* bg_rust-circle.png */; };
 		D831C9B515E7F72F0034197D /* WebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D831C9B415E7F72F0034197D /* WebViewController.xib */; };
@@ -50,6 +51,8 @@
 		D8220C391610D53100803763 /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
 		D8220C3B1610DC4600803763 /* Sermons.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Sermons.h; sourceTree = "<group>"; };
 		D8220C3C1610DC4600803763 /* Sermons.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Sermons.m; sourceTree = "<group>"; };
+		D827599E16307C9500BA8DB1 /* SermonParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SermonParser.h; sourceTree = "<group>"; };
+		D827599F16307C9500BA8DB1 /* SermonParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SermonParser.m; sourceTree = "<group>"; };
 		D82DF71416137DE1004D5170 /* LearnCustomCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LearnCustomCell.xib; sourceTree = "<group>"; };
 		D82DF7191613A937004D5170 /* bg_rust-circle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg_rust-circle.png"; sourceTree = "<group>"; };
 		D831C9B415E7F72F0034197D /* WebViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WebViewController.xib; sourceTree = "<group>"; };
@@ -116,6 +119,15 @@
 			name = Data;
 			sourceTree = "<group>";
 		};
+		D82759A216307CAA00BA8DB1 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D827599E16307C9500BA8DB1 /* SermonParser.h */,
+				D827599F16307C9500BA8DB1 /* SermonParser.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
 		D862D5EF160BEA970064F5E4 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
@@ -162,6 +174,7 @@
 			children = (
 				D8E0BC7015D43C1F00B91F61 /* IIAppDelegate.h */,
 				D8E0BC7115D43C1F00B91F61 /* IIAppDelegate.m */,
+				D82759A216307CAA00BA8DB1 /* Controller */,
 				D8220C3E1610DC4B00803763 /* Data */,
 				D8F5CAE715DD91EB00EBC61A /* Images */,
 				D8F5CAE615DD91D900EBC61A /* ViewControllrs */,
@@ -323,6 +336,7 @@
 				D8220C3D1610DC4600803763 /* Sermons.m in Sources */,
 				D88DF450161F66C30063809A /* SermonViewController.m in Sources */,
 				D850509816260132003C5597 /* SermonCustomCell.m in Sources */,
+				D82759A016307C9600BA8DB1 /* SermonParser.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
