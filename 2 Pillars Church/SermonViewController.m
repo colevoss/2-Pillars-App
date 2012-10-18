@@ -52,7 +52,7 @@ heightForRowAtIndexPath:(NSIndexPath *)indexPath
     //initiate the tab with the image buttons and title
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-
+        self.title = NSLocalizedString(@"Nehemiah", "Nehemiah");
     }
     return self;
     
@@ -75,6 +75,7 @@ heightForRowAtIndexPath:(NSIndexPath *)indexPath
 
     static NSString *CellIdentifier = @"Cell";
     SermonCustomCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    tableView.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"bg_rust-circle.png"]];
     
     if (cell == nil){
         NSArray *topLevelObjects = [[NSBundle mainBundle] loadNibNamed:@"SermonCell"
