@@ -60,7 +60,7 @@
     if (self) {
         self.tabBarItem.title = NSLocalizedString(@"Learn", @"Learn");
         self.tabBarItem.image = [UIImage imageNamed:@"Learn Icon"];
-        self.title = NSLocalizedString(@"LearnTitle", "Learn");
+        self.title = NSLocalizedString(@"Learn", "Learn");
     }
     
     return self;
