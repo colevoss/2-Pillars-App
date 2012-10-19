@@ -10,6 +10,7 @@
 #import "SermonViewController.h"
 #import "LearnCustomCell.h"
 #import "Sermons.h"
+#import "SermonParser.h"
 
 @interface LearnViewController ()
 
@@ -24,24 +25,8 @@
 - (void)viewDidLoad
 {
     //Later this list should be populated by what is parsed from the website.
-    Sermons *nehemiah = [[Sermons alloc] init];
-    [nehemiah setSermon:@"Nehemiah"];
-    [nehemiah setSermonImage:[UIImage imageNamed:@"1.png"]];
-    
-    Sermons *sermonOnTheMount = [[Sermons alloc] init];
-    [sermonOnTheMount setSermon:@"The Sermon On the Mount"];
-    [sermonOnTheMount setSermonImage:[UIImage imageNamed:@"1.png"]];
-    
-    Sermons *theStoryOfGod = [[Sermons alloc] init];
-    [theStoryOfGod setSermon:@"The Story Of God"];
-    [theStoryOfGod setSermonImage:[UIImage imageNamed:@"1.png"]];
-    
-    //Need to change this array to load these sermon objects.
-//    tableList = [[NSArray alloc] initWithObjects:nehemiah, sermonOnTheMount, theStoryOfGod, nil];
     
     tableList = [[NSArray alloc] initWithObjects:@"Nehemiah", @"The Sermon On The Mount", @"The Story of God", nil];
-
-
     [super viewDidLoad];
 }
 
