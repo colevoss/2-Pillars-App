@@ -22,6 +22,7 @@
 		D88DF450161F66C30063809A /* SermonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D88DF44E161F66C30063809A /* SermonViewController.m */; };
 		D88DF451161F66C30063809A /* SermonViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D88DF44F161F66C30063809A /* SermonViewController.xib */; };
 		D89189C11627416D00AAEA59 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D89189C01627416D00AAEA59 /* Default-568h@2x.png */; };
+		D8A067061632F422008BF6DD /* SermonXML.rtf in Resources */ = {isa = PBXBuildFile; fileRef = D8A067051632F422008BF6DD /* SermonXML.rtf */; };
 		D8D86199161F6ACB00EFE852 /* Nehemiahs-Wall.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = D8D86198161F6ACB00EFE852 /* Nehemiahs-Wall.jpeg */; };
 		D8E0BC6215D43C1F00B91F61 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8E0BC6115D43C1F00B91F61 /* UIKit.framework */; };
 		D8E0BC6415D43C1F00B91F61 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8E0BC6315D43C1F00B91F61 /* Foundation.framework */; };
@@ -66,6 +67,7 @@
 		D88DF44E161F66C30063809A /* SermonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SermonViewController.m; sourceTree = "<group>"; };
 		D88DF44F161F66C30063809A /* SermonViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SermonViewController.xib; sourceTree = "<group>"; };
 		D89189C01627416D00AAEA59 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		D8A067051632F422008BF6DD /* SermonXML.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; name = SermonXML.rtf; path = ../../Desktop/SermonXML.rtf; sourceTree = "<group>"; };
 		D8D86198161F6ACB00EFE852 /* Nehemiahs-Wall.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Nehemiahs-Wall.jpeg"; sourceTree = "<group>"; };
 		D8E0BC5D15D43C1F00B91F61 /* 2 Pillars Church.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "2 Pillars Church.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8E0BC6115D43C1F00B91F61 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -113,6 +115,7 @@
 		D8220C3E1610DC4B00803763 /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				D8A067051632F422008BF6DD /* SermonXML.rtf */,
 				D8220C3B1610DC4600803763 /* Sermons.h */,
 				D8220C3C1610DC4600803763 /* Sermons.m */,
 			);
@@ -317,6 +320,7 @@
 				D85050951625F7F6003C5597 /* backgroundMatte.jpeg in Resources */,
 				D850509A16260184003C5597 /* SermonCell.xib in Resources */,
 				D89189C11627416D00AAEA59 /* Default-568h@2x.png in Resources */,
+				D8A067061632F422008BF6DD /* SermonXML.rtf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
