@@ -8,13 +8,17 @@
 
 #import <Foundation/Foundation.h>
 
-@interface Sermons : NSObject
+@interface Sermons : NSObject <NSXMLParserDelegate>
 {
-    NSObject *sermon;
-    UIImage *sermonImage;
+    NSMutableString *currentString;
 }
 
-@property NSObject *sermon;
-@property UIImage *sermonImage;
+@property (nonatomic, weak) id parentParserDelegate;
+
+@property NSString *seriesTitle;
+@property NSString *sermonTitle;
+@property NSString *byWho;
+@property NSString *date;
+//@property UIImage *sermonImage;
 
 @end

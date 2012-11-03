@@ -10,9 +10,14 @@
 
 @class WebViewController;
 @class LearnCustomCell;
+@class SermonParser;
 
-@interface LearnViewController :  UIViewController <UITableViewDelegate, UITableViewDataSource>
+@interface LearnViewController :  UIViewController <UITableViewDelegate, UITableViewDataSource, NSXMLParserDelegate>
 {
+    NSMutableData *xmlData;
+    NSURLConnection *connection;
+    SermonParser *channel;
+    
     NSArray *tableList;
     LearnCustomCell *cell;
 }

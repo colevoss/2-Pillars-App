@@ -8,18 +8,20 @@
 
 #import <Foundation/Foundation.h>
 
-@interface SermonParser : NSXMLParser
+@interface SermonParser : NSObject <NSXMLParserDelegate>
 {
-    NSString *seriesTitle;
-    NSString *byWho;
-    NSString *sermonTitle;
+    NSMutableString *currentString;
     
 //    Website is not prepared to have an image parsed
 //    UIImage *sermonImage;
 }
 
+@property (nonatomic, weak) id parentParserDelegate;
+@property (nonatomic, readonly, strong) NSMutableArray *items;
+
 @property NSString *seriesTitle;
 @property NSString *byWho;
 @property NSString *sermonTitle;
+@property NSString *date;
 
 @end

@@ -55,7 +55,6 @@
     
     //Learn View Controller creation
     //
-    
     UIViewController *viewController1 = [[LearnViewController alloc] initWithNibName:@"LearnViewController" bundle:nil];
     UINavigationController *navController1 = [[UINavigationController alloc] initWithRootViewController:viewController1];
     navController1.navigationBar.barStyle = UIBarStyleBlack;
