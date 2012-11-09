@@ -26,7 +26,7 @@
 {
     //Later this list should be populated by what is parsed from the website.
     
-    tableList = [[NSArray alloc] initWithObjects:@"Nehemiah", @"The Sermon On The Mount", @"The Story of God", nil];
+    tableList = [[NSArray alloc] initWithObjects:@"Nehemiah", @"The Sermon On The Mount", @"The Story of God", @"The Gospel &...", @"Vision Series", @"Misc Teachings",  nil];
     [super viewDidLoad];
 }
 
