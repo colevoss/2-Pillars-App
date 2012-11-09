@@ -7,6 +7,7 @@
 //
 
 #import "MoreViewController.h"
+#import "MapViewController.h"
 
 @interface MoreViewController ()
 
@@ -19,7 +20,7 @@
 - (void)viewDidLoad
 {
     //Need to define what will be in this list.
-    tableList = [[NSArray alloc] initWithObjects:@"Nehemiah 1:11", @"Nehemiah 2:1", nil];
+    tableList = [[NSArray alloc] initWithObjects:@"Directions here!", nil];
     
     NSLog(@"# Of objects in MoreViewController's tableList = %i", [tableList count]);
     [super viewDidLoad];
@@ -78,15 +79,25 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-//    //Set what happens when an item is selected
-//    NSURL *churchSite = [NSURL URLWithString:@"http://www.2pillarschurch.com"];
-//    NSURLRequest *url = [NSURLRequest requestWithURL:churchSite];
-//    
-//    WebViewController *webController = [[WebViewController alloc] initWithNibName:@"WebViewController"
-//                                                                           bundle:nil];
-//    [webController.webView loadRequest:url];
-//	[self.navigationController pushViewController:webController animated:YES];
+    NSString *selected = [tableList objectAtIndex:indexPath.row];
+    if (selected == @"Directions here!")
+    {
+        NSLog(@"clicked on map");
+        [tableView deselectRowAtIndexPath:indexPath animated:YES];
+        
+        MapViewController *mapView = [[MapViewController alloc] initWithNibName:@"MapViewController"
+                                                                         bundle:nil];
+        UINavigationController *mapNav = [[UINavigationController alloc] initWithRootViewController:mapView];
+
+        mapNav.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Back" style:UIBarButtonItemStylePlain target:self action:@selector(dismissModalViewControllerAnimated:)];
+        
+        mapNav.delegate = self;
+        
+        [self presentModalViewController:mapNav animated:YES];
+    }
+    //Add other selections here before the else statement.
     
+    else [tableView deselectRowAtIndexPath:indexPath animated:YES];
     
 }
 

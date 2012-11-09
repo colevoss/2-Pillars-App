@@ -19,6 +19,10 @@
 		D850509A16260184003C5597 /* SermonCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D850509916260184003C5597 /* SermonCell.xib */; };
 		D862D5E9160BE00A0064F5E4 /* DarkBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = D862D5E8160BE00A0064F5E4 /* DarkBackground.png */; };
 		D862D5EB160BE0100064F5E4 /* LightBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = D862D5EA160BE0100064F5E4 /* LightBackground.png */; };
+		D87D5380164CB1B400859AB8 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D87D537F164CB1B400859AB8 /* MapKit.framework */; };
+		D87D5382164CB1F700859AB8 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D87D5381164CB1F700859AB8 /* CoreLocation.framework */; };
+		D87D538A164CB54700859AB8 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D87D5388164CB54700859AB8 /* MapViewController.m */; };
+		D87D538B164CB54700859AB8 /* MapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D87D5389164CB54700859AB8 /* MapViewController.xib */; };
 		D88DF450161F66C30063809A /* SermonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D88DF44E161F66C30063809A /* SermonViewController.m */; };
 		D88DF451161F66C30063809A /* SermonViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D88DF44F161F66C30063809A /* SermonViewController.xib */; };
 		D89189C11627416D00AAEA59 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D89189C01627416D00AAEA59 /* Default-568h@2x.png */; };
@@ -63,6 +67,11 @@
 		D850509916260184003C5597 /* SermonCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SermonCell.xib; sourceTree = "<group>"; };
 		D862D5E8160BE00A0064F5E4 /* DarkBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DarkBackground.png; sourceTree = "<group>"; };
 		D862D5EA160BE0100064F5E4 /* LightBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LightBackground.png; sourceTree = "<group>"; };
+		D87D537F164CB1B400859AB8 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		D87D5381164CB1F700859AB8 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		D87D5387164CB54700859AB8 /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
+		D87D5388164CB54700859AB8 /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
+		D87D5389164CB54700859AB8 /* MapViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MapViewController.xib; sourceTree = "<group>"; };
 		D88DF44D161F66C30063809A /* SermonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SermonViewController.h; sourceTree = "<group>"; };
 		D88DF44E161F66C30063809A /* SermonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SermonViewController.m; sourceTree = "<group>"; };
 		D88DF44F161F66C30063809A /* SermonViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SermonViewController.xib; sourceTree = "<group>"; };
@@ -103,6 +112,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D87D5382164CB1F700859AB8 /* CoreLocation.framework in Frameworks */,
+				D87D5380164CB1B400859AB8 /* MapKit.framework in Frameworks */,
 				D8E0BC6215D43C1F00B91F61 /* UIKit.framework in Frameworks */,
 				D8E0BC6415D43C1F00B91F61 /* Foundation.framework in Frameworks */,
 				D8E0BC6615D43C1F00B91F61 /* CoreGraphics.framework in Frameworks */,
@@ -147,6 +158,8 @@
 		D8E0BC5215D43C1E00B91F61 = {
 			isa = PBXGroup;
 			children = (
+				D87D5381164CB1F700859AB8 /* CoreLocation.framework */,
+				D87D537F164CB1B400859AB8 /* MapKit.framework */,
 				D89189C01627416D00AAEA59 /* Default-568h@2x.png */,
 				D8E0BC6715D43C1F00B91F61 /* 2 Pillars Church */,
 				D8E0BC6015D43C1F00B91F61 /* Frameworks */,
@@ -180,7 +193,7 @@
 				D82759A216307CAA00BA8DB1 /* Controller */,
 				D8220C3E1610DC4B00803763 /* Data */,
 				D8F5CAE715DD91EB00EBC61A /* Images */,
-				D8F5CAE615DD91D900EBC61A /* ViewControllrs */,
+				D8F5CAE615DD91D900EBC61A /* Controllers */,
 				D8E0BC6815D43C1F00B91F61 /* Supporting Files */,
 			);
 			path = "2 Pillars Church";
@@ -197,7 +210,7 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		D8F5CAE615DD91D900EBC61A /* ViewControllrs */ = {
+		D8F5CAE615DD91D900EBC61A /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
 				D8E0BC7315D43C1F00B91F61 /* LearnViewController.h */,
@@ -208,10 +221,12 @@
 				D8E0BC7B15D43C1F00B91F61 /* InfoViewController.m */,
 				D88DF44D161F66C30063809A /* SermonViewController.h */,
 				D88DF44E161F66C30063809A /* SermonViewController.m */,
+				D87D5387164CB54700859AB8 /* MapViewController.h */,
+				D87D5388164CB54700859AB8 /* MapViewController.m */,
 				D8F5CAE815DD920100EBC61A /* Xibs */,
 				D862D5EF160BEA970064F5E4 /* Cells */,
 			);
-			name = ViewControllrs;
+			name = Controllers;
 			sourceTree = "<group>";
 		};
 		D8F5CAE715DD91EB00EBC61A /* Images */ = {
@@ -238,6 +253,7 @@
 		D8F5CAE815DD920100EBC61A /* Xibs */ = {
 			isa = PBXGroup;
 			children = (
+				D87D5389164CB54700859AB8 /* MapViewController.xib */,
 				D831C9B415E7F72F0034197D /* WebViewController.xib */,
 				D8E0BC8115D43C1F00B91F61 /* LearnViewController.xib */,
 				D8E0BC8415D43C1F00B91F61 /* InfoViewController.xib */,
@@ -321,6 +337,7 @@
 				D850509A16260184003C5597 /* SermonCell.xib in Resources */,
 				D89189C11627416D00AAEA59 /* Default-568h@2x.png in Resources */,
 				D8A067061632F422008BF6DD /* SermonXML.rtf in Resources */,
+				D87D538B164CB54700859AB8 /* MapViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,6 +358,7 @@
 				D88DF450161F66C30063809A /* SermonViewController.m in Sources */,
 				D850509816260132003C5597 /* SermonCustomCell.m in Sources */,
 				D82759A016307C9600BA8DB1 /* SermonParser.m in Sources */,
+				D87D538A164CB54700859AB8 /* MapViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

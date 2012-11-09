@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 @class WebViewController;
-@interface MoreViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
+@interface MoreViewController : UIViewController <UITableViewDelegate, UITableViewDataSource, UINavigationControllerDelegate>
 {
     NSArray *tableList;
     UITableView *table;
