@@ -23,9 +23,12 @@
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         
-        //NEEDS WORK, SHOULD BE LOADING ONLY SHOWING
-        MKCoordinateRegion regionForViewToShow = MKCoordinateRegionMake(CLLocationCoordinate2DMake(40.79192, -96.700295), MKCoordinateSpanMake(100,100));
-        [_map setRegion:regionForViewToShow];
+        self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Back" style:UIBarButtonItemStylePlain target:self action:@selector(dismissModalViewControllerAnimated:)];
+        
+        //not sure if this is cool.
+        self.navigationItem.title = NSLocalizedString(@"2 Pillars Address", @"2 Pillars Address");
+        
+
     }
     return self;
 }
@@ -33,7 +36,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+
 }
 
 - (void)didReceiveMemoryWarning

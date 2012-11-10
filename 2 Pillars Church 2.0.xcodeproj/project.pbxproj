@@ -158,8 +158,6 @@
 		D8E0BC5215D43C1E00B91F61 = {
 			isa = PBXGroup;
 			children = (
-				D87D5381164CB1F700859AB8 /* CoreLocation.framework */,
-				D87D537F164CB1B400859AB8 /* MapKit.framework */,
 				D89189C01627416D00AAEA59 /* Default-568h@2x.png */,
 				D8E0BC6715D43C1F00B91F61 /* 2 Pillars Church */,
 				D8E0BC6015D43C1F00B91F61 /* Frameworks */,
@@ -178,6 +176,8 @@
 		D8E0BC6015D43C1F00B91F61 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D87D5381164CB1F700859AB8 /* CoreLocation.framework */,
+				D87D537F164CB1B400859AB8 /* MapKit.framework */,
 				D8E0BC6115D43C1F00B91F61 /* UIKit.framework */,
 				D8E0BC6315D43C1F00B91F61 /* Foundation.framework */,
 				D8E0BC6515D43C1F00B91F61 /* CoreGraphics.framework */,

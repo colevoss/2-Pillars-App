@@ -88,12 +88,14 @@
         MapViewController *mapView = [[MapViewController alloc] initWithNibName:@"MapViewController"
                                                                          bundle:nil];
         UINavigationController *mapNav = [[UINavigationController alloc] initWithRootViewController:mapView];
-
-        mapNav.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Back" style:UIBarButtonItemStylePlain target:self action:@selector(dismissModalViewControllerAnimated:)];
-        
         mapNav.delegate = self;
         
+        //NEEDS WORK, SHOULD BE LOADING ONLY SHOWING
+        MKCoordinateRegion regionForViewToShow = MKCoordinateRegionMake(CLLocationCoordinate2DMake(40.79192, -96.700295), MKCoordinateSpanMake(10,10));
+        [mapView.map setRegion:regionForViewToShow animated:YES];
+        
         [self presentModalViewController:mapNav animated:YES];
+        mapNav.delegate = nil;
     }
     //Add other selections here before the else statement.
     
