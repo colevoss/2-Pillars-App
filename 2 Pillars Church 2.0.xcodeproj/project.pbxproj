@@ -37,9 +37,9 @@
 		D8E0BC7215D43C1F00B91F61 /* IIAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D8E0BC7115D43C1F00B91F61 /* IIAppDelegate.m */; };
 		D8E0BC7515D43C1F00B91F61 /* LearnViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8E0BC7415D43C1F00B91F61 /* LearnViewController.m */; };
 		D8E0BC7715D43C1F00B91F61 /* first.png in Resources */ = {isa = PBXBuildFile; fileRef = D8E0BC7615D43C1F00B91F61 /* first.png */; };
-		D8E0BC7C15D43C1F00B91F61 /* InfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8E0BC7B15D43C1F00B91F61 /* InfoViewController.m */; };
+		D8E0BC7C15D43C1F00B91F61 /* ConnectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8E0BC7B15D43C1F00B91F61 /* ConnectViewController.m */; };
 		D8E0BC8315D43C1F00B91F61 /* LearnViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D8E0BC8115D43C1F00B91F61 /* LearnViewController.xib */; };
-		D8E0BC8615D43C1F00B91F61 /* InfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D8E0BC8415D43C1F00B91F61 /* InfoViewController.xib */; };
+		D8E0BC8615D43C1F00B91F61 /* ConnectViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D8E0BC8415D43C1F00B91F61 /* ConnectViewController.xib */; };
 		D8E0BCA915D587F000B91F61 /* L.png in Resources */ = {isa = PBXBuildFile; fileRef = D8E0BCA815D587F000B91F61 /* L.png */; };
 		D8E0BCAD15D5884500B91F61 /* MoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8E0BCAB15D5884500B91F61 /* MoreViewController.m */; };
 		D8E0BCAE15D5884500B91F61 /* MoreViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D8E0BCAC15D5884500B91F61 /* MoreViewController.xib */; };
@@ -94,10 +94,10 @@
 		D8E0BC7315D43C1F00B91F61 /* LearnViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LearnViewController.h; sourceTree = "<group>"; };
 		D8E0BC7415D43C1F00B91F61 /* LearnViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LearnViewController.m; sourceTree = "<group>"; };
 		D8E0BC7615D43C1F00B91F61 /* first.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = first.png; sourceTree = "<group>"; };
-		D8E0BC7A15D43C1F00B91F61 /* InfoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InfoViewController.h; sourceTree = "<group>"; };
-		D8E0BC7B15D43C1F00B91F61 /* InfoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InfoViewController.m; sourceTree = "<group>"; };
+		D8E0BC7A15D43C1F00B91F61 /* ConnectViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ConnectViewController.h; sourceTree = "<group>"; };
+		D8E0BC7B15D43C1F00B91F61 /* ConnectViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ConnectViewController.m; sourceTree = "<group>"; };
 		D8E0BC8215D43C1F00B91F61 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/LearnViewController.xib; sourceTree = "<group>"; };
-		D8E0BC8515D43C1F00B91F61 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/InfoViewController.xib; sourceTree = "<group>"; };
+		D8E0BC8515D43C1F00B91F61 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ConnectViewController.xib; sourceTree = "<group>"; };
 		D8E0BCA815D587F000B91F61 /* L.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = L.png; sourceTree = "<group>"; };
 		D8E0BCAA15D5884500B91F61 /* MoreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoreViewController.h; sourceTree = "<group>"; };
 		D8E0BCAB15D5884500B91F61 /* MoreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoreViewController.m; sourceTree = "<group>"; };
@@ -220,8 +220,8 @@
 				D8E0BC7415D43C1F00B91F61 /* LearnViewController.m */,
 				D8E0BCAA15D5884500B91F61 /* MoreViewController.h */,
 				D8E0BCAB15D5884500B91F61 /* MoreViewController.m */,
-				D8E0BC7A15D43C1F00B91F61 /* InfoViewController.h */,
-				D8E0BC7B15D43C1F00B91F61 /* InfoViewController.m */,
+				D8E0BC7A15D43C1F00B91F61 /* ConnectViewController.h */,
+				D8E0BC7B15D43C1F00B91F61 /* ConnectViewController.m */,
 				D88DF44D161F66C30063809A /* SermonViewController.h */,
 				D88DF44E161F66C30063809A /* SermonViewController.m */,
 				D87D5387164CB54700859AB8 /* MapViewController.h */,
@@ -261,7 +261,7 @@
 				D87D5389164CB54700859AB8 /* MapViewController.xib */,
 				D831C9B415E7F72F0034197D /* WebViewController.xib */,
 				D8E0BC8115D43C1F00B91F61 /* LearnViewController.xib */,
-				D8E0BC8415D43C1F00B91F61 /* InfoViewController.xib */,
+				D8E0BC8415D43C1F00B91F61 /* ConnectViewController.xib */,
 				D8E0BCAC15D5884500B91F61 /* MoreViewController.xib */,
 				D88DF44F161F66C30063809A /* SermonViewController.xib */,
 			);
@@ -321,7 +321,7 @@
 				D8E0BC6C15D43C1F00B91F61 /* InfoPlist.strings in Resources */,
 				D8E0BC7715D43C1F00B91F61 /* first.png in Resources */,
 				D8E0BC8315D43C1F00B91F61 /* LearnViewController.xib in Resources */,
-				D8E0BC8615D43C1F00B91F61 /* InfoViewController.xib in Resources */,
+				D8E0BC8615D43C1F00B91F61 /* ConnectViewController.xib in Resources */,
 				D8E0BCA915D587F000B91F61 /* L.png in Resources */,
 				D8E0BCAE15D5884500B91F61 /* MoreViewController.xib in Resources */,
 				D8E0BCB015D5895200B91F61 /* i.png in Resources */,
@@ -356,7 +356,7 @@
 				D8E0BC6E15D43C1F00B91F61 /* main.m in Sources */,
 				D8E0BC7215D43C1F00B91F61 /* IIAppDelegate.m in Sources */,
 				D8E0BC7515D43C1F00B91F61 /* LearnViewController.m in Sources */,
-				D8E0BC7C15D43C1F00B91F61 /* InfoViewController.m in Sources */,
+				D8E0BC7C15D43C1F00B91F61 /* ConnectViewController.m in Sources */,
 				D8E0BCAD15D5884500B91F61 /* MoreViewController.m in Sources */,
 				D8220C351610D20700803763 /* LearnCustomCell.m in Sources */,
 				D8220C3D1610DC4600803763 /* Sermons.m in Sources */,
@@ -387,12 +387,12 @@
 			name = LearnViewController.xib;
 			sourceTree = "<group>";
 		};
-		D8E0BC8415D43C1F00B91F61 /* InfoViewController.xib */ = {
+		D8E0BC8415D43C1F00B91F61 /* ConnectViewController.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
 				D8E0BC8515D43C1F00B91F61 /* en */,
 			);
-			name = InfoViewController.xib;
+			name = ConnectViewController.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
