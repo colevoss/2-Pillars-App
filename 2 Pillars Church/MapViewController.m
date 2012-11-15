@@ -11,22 +11,6 @@
 //@interface MapViewController ()
 //
 //@end
-@interface Annotation : NSObject <MKAnnotation>
-@property (nonatomic, readonly) CLLocationCoordinate2D coordinate;
-- (id)initWithLocation:(CLLocationCoordinate2D)coord;
-@end
-
-@implementation Annotation
-@synthesize coordinate;
-- (id)initWithLocation:(CLLocationCoordinate2D)coord
-{
-    self = [super init];
-    if (self) {
-        coordinate = coord;
-    }
-    return self;
-}
-@end
 
 @implementation MapViewController
 
@@ -51,8 +35,12 @@
     [super viewDidLoad];
     CLLocationCoordinate2D churchLocation = CLLocationCoordinate2DMake(40.79192, -96.700295);
     [self.map setRegion:MKCoordinateRegionMake(churchLocation, MKCoordinateSpanMake(.05, .05)) animated:YES];
-    Annotation *pin = [[Annotation alloc] initWithLocation:churchLocation];
-    [_map addAnnotation:pin];
+    MKPointAnnotation *churchPin = [[MKPointAnnotation alloc] init];
+    [churchPin setCoordinate:churchLocation];
+    [churchPin setTitle:@"2 Pillars Church"];
+    [churchPin setSubtitle:@"1430 South Street #110 Lincoln, NE 68502"];
+    [_map addAnnotation:churchPin];
+    [_map selectAnnotation:churchPin animated:YES];
 }
 
 - (void)didReceiveMemoryWarning
