@@ -14,7 +14,7 @@
 
 
 @implementation WebViewController
-@synthesize web, websiteURL;
+@synthesize web, websiteURL, viewTitle;
 
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -23,7 +23,7 @@
     if (self) {
         self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Back" style:UIBarButtonItemStylePlain target:self action:@selector(dismissModalViewControllerAnimated:)];
         
-        self.navigationItem.title = NSLocalizedString(@"The City!", @"The City!");
+        self.navigationItem.title = viewTitle;
     }
     return self;
 }

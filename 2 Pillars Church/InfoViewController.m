@@ -21,7 +21,7 @@
 
 - (void)viewDidLoad
 {
-    tableList = [[NSArray alloc] initWithObjects:@"The Plaza", nil];
+    tableList = [[NSArray alloc] initWithObjects:@"The Plaza!", nil];
     [super viewDidLoad];
 }
 
@@ -55,7 +55,6 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView
          cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    //Deallocates Memory for table cells not on screen.
     static NSString *CellIdentifier = @"Cell";
     
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
@@ -65,17 +64,39 @@
                                       reuseIdentifier:CellIdentifier];
     }
     
-    
-    //Set's the cell's textlabel to the name of the object at index.
     [[cell textLabel] setText:[tableList objectAtIndex:indexPath.row]];
-    
     return cell;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    //Set what happens when an item is selected
+    if ([tableList objectAtIndex:indexPath.row] == @"The Plaza!")
+    {
+        [tableView deselectRowAtIndexPath:indexPath animated:YES];
+        
+        WebViewController *webView = [[WebViewController alloc] initWithNibName:@"WebViewController"
+                                                                         bundle:nil];
+        [webView setWebsiteURL:@"http://www.2pillars.onthecity.org/plaza"];
+        [webView setViewTitle:@"The Plaza"];
+        UINavigationController *webNav = [[UINavigationController alloc] initWithRootViewController:webView];
+        webNav.navigationBar.barStyle = UIBarStyleBlack;
+        webNav.delegate = self;
+        
+        [self presentModalViewController:webNav animated:YES];
+    }
     
+    else
+    {
+        //If an entry is not properly programmed, this alert will appear to prevent crashes
+        NSString *alertRow = [NSString stringWithFormat:@"'%@' has not been programmed yet", [tableList objectAtIndex:indexPath.row]];
+        UIAlertView *selectionIsNotProgrammedAlert = [[UIAlertView alloc] initWithTitle:@"Woops!"
+                                                                                message:alertRow
+                                                                               delegate:self
+                                                                      cancelButtonTitle:@"Okay"
+                                                                      otherButtonTitles:nil];
+        [selectionIsNotProgrammedAlert show];
+        [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    }
 }
 
 @end

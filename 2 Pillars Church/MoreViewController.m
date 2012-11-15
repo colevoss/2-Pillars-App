@@ -20,7 +20,7 @@
 
 - (void)viewDidLoad
 {
-    tableList = [[NSArray alloc] initWithObjects:@"Directions here!", @"The City", nil];
+    tableList = [[NSArray alloc] initWithObjects:@"Directions here!", @"The City!", nil];
     [super viewDidLoad];
 }
 
@@ -80,13 +80,14 @@
         mapNav.delegate = nil;
     }
     
-    else if ([tableList objectAtIndex:indexPath.row] == @"The City")
+    else if ([tableList objectAtIndex:indexPath.row] == @"The City!")
     {
         [tableView deselectRowAtIndexPath:indexPath animated:YES];
         
         WebViewController *webView = [[WebViewController alloc] initWithNibName:@"WebViewController"
                                                                          bundle:nil];
         [webView setWebsiteURL:@"http://www.2pillars.onthecity.org"];
+        [webView setViewTitle:@"The City!"];
         UINavigationController *webNav = [[UINavigationController alloc] initWithRootViewController:webView];
         webNav.navigationBar.barStyle = UIBarStyleBlack;
         webNav.delegate = self;
