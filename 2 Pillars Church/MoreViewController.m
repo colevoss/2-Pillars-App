@@ -19,31 +19,23 @@
 
 - (void)viewDidLoad
 {
-    //Need to define what will be in this list.
-    tableList = [[NSArray alloc] initWithObjects:@"Directions here!", nil];
-    
-    NSLog(@"# Of objects in MoreViewController's tableList = %i", [tableList count]);
+    tableList = [[NSArray alloc] initWithObjects:@"Directions here!", @"test", nil];
     [super viewDidLoad];
-    
 }
 
 - (void)viewDidUnload
 {
     [super viewDidUnload];
-    //Set the tableList to nil when leaving so it can release it.
     tableList = nil;
 }
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
-    //initiate the tab with the image buttons and title
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         self.title = NSLocalizedString(@"More", @"More");
         self.tabBarItem.image = [UIImage imageNamed:@"first"];
-    }
-    return self;
-    
+    } return self;
 }
 
 #pragma mark - UITableView Data source
@@ -51,16 +43,13 @@
 - (NSInteger)tableView:(UITableView *)tableView
  numberOfRowsInSection:(NSInteger)section
 {
-    // Number of rows in the table will equal
-    // the tableList array that is made up of the
-    return [self->tableList count];
+    return [tableList count];
 }
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView
          cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    //Deallocates Memory for table cells not on screen.
     static NSString *CellIdentifier = @"Cell";
     
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
@@ -69,18 +58,14 @@
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault
                                       reuseIdentifier:CellIdentifier];
     }
-    
-    
     //Set's the cell's textlabel to the name of the object at index.
     [[cell textLabel] setText:[tableList objectAtIndex:indexPath.row]];
-    
     return cell;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    NSString *selected = [tableList objectAtIndex:indexPath.row];
-    if (selected == @"Directions here!")
+    if ([tableList objectAtIndex:indexPath.row] == @"Directions here!")
     {
         NSLog(@"clicked on map");
         [tableView deselectRowAtIndexPath:indexPath animated:YES];
@@ -89,17 +74,28 @@
                                                                          bundle:nil];
         UINavigationController *mapNav = [[UINavigationController alloc] initWithRootViewController:mapView];
         mapNav.delegate = self;
-        
-        //NEEDS WORK, SHOULD BE LOADING ONLY SHOWING
-        MKCoordinateRegion regionForViewToShow = MKCoordinateRegionMake(CLLocationCoordinate2DMake(40.79192, -96.700295), MKCoordinateSpanMake(10,10));
-        [mapView.map setRegion:regionForViewToShow animated:YES];
+        mapNav.navigationBar.barStyle = UIBarStyleBlack;
         
         [self presentModalViewController:mapNav animated:YES];
         mapNav.delegate = nil;
     }
-    //Add other selections here before the else statement.
-    
-    else [tableView deselectRowAtIndexPath:indexPath animated:YES];
+/*
+    Add other selections here before the else statement.
+    else if ([tableList objectAtIndex:indexPath.row] == @"")
+*/
+    else
+    {
+        //If an entry is not properly programmed, this alert will appear to prevent crashes
+        NSString *alertRow = [NSString stringWithFormat:@"'%@' has not been programmed yet", [tableList objectAtIndex:indexPath.row]];
+        UIAlertView *selectionIsNotProgrammedAlert = [[UIAlertView alloc] initWithTitle:@"Woops!"
+                                                                                message:alertRow
+                                                                               delegate:self
+                                                                      cancelButtonTitle:@"Okay"
+                                                                      otherButtonTitles:nil];
+        [selectionIsNotProgrammedAlert show];
+        [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    }
+        
     
 }
 

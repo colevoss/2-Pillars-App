@@ -162,7 +162,7 @@ heightForRowAtIndexPath:(NSIndexPath *)indexPath
         
     }
     
-    //When the web server is working, implement these to set the 
+    //When the web server is working, implement these to set the row title
 //    Sermons *sermonItem = [[channel items] objectAtIndex:[indexPath row]];
 //    [[cell sermonTitle] setText:[sermonItem seriesTitle];
     [[cell sermonTitle] setText:[tableList objectAtIndex:indexPath.row]];
