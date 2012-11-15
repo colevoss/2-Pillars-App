@@ -10,7 +10,7 @@
 
 #import "LearnViewController.h"
 #import "MoreViewController.h"
-#import "InfoViewController.h"
+#import "ConnectViewController.h"
 
 @implementation IIAppDelegate
 
@@ -63,9 +63,9 @@
     //Info View Controller creation
     //
     
-    UIViewController *viewController2 = [[InfoViewController alloc] initWithNibName:@"InfoViewController" bundle:nil];
+    UIViewController *viewController2 = [[ConnectViewController alloc] initWithNibName:@"ConnectViewController" bundle:nil];
     UINavigationController *navController2 = [[UINavigationController alloc] initWithRootViewController:viewController2];
-    navController1.navigationBar.barStyle = UIBarStyleBlack;
+    navController2.navigationBar.barStyle = UIBarStyleBlack;
     
     
     
@@ -75,7 +75,7 @@
     UIViewController *viewController3 = [[MoreViewController alloc] initWithNibName:@"MoreViewController" bundle:nil];
     UINavigationController *navController3 = [[UINavigationController alloc] initWithRootViewController:viewController3];
     //set style of navController1 to black solid
-    navController1.navigationBar.barStyle = UIBarStyleBlack;
+    navController3.navigationBar.barStyle = UIBarStyleBlack;
     
     
     
