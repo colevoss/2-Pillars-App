@@ -8,6 +8,7 @@
 
 #import "MoreViewController.h"
 #import "MapViewController.h"
+#import "WebViewController.h"
 
 @interface MoreViewController ()
 
@@ -19,7 +20,7 @@
 
 - (void)viewDidLoad
 {
-    tableList = [[NSArray alloc] initWithObjects:@"Directions here!", @"test", nil];
+    tableList = [[NSArray alloc] initWithObjects:@"Directions here!", @"The City", nil];
     [super viewDidLoad];
 }
 
@@ -67,7 +68,6 @@
 {
     if ([tableList objectAtIndex:indexPath.row] == @"Directions here!")
     {
-        NSLog(@"clicked on map");
         [tableView deselectRowAtIndexPath:indexPath animated:YES];
         
         MapViewController *mapView = [[MapViewController alloc] initWithNibName:@"MapViewController"
@@ -78,6 +78,20 @@
         
         [self presentModalViewController:mapNav animated:YES];
         mapNav.delegate = nil;
+    }
+    
+    else if ([tableList objectAtIndex:indexPath.row] == @"The City")
+    {
+        [tableView deselectRowAtIndexPath:indexPath animated:YES];
+        
+        WebViewController *webView = [[WebViewController alloc] initWithNibName:@"WebViewController"
+                                                                         bundle:nil];
+        [webView setWebsiteURL:@"http://www.2pillars.onthecity.org"];
+        UINavigationController *webNav = [[UINavigationController alloc] initWithRootViewController:webView];
+        webNav.navigationBar.barStyle = UIBarStyleBlack;
+        webNav.delegate = self;
+        
+        [self presentModalViewController:webNav animated:YES];
     }
 /*
     Add other selections here before the else statement.

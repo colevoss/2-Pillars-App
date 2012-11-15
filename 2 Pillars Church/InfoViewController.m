@@ -7,6 +7,7 @@
 //
 
 #import "InfoViewController.h"
+#import "WebViewController.h"
 
 @interface InfoViewController ()
 
@@ -20,35 +21,23 @@
 
 - (void)viewDidLoad
 {
-    //Need to define what will be in this list.
-    tableList = [[NSArray alloc] initWithObjects:@"Info1", @"Info2", nil];
+    tableList = [[NSArray alloc] initWithObjects:@"The Plaza", nil];
     [super viewDidLoad];
-    
 }
 
 - (void)viewDidUnload
 {
     [super viewDidUnload];
-    //Set the tableList to nil when leaving so it can release it.
     tableList = nil;
 }
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
-    //initiate the tab with the image buttons and title
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         self.title = NSLocalizedString(@"Info", @"Info");
         self.tabBarItem.image = [UIImage imageNamed:@"i"];
     }
-    
-    //Create the nav controller for this ViewController
-    
-    //NEEDS WORK
-    UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:self];
-    [navController setTitle:@"Info"];
-    self.window.rootViewController = navController;
-    
     return self;
 }
 
