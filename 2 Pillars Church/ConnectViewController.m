@@ -6,14 +6,14 @@
 //  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
 //
 
-#import "InfoViewController.h"
+#import "ConnectViewController.h"
 #import "WebViewController.h"
 
-@interface InfoViewController ()
+@interface ConnectViewController ()
 
 @end
 
-@implementation InfoViewController
+@implementation ConnectViewController
 
 @synthesize window;
 
@@ -35,7 +35,7 @@
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        self.title = NSLocalizedString(@"Info", @"Info");
+        self.title = NSLocalizedString(@"Connect", @"Connect");
         self.tabBarItem.image = [UIImage imageNamed:@"i"];
     }
     return self;
