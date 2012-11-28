@@ -40,6 +40,8 @@
 	<array>
 		<string>armv7</string>
 	</array>
+	<key>PlazaAlert</key>
+	<false/>
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>

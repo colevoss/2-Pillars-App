@@ -26,7 +26,7 @@
 {
     //Later this list should be populated by what is parsed from the website.
     
-    tableList = [[NSArray alloc] initWithObjects:@"Nehemiah", @"The Sermon On The Mount", @"The Story of God", @"The Gospel &...", @"Vision Series", @"Misc Teachings",  nil];
+    tableList = [[NSArray alloc] initWithObjects:@"Nehemiah", @"The Sermon On The Mount", @"The Story of God", @"The Gospel & ...", @"Vision Series", @"Miscellaneous", nil];
     [super viewDidLoad];
 }
 
@@ -78,8 +78,6 @@ didStartElement:(NSString *)elementName
 
 - (void)connection:(NSURLConnection *)conn didReceiveData:(NSData *)data
 {
-    // Add the incoming chunk of data to the container we are keeping
-    // The data always comes in the correct order
     [xmlData appendData:data];
     NSLog(@"%@", xmlData);
 }
@@ -112,11 +110,8 @@ didStartElement:(NSString *)elementName
     connection = nil;
     xmlData = nil;
     
-    // Grab the description of the error object passed to us
     NSString *errorString = [NSString stringWithFormat:@"Fetch failed: %@",
                              [error localizedDescription]];
-    
-    // Create and show an alert view with this error displayed
     UIAlertView *av = [[UIAlertView alloc] initWithTitle:@"Error"
                                                  message:errorString
                                                 delegate:nil
@@ -128,8 +123,6 @@ didStartElement:(NSString *)elementName
 - (NSInteger)tableView:(UITableView *)tableView
  numberOfRowsInSection:(NSInteger)section
 {
-    // Number of rows in the table will equal
-    // the tableList array that is made up of the
     return [tableList count];
 }
 

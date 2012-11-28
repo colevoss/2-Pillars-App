@@ -8,7 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@class WebViewController;
 @class LearnCustomCell;
 @class SermonParser;
 
@@ -21,7 +20,5 @@
     NSArray *tableList;
     LearnCustomCell *cell;
 }
-
-@property (nonatomic, strong) WebViewController *webViewController;
 
 @end

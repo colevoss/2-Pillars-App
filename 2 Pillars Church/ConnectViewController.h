@@ -8,11 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ConnectViewController : UIViewController <UITableViewDelegate, UITableViewDataSource, UINavigationControllerDelegate>
+@interface ConnectViewController : UIViewController <UITableViewDelegate, UITableViewDataSource, UINavigationControllerDelegate, UIAlertViewDelegate>
 {
     NSArray *tableList;
-    IBOutlet UITableView *table;
+    UIAlertView *info;
 }
+
 @property (strong, nonatomic) UIWindow *window;
+@property BOOL *plazaAlertHasBeenShown;
 
 @end

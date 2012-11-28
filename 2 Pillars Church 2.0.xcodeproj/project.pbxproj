@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D80B0F51165FFA9000818419 /* LeadersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D80B0F4F165FFA9000818419 /* LeadersViewController.m */; };
+		D80B0F52165FFA9000818419 /* LeadersViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D80B0F50165FFA9000818419 /* LeadersViewController.xib */; };
 		D8220C351610D20700803763 /* LearnCustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D8220C341610D20700803763 /* LearnCustomCell.m */; };
 		D8220C3A1610D53100803763 /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = D8220C391610D53100803763 /* 1.png */; };
 		D8220C3D1610DC4600803763 /* Sermons.m in Sources */ = {isa = PBXBuildFile; fileRef = D8220C3C1610DC4600803763 /* Sermons.m */; };
@@ -19,6 +21,12 @@
 		D850509A16260184003C5597 /* SermonCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D850509916260184003C5597 /* SermonCell.xib */; };
 		D862D5E9160BE00A0064F5E4 /* DarkBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = D862D5E8160BE00A0064F5E4 /* DarkBackground.png */; };
 		D862D5EB160BE0100064F5E4 /* LightBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = D862D5EA160BE0100064F5E4 /* LightBackground.png */; };
+		D8736DAA16558369002DB966 /* InfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8736DA816558369002DB966 /* InfoViewController.m */; };
+		D8736DAB16558369002DB966 /* InfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D8736DA916558369002DB966 /* InfoViewController.xib */; };
+		D8736DB21655B4FB002DB966 /* Why2PCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8736DB01655B4FB002DB966 /* Why2PCViewController.m */; };
+		D8736DB31655B4FB002DB966 /* Why2PCViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D8736DB11655B4FB002DB966 /* Why2PCViewController.xib */; };
+		D8736DB71655BB7A002DB966 /* MissionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8736DB51655BB7A002DB966 /* MissionViewController.m */; };
+		D8736DB81655BB7A002DB966 /* MissionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D8736DB61655BB7A002DB966 /* MissionViewController.xib */; };
 		D87D5380164CB1B400859AB8 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D87D537F164CB1B400859AB8 /* MapKit.framework */; };
 		D87D5382164CB1F700859AB8 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D87D5381164CB1F700859AB8 /* CoreLocation.framework */; };
 		D87D538A164CB54700859AB8 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D87D5388164CB54700859AB8 /* MapViewController.m */; };
@@ -52,6 +60,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D80B0F4E165FFA9000818419 /* LeadersViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeadersViewController.h; sourceTree = "<group>"; };
+		D80B0F4F165FFA9000818419 /* LeadersViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeadersViewController.m; sourceTree = "<group>"; };
+		D80B0F50165FFA9000818419 /* LeadersViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LeadersViewController.xib; sourceTree = "<group>"; };
 		D8220C331610D20700803763 /* LearnCustomCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LearnCustomCell.h; path = ../LearnCustomCell.h; sourceTree = "<group>"; };
 		D8220C341610D20700803763 /* LearnCustomCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LearnCustomCell.m; path = ../LearnCustomCell.m; sourceTree = "<group>"; };
 		D8220C391610D53100803763 /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
@@ -68,6 +79,15 @@
 		D850509916260184003C5597 /* SermonCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SermonCell.xib; sourceTree = "<group>"; };
 		D862D5E8160BE00A0064F5E4 /* DarkBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DarkBackground.png; sourceTree = "<group>"; };
 		D862D5EA160BE0100064F5E4 /* LightBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LightBackground.png; sourceTree = "<group>"; };
+		D8736DA716558369002DB966 /* InfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfoViewController.h; sourceTree = "<group>"; };
+		D8736DA816558369002DB966 /* InfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfoViewController.m; sourceTree = "<group>"; };
+		D8736DA916558369002DB966 /* InfoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InfoViewController.xib; sourceTree = "<group>"; };
+		D8736DAF1655B4FB002DB966 /* Why2PCViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Why2PCViewController.h; sourceTree = "<group>"; };
+		D8736DB01655B4FB002DB966 /* Why2PCViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Why2PCViewController.m; sourceTree = "<group>"; };
+		D8736DB11655B4FB002DB966 /* Why2PCViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Why2PCViewController.xib; sourceTree = "<group>"; };
+		D8736DB41655BB7A002DB966 /* MissionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MissionViewController.h; sourceTree = "<group>"; };
+		D8736DB51655BB7A002DB966 /* MissionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MissionViewController.m; sourceTree = "<group>"; };
+		D8736DB61655BB7A002DB966 /* MissionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MissionViewController.xib; sourceTree = "<group>"; };
 		D87D537F164CB1B400859AB8 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		D87D5381164CB1F700859AB8 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		D87D5387164CB54700859AB8 /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
@@ -158,6 +178,33 @@
 			name = Cells;
 			sourceTree = "<group>";
 		};
+		D8736DAD1655B4B7002DB966 /* InformationControllerItems */ = {
+			isa = PBXGroup;
+			children = (
+				D8736DA716558369002DB966 /* InfoViewController.h */,
+				D8736DA816558369002DB966 /* InfoViewController.m */,
+				D8736DB41655BB7A002DB966 /* MissionViewController.h */,
+				D8736DB51655BB7A002DB966 /* MissionViewController.m */,
+				D8736DAF1655B4FB002DB966 /* Why2PCViewController.h */,
+				D8736DB01655B4FB002DB966 /* Why2PCViewController.m */,
+				D80B0F4E165FFA9000818419 /* LeadersViewController.h */,
+				D80B0F4F165FFA9000818419 /* LeadersViewController.m */,
+				D8736DAE1655B4C7002DB966 /* Xibs */,
+			);
+			name = InformationControllerItems;
+			sourceTree = "<group>";
+		};
+		D8736DAE1655B4C7002DB966 /* Xibs */ = {
+			isa = PBXGroup;
+			children = (
+				D8736DB61655BB7A002DB966 /* MissionViewController.xib */,
+				D80B0F50165FFA9000818419 /* LeadersViewController.xib */,
+				D8736DB11655B4FB002DB966 /* Why2PCViewController.xib */,
+				D8736DA916558369002DB966 /* InfoViewController.xib */,
+			);
+			name = Xibs;
+			sourceTree = "<group>";
+		};
 		D8E0BC5215D43C1E00B91F61 = {
 			isa = PBXGroup;
 			children = (
@@ -218,10 +265,11 @@
 			children = (
 				D8E0BC7315D43C1F00B91F61 /* LearnViewController.h */,
 				D8E0BC7415D43C1F00B91F61 /* LearnViewController.m */,
-				D8E0BCAA15D5884500B91F61 /* MoreViewController.h */,
-				D8E0BCAB15D5884500B91F61 /* MoreViewController.m */,
 				D8E0BC7A15D43C1F00B91F61 /* ConnectViewController.h */,
 				D8E0BC7B15D43C1F00B91F61 /* ConnectViewController.m */,
+				D8736DAD1655B4B7002DB966 /* InformationControllerItems */,
+				D8E0BCAA15D5884500B91F61 /* MoreViewController.h */,
+				D8E0BCAB15D5884500B91F61 /* MoreViewController.m */,
 				D88DF44D161F66C30063809A /* SermonViewController.h */,
 				D88DF44E161F66C30063809A /* SermonViewController.m */,
 				D87D5387164CB54700859AB8 /* MapViewController.h */,
@@ -343,6 +391,10 @@
 				D89189C11627416D00AAEA59 /* Default-568h@2x.png in Resources */,
 				D8A067061632F422008BF6DD /* SermonXML.rtf in Resources */,
 				D87D538B164CB54700859AB8 /* MapViewController.xib in Resources */,
+				D8736DAB16558369002DB966 /* InfoViewController.xib in Resources */,
+				D8736DB31655B4FB002DB966 /* Why2PCViewController.xib in Resources */,
+				D8736DB81655BB7A002DB966 /* MissionViewController.xib in Resources */,
+				D80B0F52165FFA9000818419 /* LeadersViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -365,6 +417,10 @@
 				D82759A016307C9600BA8DB1 /* SermonParser.m in Sources */,
 				D87D538A164CB54700859AB8 /* MapViewController.m in Sources */,
 				D885BA16165566D700D2BE94 /* WebViewController.m in Sources */,
+				D8736DAA16558369002DB966 /* InfoViewController.m in Sources */,
+				D8736DB21655B4FB002DB966 /* Why2PCViewController.m in Sources */,
+				D8736DB71655BB7A002DB966 /* MissionViewController.m in Sources */,
+				D80B0F51165FFA9000818419 /* LeadersViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
