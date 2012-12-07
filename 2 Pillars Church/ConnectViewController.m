@@ -25,7 +25,7 @@
 
 - (void)viewDidLoad
 {
-    tableList = [[NSArray alloc] initWithObjects:@"The Plaza!", @"Information!", nil];
+    tableList = [[NSArray alloc] initWithObjects:@"The Plaza!",@"The City!", @"Information!", @"Testimonials!", nil];
     [super viewDidLoad];
 }
 
@@ -150,6 +150,21 @@
         leadersNav = nil;
         leadersView = nil;
         
+    }
+    else if ([tableList objectAtIndex:indexPath.row] == @"The City!")
+    {
+        [tableView deselectRowAtIndexPath:indexPath animated:YES];
+        
+        WebViewController *webView = [[WebViewController alloc] initWithNibName:@"WebViewController"
+                                                                         bundle:nil];
+        [webView setWebsiteURL:@"http://www.2pillars.onthecity.org"];
+        NSString *titleString = [NSString stringWithFormat:@"The City"];
+        [webView setViewTitle:titleString];
+        UINavigationController *webNav = [[UINavigationController alloc] initWithRootViewController:webView];
+        webNav.navigationBar.barStyle = UIBarStyleBlack;
+        webNav.delegate = self;
+        
+        [self presentModalViewController:webNav animated:YES];
     }
     else {
         //If an entry is not properly programmed, this alert will appear to prevent crashes

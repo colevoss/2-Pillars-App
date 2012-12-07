@@ -20,7 +20,7 @@
 
 - (void)viewDidLoad
 {
-    tableList = [[NSArray alloc] initWithObjects:@"Directions here!", @"The City!", nil];
+    tableList = [[NSArray alloc] initWithObjects:@"Map", nil];
     [super viewDidLoad];
 }
 
@@ -54,12 +54,14 @@
     static NSString *CellIdentifier = @"Cell";
     
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    [[cell textLabel] setTextAlignment:NSTextAlignmentCenter];
     
     if (cell == nil){
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault
                                       reuseIdentifier:CellIdentifier];
     }
     //Set's the cell's textlabel to the name of the object at index.
+
     [[cell textLabel] setText:[tableList objectAtIndex:indexPath.row]];
     return cell;
 }
@@ -79,22 +81,7 @@
         [self presentModalViewController:mapNav animated:YES];
         mapNav.delegate = nil;
     }
-    
-    else if ([tableList objectAtIndex:indexPath.row] == @"The City!")
-    {
-        [tableView deselectRowAtIndexPath:indexPath animated:YES];
-        
-        WebViewController *webView = [[WebViewController alloc] initWithNibName:@"WebViewController"
-                                                                         bundle:nil];
-        [webView setWebsiteURL:@"http://www.2pillars.onthecity.org"];
-        NSString *titleString = [NSString stringWithFormat:@"The City"];
-        [webView setViewTitle:titleString];
-        UINavigationController *webNav = [[UINavigationController alloc] initWithRootViewController:webView];
-        webNav.navigationBar.barStyle = UIBarStyleBlack;
-        webNav.delegate = self;
-        
-        [self presentModalViewController:webNav animated:YES];
-    }
+
 /*
     Add other selections here before the else statement.
     else if ([tableList objectAtIndex:indexPath.row] == @"")
