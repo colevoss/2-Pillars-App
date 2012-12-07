@@ -1,13 +1,16 @@
 //
-//  MoreViewController.m
-//  2 Pillars Church
+//  SermonTabViewController.m
+//  2 Pillars Church 2.0
 //
-//  Created by Blaine Kasten on 8/10/12.
-//  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
+//  Created by Blaine Kasten on 12/5/12.
+//
 //
 
 #import "SermonViewController.h"
-#import "SermonCustomCell.h"
+#import "LearnCustomCell.h"
+#import "LearnViewController.h"
+#import "SermonParser.h"
+#import "SermonDetailViewController.h"
 
 @interface SermonViewController ()
 
@@ -15,29 +18,36 @@
 
 @implementation SermonViewController
 
-@synthesize sermonImage, sermonDescription;
-
-#pragma mark -
-#pragma mark - Initializers
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+{
+    self = [super initWithNibName:nibNameOrNil
+                           bundle:nibBundleOrNil];
+    if (self){
+        [self fetchEntries];
+    }
+    return self;
+}
 
 - (void)viewDidLoad
 {
-    //Need to define what will be in this list.
-    tableList = [[NSArray alloc] initWithObjects:@"Nehemiah 1:11", @"Nehemiah 2:1", nil];
-    
-    background.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"backgroundMatte.jpeg"]];
-    [sermonDescription setTextColor:[UIColor blackColor]];
-    [[self sermonDescription] setText:@"The Sermon on the mount\n is a study on Jesus \nteachings in Mathew 5-7. \nHere we learn about \nwhat it means to be \na follower of Christ."];
-    [[self sermonImage] setImage:[UIImage imageNamed:@""]];
-    
     [super viewDidLoad];
+    tableList = [[NSArray alloc] initWithObjects:@"Nehemiah", @"The Sermon On The Mount", @"The Story of God", @"The Gospel & ...", @"Vision Series", @"Miscellaneous", nil];
 }
 
 - (void)viewDidUnload
 {
     [super viewDidUnload];
-    //Set the tableList to nil when leaving so it can release it.
     tableList = nil;
+}
+
+
+#pragma mark - Table view data source
+
+
+- (NSInteger)tableView:(UITableView *)tableView
+ numberOfRowsInSection:(NSInteger)section
+{
+    return [tableList count];
 }
 
 - (CGFloat)tableView:(UITableView *)tableView
@@ -46,61 +56,121 @@ heightForRowAtIndexPath:(NSIndexPath *)indexPath
     return 61.2;
 }
 
-
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
-    //initiate the tab with the image buttons and title
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        self.title = NSLocalizedString(@"Nehemiah", "Nehemiah");
-    }
-    return self;
-    
-}
-
-#pragma mark - UITableView Data source
-
-- (NSInteger)tableView:(UITableView *)tableView
- numberOfRowsInSection:(NSInteger)section
-{
-    return [tableList count];
-}
-
-
 - (UITableViewCell *)tableView:(UITableView *)tableView
          cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    //I think later on, it may be cool to have the background be hosted
-    //online, and retrieve that for each sermon view
-
     static NSString *CellIdentifier = @"Cell";
-    SermonCustomCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    
     tableView.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"bg_rust-circle.png"]];
     
-    if (cell == nil){
-        NSArray *topLevelObjects = [[NSBundle mainBundle] loadNibNamed:@"SermonCell"
+    //Custom Cells
+    if (cell == nil)
+    {
+        NSArray *topLevelObjects = [[NSBundle mainBundle] loadNibNamed:@"LearnCustomCell"
                                                                  owner:nil
                                                                options:nil];
         for (id currentObject in topLevelObjects)
         {
-            cell = (SermonCustomCell *)currentObject;
+            cell = (LearnCustomCell *)currentObject;
             break;
         }
+        
     }
     
-    
-
+    //    When the web server is working, implement these to set the row title
+    //    Sermons *sermonItem = [[channel items] objectAtIndex:[indexPath row]];
+    //    [[cell sermonTitle] setText:[sermonItem seriesTitle];
     [[cell sermonTitle] setText:[tableList objectAtIndex:indexPath.row]];
-    [[cell sermonDate] setText:@"Oct. 12, 2012"];
+    [[cell imageView] setImage:[UIImage imageNamed:@"1.png"]];
     
     return cell;
 }
 
+#pragma mark - Table view delegate
+
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    if (!detailViewController)
+    detailViewController = [[SermonDetailViewController alloc] initWithNibName:@"SermonViewController"
+                                                                                  bundle:nil];
+    [self presentModalViewController:detailViewController animated:YES];
+    [tableView deselectRowAtIndexPath:indexPath
+                             animated:YES];
+
+
 }
 
+#pragma mark
+#pragma mark - Parsing Methods
+
+- (void)fetchEntries
+{
+    // Create a new data container for the stuff that comes back from the service
+    xmlData = [[NSMutableData alloc] init];
+    NSURL *url = [NSURL URLWithString:@"blaine.macpractice.net/Pages/SermonXML"];
+    NSURLRequest *req = [NSURLRequest requestWithURL:url];
+    
+    // Create a connection that will exchange this request for data from the URL
+    connection = [[NSURLConnection alloc] initWithRequest:req
+                                                 delegate:self
+                                         startImmediately:YES];
+}
+
+- (void)connection:(NSURLConnection *)conn didReceiveData:(NSData *)data
+{
+    [xmlData appendData:data];
+    NSLog(@"%@", xmlData);
+}
+
+- (void)parser:(NSXMLParser *)parser
+didStartElement:(NSString *)elementName
+  namespaceURI:(NSString *)namespaceURI
+ qualifiedName:(NSString *)qualifiedName
+    attributes:(NSDictionary *)attributeDict
+{
+    NSLog(@"%@ found a %@ element", self, elementName);
+    if ([elementName isEqual:@"channel"]) {
+        
+        // If the parser saw a channel, create new instance, store in our ivar
+        channel = [[SermonParser alloc] init];
+        
+        // Give the channel object a pointer back to ourselves for later
+        [channel setParentParserDelegate:self];
+        
+        // Set the parser's delegate to the channel object
+        [parser setDelegate:channel];
+    }
+}
+
+- (void)connection:(NSURLConnection *)conn
+  didFailWithError:(NSError *)error
+{
+    connection = nil;
+    xmlData = nil;
+    
+    NSString *errorString = [NSString stringWithFormat:@"Fetch failed: %@",
+                             [error localizedDescription]];
+    UIAlertView *av = [[UIAlertView alloc] initWithTitle:@"Error"
+                                                 message:errorString
+                                                delegate:nil
+                                       cancelButtonTitle:@"OK"
+                                       otherButtonTitles:nil];
+    [av show];
+}
+
+- (void)connectionDidFinishLoading:(NSURLConnection *)conn
+{
+    // Create the parser object with the data received from the web service
+    NSXMLParser *parser = [[NSXMLParser alloc] initWithData:xmlData];
+    [parser setDelegate:self];
+    [parser parse];
+    
+    xmlData = nil;
+    connection = nil;
+    
+    NSLog(@"%@\n %@\n %@\n", channel, [channel seriesTitle], [channel sermonTitle]);
+}
 
 
 @end

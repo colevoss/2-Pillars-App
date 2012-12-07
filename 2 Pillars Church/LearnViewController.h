@@ -10,15 +10,29 @@
 
 @class LearnCustomCell;
 @class SermonParser;
+@class SideTabViewController;
+@class SermonViewController;
+@class SermonDetailViewController;
 
-@interface LearnViewController :  UIViewController <UITableViewDelegate, UITableViewDataSource, NSXMLParserDelegate>
+@interface LearnViewController :  UIViewController 
 {
-    NSMutableData *xmlData;
-    NSURLConnection *connection;
-    SermonParser *channel;
+    //Side-tab ivars
+    BOOL *menuOpen;
+    IBOutlet UIView *mainView;
+    IBOutlet SideTabViewController *sideTab;
     
-    NSArray *tableList;
-    LearnCustomCell *cell;
+    
+    //Views to present
+    SermonViewController *sermonViewController;
+    SermonDetailViewController *sermonDetailViewController;
 }
+
+@property(nonatomic, retain) UIView *mainView;
+@property(nonatomic) BOOL *menuOpen;
+
+- (void)menuTapped;
+- (void)navMenuItemTapped;
+//- (void)viewControllerSelectedToPush:(UIViewController*)view Animated:(BOOL)b;
+
 
 @end

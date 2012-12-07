@@ -87,7 +87,8 @@
         WebViewController *webView = [[WebViewController alloc] initWithNibName:@"WebViewController"
                                                                          bundle:nil];
         [webView setWebsiteURL:@"http://www.2pillars.onthecity.org"];
-        [webView setViewTitle:@"The City!"];
+        NSString *titleString = [NSString stringWithFormat:@"The City"];
+        [webView setViewTitle:titleString];
         UINavigationController *webNav = [[UINavigationController alloc] initWithRootViewController:webView];
         webNav.navigationBar.barStyle = UIBarStyleBlack;
         webNav.delegate = self;

@@ -23,7 +23,7 @@
     if (self) {
         self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Back" style:UIBarButtonItemStylePlain target:self action:@selector(dismissModalViewControllerAnimated:)];
         
-        self.navigationItem.title = viewTitle;
+        self.title = viewTitle;
     }
     return self;
 }

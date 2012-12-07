@@ -16,6 +16,7 @@
 		D82DF71516137DE2004D5170 /* LearnCustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D82DF71416137DE1004D5170 /* LearnCustomCell.xib */; };
 		D82DF71A1613A937004D5170 /* bg_rust-circle.png in Resources */ = {isa = PBXBuildFile; fileRef = D82DF7191613A937004D5170 /* bg_rust-circle.png */; };
 		D831C9B515E7F72F0034197D /* WebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D831C9B415E7F72F0034197D /* WebViewController.xib */; };
+		D838C976167119C900A1D1DE /* SermonView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D838C975167119C900A1D1DE /* SermonView.xib */; };
 		D85050951625F7F6003C5597 /* backgroundMatte.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = D85050941625F7F6003C5597 /* backgroundMatte.jpeg */; };
 		D850509816260132003C5597 /* SermonCustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D850509716260132003C5597 /* SermonCustomCell.m */; };
 		D850509A16260184003C5597 /* SermonCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D850509916260184003C5597 /* SermonCell.xib */; };
@@ -32,10 +33,15 @@
 		D87D538A164CB54700859AB8 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D87D5388164CB54700859AB8 /* MapViewController.m */; };
 		D87D538B164CB54700859AB8 /* MapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D87D5389164CB54700859AB8 /* MapViewController.xib */; };
 		D885BA16165566D700D2BE94 /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D885BA15165566D700D2BE94 /* WebViewController.m */; };
-		D88DF450161F66C30063809A /* SermonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D88DF44E161F66C30063809A /* SermonViewController.m */; };
+		D88DF450161F66C30063809A /* SermonDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D88DF44E161F66C30063809A /* SermonDetailViewController.m */; };
 		D88DF451161F66C30063809A /* SermonViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D88DF44F161F66C30063809A /* SermonViewController.xib */; };
 		D89189C11627416D00AAEA59 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D89189C01627416D00AAEA59 /* Default-568h@2x.png */; };
 		D8A067061632F422008BF6DD /* SermonXML.rtf in Resources */ = {isa = PBXBuildFile; fileRef = D8A067051632F422008BF6DD /* SermonXML.rtf */; };
+		D8A9BB2F166FC5990014C882 /* menuButton.png in Resources */ = {isa = PBXBuildFile; fileRef = D8A9BB2E166FC5990014C882 /* menuButton.png */; };
+		D8A9BB33166FCAFB0014C882 /* BlogView.m in Sources */ = {isa = PBXBuildFile; fileRef = D8A9BB32166FCAFB0014C882 /* BlogView.m */; };
+		D8A9BB36166FCDBD0014C882 /* SideTabViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8A9BB35166FCDBD0014C882 /* SideTabViewController.m */; };
+		D8A9BB3D166FFE590014C882 /* LearnViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D8A9BB3C166FFE590014C882 /* LearnViewController.xib */; };
+		D8A9BB40166FFF190014C882 /* SermonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8A9BB3F166FFF190014C882 /* SermonViewController.m */; };
 		D8D86199161F6ACB00EFE852 /* Nehemiahs-Wall.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = D8D86198161F6ACB00EFE852 /* Nehemiahs-Wall.jpeg */; };
 		D8E0BC6215D43C1F00B91F61 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8E0BC6115D43C1F00B91F61 /* UIKit.framework */; };
 		D8E0BC6415D43C1F00B91F61 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8E0BC6315D43C1F00B91F61 /* Foundation.framework */; };
@@ -46,7 +52,6 @@
 		D8E0BC7515D43C1F00B91F61 /* LearnViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8E0BC7415D43C1F00B91F61 /* LearnViewController.m */; };
 		D8E0BC7715D43C1F00B91F61 /* first.png in Resources */ = {isa = PBXBuildFile; fileRef = D8E0BC7615D43C1F00B91F61 /* first.png */; };
 		D8E0BC7C15D43C1F00B91F61 /* ConnectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8E0BC7B15D43C1F00B91F61 /* ConnectViewController.m */; };
-		D8E0BC8315D43C1F00B91F61 /* LearnViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D8E0BC8115D43C1F00B91F61 /* LearnViewController.xib */; };
 		D8E0BC8615D43C1F00B91F61 /* ConnectViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D8E0BC8415D43C1F00B91F61 /* ConnectViewController.xib */; };
 		D8E0BCA915D587F000B91F61 /* L.png in Resources */ = {isa = PBXBuildFile; fileRef = D8E0BCA815D587F000B91F61 /* L.png */; };
 		D8E0BCAD15D5884500B91F61 /* MoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8E0BCAB15D5884500B91F61 /* MoreViewController.m */; };
@@ -73,6 +78,7 @@
 		D82DF71416137DE1004D5170 /* LearnCustomCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LearnCustomCell.xib; sourceTree = "<group>"; };
 		D82DF7191613A937004D5170 /* bg_rust-circle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg_rust-circle.png"; sourceTree = "<group>"; };
 		D831C9B415E7F72F0034197D /* WebViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WebViewController.xib; sourceTree = "<group>"; };
+		D838C975167119C900A1D1DE /* SermonView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SermonView.xib; sourceTree = "<group>"; };
 		D85050941625F7F6003C5597 /* backgroundMatte.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = backgroundMatte.jpeg; sourceTree = "<group>"; };
 		D850509616260132003C5597 /* SermonCustomCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SermonCustomCell.h; sourceTree = "<group>"; };
 		D850509716260132003C5597 /* SermonCustomCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SermonCustomCell.m; sourceTree = "<group>"; };
@@ -95,11 +101,19 @@
 		D87D5389164CB54700859AB8 /* MapViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MapViewController.xib; sourceTree = "<group>"; };
 		D885BA14165566D700D2BE94 /* WebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
 		D885BA15165566D700D2BE94 /* WebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
-		D88DF44D161F66C30063809A /* SermonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SermonViewController.h; sourceTree = "<group>"; };
-		D88DF44E161F66C30063809A /* SermonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SermonViewController.m; sourceTree = "<group>"; };
+		D88DF44D161F66C30063809A /* SermonDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SermonDetailViewController.h; sourceTree = "<group>"; };
+		D88DF44E161F66C30063809A /* SermonDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SermonDetailViewController.m; sourceTree = "<group>"; };
 		D88DF44F161F66C30063809A /* SermonViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SermonViewController.xib; sourceTree = "<group>"; };
 		D89189C01627416D00AAEA59 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		D8A067051632F422008BF6DD /* SermonXML.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; name = SermonXML.rtf; path = ../../Desktop/SermonXML.rtf; sourceTree = "<group>"; };
+		D8A9BB2E166FC5990014C882 /* menuButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = menuButton.png; path = ../../Downloads/menuButton.png; sourceTree = "<group>"; };
+		D8A9BB31166FCAFB0014C882 /* BlogView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlogView.h; sourceTree = "<group>"; };
+		D8A9BB32166FCAFB0014C882 /* BlogView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlogView.m; sourceTree = "<group>"; };
+		D8A9BB34166FCDBD0014C882 /* SideTabViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SideTabViewController.h; sourceTree = "<group>"; };
+		D8A9BB35166FCDBD0014C882 /* SideTabViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SideTabViewController.m; sourceTree = "<group>"; };
+		D8A9BB3C166FFE590014C882 /* LearnViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LearnViewController.xib; path = ../LearnViewController.xib; sourceTree = "<group>"; };
+		D8A9BB3E166FFF190014C882 /* SermonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SermonViewController.h; sourceTree = "<group>"; };
+		D8A9BB3F166FFF190014C882 /* SermonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SermonViewController.m; sourceTree = "<group>"; };
 		D8D86198161F6ACB00EFE852 /* Nehemiahs-Wall.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Nehemiahs-Wall.jpeg"; sourceTree = "<group>"; };
 		D8E0BC5D15D43C1F00B91F61 /* 2 Pillars Church.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "2 Pillars Church.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8E0BC6115D43C1F00B91F61 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -116,7 +130,6 @@
 		D8E0BC7615D43C1F00B91F61 /* first.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = first.png; sourceTree = "<group>"; };
 		D8E0BC7A15D43C1F00B91F61 /* ConnectViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ConnectViewController.h; sourceTree = "<group>"; };
 		D8E0BC7B15D43C1F00B91F61 /* ConnectViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ConnectViewController.m; sourceTree = "<group>"; };
-		D8E0BC8215D43C1F00B91F61 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/LearnViewController.xib; sourceTree = "<group>"; };
 		D8E0BC8515D43C1F00B91F61 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ConnectViewController.xib; sourceTree = "<group>"; };
 		D8E0BCA815D587F000B91F61 /* L.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = L.png; sourceTree = "<group>"; };
 		D8E0BCAA15D5884500B91F61 /* MoreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoreViewController.h; sourceTree = "<group>"; };
@@ -205,6 +218,21 @@
 			name = Xibs;
 			sourceTree = "<group>";
 		};
+		D8A9BB37166FCDC50014C882 /* Learn Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D8A9BB34166FCDBD0014C882 /* SideTabViewController.h */,
+				D8A9BB35166FCDBD0014C882 /* SideTabViewController.m */,
+				D8E0BC7315D43C1F00B91F61 /* LearnViewController.h */,
+				D8E0BC7415D43C1F00B91F61 /* LearnViewController.m */,
+				D8A9BB3E166FFF190014C882 /* SermonViewController.h */,
+				D8A9BB3F166FFF190014C882 /* SermonViewController.m */,
+				D8A9BB31166FCAFB0014C882 /* BlogView.h */,
+				D8A9BB32166FCAFB0014C882 /* BlogView.m */,
+			);
+			name = "Learn Controller";
+			sourceTree = "<group>";
+		};
 		D8E0BC5215D43C1E00B91F61 = {
 			isa = PBXGroup;
 			children = (
@@ -263,15 +291,14 @@
 		D8F5CAE615DD91D900EBC61A /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				D8E0BC7315D43C1F00B91F61 /* LearnViewController.h */,
-				D8E0BC7415D43C1F00B91F61 /* LearnViewController.m */,
+				D8A9BB37166FCDC50014C882 /* Learn Controller */,
 				D8E0BC7A15D43C1F00B91F61 /* ConnectViewController.h */,
 				D8E0BC7B15D43C1F00B91F61 /* ConnectViewController.m */,
 				D8736DAD1655B4B7002DB966 /* InformationControllerItems */,
 				D8E0BCAA15D5884500B91F61 /* MoreViewController.h */,
 				D8E0BCAB15D5884500B91F61 /* MoreViewController.m */,
-				D88DF44D161F66C30063809A /* SermonViewController.h */,
-				D88DF44E161F66C30063809A /* SermonViewController.m */,
+				D88DF44D161F66C30063809A /* SermonDetailViewController.h */,
+				D88DF44E161F66C30063809A /* SermonDetailViewController.m */,
 				D87D5387164CB54700859AB8 /* MapViewController.h */,
 				D87D5388164CB54700859AB8 /* MapViewController.m */,
 				D885BA14165566D700D2BE94 /* WebViewController.h */,
@@ -285,6 +312,7 @@
 		D8F5CAE715DD91EB00EBC61A /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				D8A9BB2E166FC5990014C882 /* menuButton.png */,
 				D8D86198161F6ACB00EFE852 /* Nehemiahs-Wall.jpeg */,
 				D82DF7191613A937004D5170 /* bg_rust-circle.png */,
 				D85050941625F7F6003C5597 /* backgroundMatte.jpeg */,
@@ -306,9 +334,10 @@
 		D8F5CAE815DD920100EBC61A /* Xibs */ = {
 			isa = PBXGroup;
 			children = (
+				D8A9BB3C166FFE590014C882 /* LearnViewController.xib */,
+				D838C975167119C900A1D1DE /* SermonView.xib */,
 				D87D5389164CB54700859AB8 /* MapViewController.xib */,
 				D831C9B415E7F72F0034197D /* WebViewController.xib */,
-				D8E0BC8115D43C1F00B91F61 /* LearnViewController.xib */,
 				D8E0BC8415D43C1F00B91F61 /* ConnectViewController.xib */,
 				D8E0BCAC15D5884500B91F61 /* MoreViewController.xib */,
 				D88DF44F161F66C30063809A /* SermonViewController.xib */,
@@ -368,7 +397,6 @@
 			files = (
 				D8E0BC6C15D43C1F00B91F61 /* InfoPlist.strings in Resources */,
 				D8E0BC7715D43C1F00B91F61 /* first.png in Resources */,
-				D8E0BC8315D43C1F00B91F61 /* LearnViewController.xib in Resources */,
 				D8E0BC8615D43C1F00B91F61 /* ConnectViewController.xib in Resources */,
 				D8E0BCA915D587F000B91F61 /* L.png in Resources */,
 				D8E0BCAE15D5884500B91F61 /* MoreViewController.xib in Resources */,
@@ -395,6 +423,9 @@
 				D8736DB31655B4FB002DB966 /* Why2PCViewController.xib in Resources */,
 				D8736DB81655BB7A002DB966 /* MissionViewController.xib in Resources */,
 				D80B0F52165FFA9000818419 /* LeadersViewController.xib in Resources */,
+				D8A9BB2F166FC5990014C882 /* menuButton.png in Resources */,
+				D8A9BB3D166FFE590014C882 /* LearnViewController.xib in Resources */,
+				D838C976167119C900A1D1DE /* SermonView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -412,7 +443,7 @@
 				D8E0BCAD15D5884500B91F61 /* MoreViewController.m in Sources */,
 				D8220C351610D20700803763 /* LearnCustomCell.m in Sources */,
 				D8220C3D1610DC4600803763 /* Sermons.m in Sources */,
-				D88DF450161F66C30063809A /* SermonViewController.m in Sources */,
+				D88DF450161F66C30063809A /* SermonDetailViewController.m in Sources */,
 				D850509816260132003C5597 /* SermonCustomCell.m in Sources */,
 				D82759A016307C9600BA8DB1 /* SermonParser.m in Sources */,
 				D87D538A164CB54700859AB8 /* MapViewController.m in Sources */,
@@ -421,6 +452,9 @@
 				D8736DB21655B4FB002DB966 /* Why2PCViewController.m in Sources */,
 				D8736DB71655BB7A002DB966 /* MissionViewController.m in Sources */,
 				D80B0F51165FFA9000818419 /* LeadersViewController.m in Sources */,
+				D8A9BB33166FCAFB0014C882 /* BlogView.m in Sources */,
+				D8A9BB36166FCDBD0014C882 /* SideTabViewController.m in Sources */,
+				D8A9BB40166FFF190014C882 /* SermonViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -433,14 +467,6 @@
 				D8E0BC6B15D43C1F00B91F61 /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		D8E0BC8115D43C1F00B91F61 /* LearnViewController.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D8E0BC8215D43C1F00B91F61 /* en */,
-			);
-			name = LearnViewController.xib;
 			sourceTree = "<group>";
 		};
 		D8E0BC8415D43C1F00B91F61 /* ConnectViewController.xib */ = {

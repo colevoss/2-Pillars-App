@@ -7,10 +7,11 @@
 //
 
 #import "LearnViewController.h"
+#import <CoreGraphics/CoreGraphics.h>
 #import "SermonViewController.h"
-#import "LearnCustomCell.h"
-#import "Sermons.h"
-#import "SermonParser.h"
+#import "BlogView.h"
+#import "SideTabViewController.h"
+#import "SermonDetailViewController.h"
 
 @interface LearnViewController ()
 
@@ -18,174 +19,103 @@
 
 @implementation LearnViewController
 
-//@synthesize tmpCell;
+@synthesize mainView, menuOpen;
 
 #pragma mark - UIViewController
 
-- (void)viewDidLoad
-{
-    //Later this list should be populated by what is parsed from the website.
-    
-    tableList = [[NSArray alloc] initWithObjects:@"Nehemiah", @"The Sermon On The Mount", @"The Story of God", @"The Gospel & ...", @"Vision Series", @"Miscellaneous", nil];
-    [super viewDidLoad];
-}
-
-- (void)viewDidUnload
-{
-    [super viewDidUnload];
-    //Set Array to nil when we leave the view so it can be deallocated.
-    tableList = nil;
-}
-
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
-    //initiate the tab with the image buttons and title
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
 
     if (self) {
         self.tabBarItem.title = NSLocalizedString(@"Learn", @"Learn");
         self.tabBarItem.image = [UIImage imageNamed:@"Learn Icon"];
-        self.title = NSLocalizedString(@"Learn", "Learn");
-        [self fetchEntries];
+        UIBarButtonItem *menuButton = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"menuButton.png"] style:UIBarButtonItemStylePlain target:self action:@selector(menuTapped)];
+        self.navigationItem.leftBarButtonItem = menuButton;
     }
-    
     return self;
-
 }
 
-#pragma mark
-#pragma mark - UITableView Data source
-
-- (void)parser:(NSXMLParser *)parser
-didStartElement:(NSString *)elementName
-  namespaceURI:(NSString *)namespaceURI
- qualifiedName:(NSString *)qualifiedName
-    attributes:(NSDictionary *)attributeDict
+- (void)viewDidLoad
 {
-    NSLog(@"%@ found a %@ element", self, elementName);
-    if ([elementName isEqual:@"channel"]) {
-        
-        // If the parser saw a channel, create new instance, store in our ivar
-        channel = [[SermonParser alloc] init];
-        
-        // Give the channel object a pointer back to ourselves for later
-        [channel setParentParserDelegate:self];
-        
-        // Set the parser's delegate to the channel object - ignore this warning for now
-        [parser setDelegate:channel];
+    //This sets the sideTab to send it's mainWindow messages to this instance of the LearnView.
+    sideTab.mainWindow = self;
+    [sermonViewController setMainWindow:self];
+}
+
+- (void)viewDidAppear:(BOOL)animated
+{
+    //Sets the menu to be opened at launch.
+    [self menuTapped];
+}
+
+#pragma mark 
+#pragma mark - Side Tab
+
+-(void)animationDidStop:(NSString *)animationID
+               finished:(NSNumber *)finished
+                context:(void *)context
+{
+    if ([animationID isEqualToString:@"slideMenu"]){
+        UIView *sq = (__bridge UIView *) context;
+        [sq removeFromSuperview];
     }
 }
 
-- (void)connection:(NSURLConnection *)conn didReceiveData:(NSData *)data
+- (void)menuTapped
 {
-    [xmlData appendData:data];
-    NSLog(@"%@", xmlData);
-}
-
-- (void)connectionDidFinishLoading:(NSURLConnection *)conn
-{
-    // Create the parser object with the data received from the web service
-    NSXMLParser *parser = [[NSXMLParser alloc] initWithData:xmlData];
+    CGRect frame = self.mainView.frame;
+    [UIView setAnimationDelegate:self];
+    [UIView setAnimationDidStopSelector:@selector( animationDidStop:finished:context: )];
+    [UIView beginAnimations:@"slideMenu" context:(__bridge void *)(self.mainView)];
     
-    // Give it a delegate
-    [parser setDelegate:self];
-    
-    // Tell it to start parsing - the document will be parsed and
-    // the delegate of NSXMLParser will get all of its delegate messages
-    // sent to it before this line finishes execution - it is blocking
-    [parser parse];
-    
-    // Get rid of the XML data as we no longer need it
-    xmlData = nil;
-    
-    // Get rid of the connection, no longer need it
-    connection = nil;
-    
-    NSLog(@"%@\n %@\n %@\n", channel, [channel seriesTitle], [channel sermonTitle]);
-}
-
-- (void)connection:(NSURLConnection *)conn
-  didFailWithError:(NSError *)error
-{
-    connection = nil;
-    xmlData = nil;
-    
-    NSString *errorString = [NSString stringWithFormat:@"Fetch failed: %@",
-                             [error localizedDescription]];
-    UIAlertView *av = [[UIAlertView alloc] initWithTitle:@"Error"
-                                                 message:errorString
-                                                delegate:nil
-                                       cancelButtonTitle:@"OK"
-                                       otherButtonTitles:nil];
-    [av show];
-}
-
-- (NSInteger)tableView:(UITableView *)tableView
- numberOfRowsInSection:(NSInteger)section
-{
-    return [tableList count];
-}
-
-- (CGFloat)tableView:(UITableView *)tableView
-heightForRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    return 61.2;
-}
-
-
-- (UITableViewCell *)tableView:(UITableView *)tableView
-         cellForRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    static NSString *CellIdentifier = @"Cell";
-    cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
-    
-    tableView.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"bg_rust-circle.png"]];
-
-    //Creating the cells from customcell.h
-    if (cell == nil)
+    if(menuOpen) {
+        frame.origin.x = 0;
+        menuOpen = NO;
+    }
+    else
     {
-        NSArray *topLevelObjects = [[NSBundle mainBundle] loadNibNamed:@"LearnCustomCell"
-                                                                 owner:nil
-                                                               options:nil];
-        for (id currentObject in topLevelObjects)
-        {
-            cell = (LearnCustomCell *)currentObject;
-            break;
-        }
-        
+        frame.origin.x = 105;
+        [self setMenuOpen:YES];
     }
     
-    //When the web server is working, implement these to set the row title
-//    Sermons *sermonItem = [[channel items] objectAtIndex:[indexPath row]];
-//    [[cell sermonTitle] setText:[sermonItem seriesTitle];
-    [[cell sermonTitle] setText:[tableList objectAtIndex:indexPath.row]];
-    [[cell imageView] setImage:[UIImage imageNamed:@"1.png"]];
-    
-    return cell;
+    self.mainView.frame = frame;
+    [UIView commitAnimations];
 }
 
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+- (void)navMenuItemTapped
 {
-    SermonViewController *vc = [[SermonViewController alloc] initWithNibName:@"SermonViewController"
+    //Crash if you select the sermon, select a detail, tap to menu, select a sermon.
+    if (!sermonViewController) 
+        sermonViewController = [[SermonViewController alloc] initWithNibName:@"SermonView"
                                                                       bundle:nil];
-    [self.navigationController pushViewController:vc animated:YES];
-    self.tabBarItem.title = NSLocalizedString(@"Nehemiah", @"Nehemiah");
-    [tableView deselectRowAtIndexPath:indexPath
-                             animated:YES];
+
+    while ([sermonDetailViewController isBeingPresented]){
+        [sermonViewController dismissModalViewControllerAnimated:YES];
+        sermonDetailViewController = nil;
+    }
+
+    if (self.presentedViewController == sermonViewController)
+        [self menuTapped];
+    else{
+    [self.mainView addSubview:sermonViewController.view];
+        NSLog(@"%@", [sermonViewController description]);
+    [self menuTapped];
+    }
 }
 
-- (void)fetchEntries
+//not using
+/*
+- (void)viewControllerSelectedToPush:(UIViewController*)view Animated:(BOOL)b
 {
-    // Create a new data container for the stuff that comes back from the service
-    xmlData = [[NSMutableData alloc] init];
-    NSURL *url = [NSURL URLWithString:@"blaine.macpractice.net/Pages/SermonXML"];
+    if (!sermonDetailViewController) {
+        sermonDetailViewController = [[SermonDetailViewController alloc] initWithNibName:@"SermonViewController"
+                                                                                      bundle:nil];
+    }
+    [self.navigationController pushViewController:sermonDetailViewController animated:YES];
+    if(menuOpen)
+        [self menuTapped];
     
-    NSURLRequest *req = [NSURLRequest requestWithURL:url];
-    
-    // Create a connection that will exchange this request for data from the URL
-    connection = [[NSURLConnection alloc] initWithRequest:req
-                                                 delegate:self
-                                         startImmediately:YES];
-}
+}*/
 
 @end

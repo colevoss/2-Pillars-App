@@ -35,9 +35,11 @@
     tableList = nil;
 }
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+- (id)initWithNibName:(NSString *)nibNameOrNil
+               bundle:(NSBundle *)nibBundleOrNil
 {
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+    self = [super initWithNibName:nibNameOrNil
+                           bundle:nibBundleOrNil];
     if (self) {
         self.title = NSLocalizedString(@"Connect", @"Connect");
         self.tabBarItem.image = [UIImage imageNamed:@"i"];
@@ -50,8 +52,6 @@
 - (NSInteger)tableView:(UITableView *)tableView
  numberOfRowsInSection:(NSInteger)section
 {
-    // Number of rows in the table will equal
-    // the tableList array that is made up of the
     return [tableList count];
 }
 

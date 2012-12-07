@@ -1,23 +1,29 @@
 //
-//  SermonViewController.h
+//  SermonTabViewController.h
 //  2 Pillars Church 2.0
 //
-//  Created by Blaine Kasten on 10/5/12.
+//  Created by Blaine Kasten on 12/5/12.
 //
 //
 
 #import <UIKit/UIKit.h>
+@class SermonParser, LearnCustomCell, LearnViewController;
 
-@interface SermonViewController : UIViewController <UITableViewDelegate, UITableViewDataSource, UINavigationControllerDelegate>
+@interface SermonViewController : UIViewController <UITableViewDataSource, UITableViewDataSource, NSXMLParserDelegate>
 {
-    NSArray *tableList;
-    UITableView *table;
-    IBOutlet UIView *background;
+    //WebParsing iVars
+    NSMutableData *xmlData;
+    NSURLConnection *connection;
+    SermonParser *channel;
     
-
+    //tableView ivars
+    NSArray *tableList;
+    LearnCustomCell *cell;
+    
+    LearnViewController *mainWindow;
+    SermonViewController *detailViewController;
 }
-@property (strong, nonatomic) UIWindow *window;
-@property IBOutlet UILabel *sermonDescription;
-@property IBOutlet UIImageView *sermonImage;
+
+@property (assign, readwrite) LearnViewController *mainWindow;
 
 @end
