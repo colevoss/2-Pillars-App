@@ -40,7 +40,7 @@
 {
     //This sets the sideTab to send it's mainWindow messages to this instance of the LearnView.
     sideTab.mainWindow = self;
-    [sermonViewController setMainWindow:self];
+    sermonViewController.mainWindow = self;
 }
 
 - (void)viewDidAppear:(BOOL)animated
@@ -86,22 +86,12 @@
 - (void)navMenuItemTapped
 {
     //Crash if you select the sermon, select a detail, tap to menu, select a sermon.
-    if (!sermonViewController) 
+    if (!sermonViewController)
         sermonViewController = [[SermonViewController alloc] initWithNibName:@"SermonView"
                                                                       bundle:nil];
-
-    while ([sermonDetailViewController isBeingPresented]){
-        [sermonViewController dismissModalViewControllerAnimated:YES];
-        sermonDetailViewController = nil;
-    }
-
-    if (self.presentedViewController == sermonViewController)
-        [self menuTapped];
-    else{
     [self.mainView addSubview:sermonViewController.view];
-        NSLog(@"%@", [sermonViewController description]);
+    NSLog(@"%@", [sermonViewController description]);
     [self menuTapped];
-    }
 }
 
 //not using

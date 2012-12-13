@@ -36,8 +36,6 @@
 		D88DF450161F66C30063809A /* SermonDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D88DF44E161F66C30063809A /* SermonDetailViewController.m */; };
 		D88DF451161F66C30063809A /* SermonViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D88DF44F161F66C30063809A /* SermonViewController.xib */; };
 		D89189C11627416D00AAEA59 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D89189C01627416D00AAEA59 /* Default-568h@2x.png */; };
-		D8A067061632F422008BF6DD /* SermonXML.rtf in Resources */ = {isa = PBXBuildFile; fileRef = D8A067051632F422008BF6DD /* SermonXML.rtf */; };
-		D8A9BB2F166FC5990014C882 /* menuButton.png in Resources */ = {isa = PBXBuildFile; fileRef = D8A9BB2E166FC5990014C882 /* menuButton.png */; };
 		D8A9BB33166FCAFB0014C882 /* BlogView.m in Sources */ = {isa = PBXBuildFile; fileRef = D8A9BB32166FCAFB0014C882 /* BlogView.m */; };
 		D8A9BB36166FCDBD0014C882 /* SideTabViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8A9BB35166FCDBD0014C882 /* SideTabViewController.m */; };
 		D8A9BB3D166FFE590014C882 /* LearnViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D8A9BB3C166FFE590014C882 /* LearnViewController.xib */; };
@@ -106,8 +104,6 @@
 		D88DF44E161F66C30063809A /* SermonDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SermonDetailViewController.m; sourceTree = "<group>"; };
 		D88DF44F161F66C30063809A /* SermonViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SermonViewController.xib; sourceTree = "<group>"; };
 		D89189C01627416D00AAEA59 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		D8A067051632F422008BF6DD /* SermonXML.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; name = SermonXML.rtf; path = ../../Desktop/SermonXML.rtf; sourceTree = "<group>"; };
-		D8A9BB2E166FC5990014C882 /* menuButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = menuButton.png; path = ../../Downloads/menuButton.png; sourceTree = "<group>"; };
 		D8A9BB31166FCAFB0014C882 /* BlogView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlogView.h; sourceTree = "<group>"; };
 		D8A9BB32166FCAFB0014C882 /* BlogView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlogView.m; sourceTree = "<group>"; };
 		D8A9BB34166FCDBD0014C882 /* SideTabViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SideTabViewController.h; sourceTree = "<group>"; };
@@ -164,7 +160,6 @@
 		D8220C3E1610DC4B00803763 /* Data */ = {
 			isa = PBXGroup;
 			children = (
-				D8A067051632F422008BF6DD /* SermonXML.rtf */,
 				D8220C3B1610DC4600803763 /* Sermons.h */,
 				D8220C3C1610DC4600803763 /* Sermons.m */,
 			);
@@ -314,7 +309,6 @@
 		D8F5CAE715DD91EB00EBC61A /* Images */ = {
 			isa = PBXGroup;
 			children = (
-				D8A9BB2E166FC5990014C882 /* menuButton.png */,
 				EDAE664B167272AA00A80649 /* connected.jpg */,
 				D8D86198161F6ACB00EFE852 /* Nehemiahs-Wall.jpeg */,
 				D82DF7191613A937004D5170 /* bg_rust-circle.png */,
@@ -420,13 +414,11 @@
 				D85050951625F7F6003C5597 /* backgroundMatte.jpeg in Resources */,
 				D850509A16260184003C5597 /* SermonCell.xib in Resources */,
 				D89189C11627416D00AAEA59 /* Default-568h@2x.png in Resources */,
-				D8A067061632F422008BF6DD /* SermonXML.rtf in Resources */,
 				D87D538B164CB54700859AB8 /* MapViewController.xib in Resources */,
 				D8736DAB16558369002DB966 /* InfoViewController.xib in Resources */,
 				D8736DB31655B4FB002DB966 /* Why2PCViewController.xib in Resources */,
 				D8736DB81655BB7A002DB966 /* MissionViewController.xib in Resources */,
 				D80B0F52165FFA9000818419 /* LeadersViewController.xib in Resources */,
-				D8A9BB2F166FC5990014C882 /* menuButton.png in Resources */,
 				D8A9BB3D166FFE590014C882 /* LearnViewController.xib in Resources */,
 				D838C976167119C900A1D1DE /* SermonView.xib in Resources */,
 				EDAE664C167272AA00A80649 /* connected.jpg in Resources */,

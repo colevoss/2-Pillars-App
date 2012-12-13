@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-@class SermonParser, LearnCustomCell, LearnViewController;
+@class SermonParser, LearnCustomCell, LearnViewController, SermonDetailViewController;
 
 @interface SermonViewController : UIViewController <UITableViewDataSource, UITableViewDataSource, NSXMLParserDelegate>
 {
@@ -21,7 +21,7 @@
     LearnCustomCell *cell;
     
     LearnViewController *mainWindow;
-    SermonViewController *detailViewController;
+    SermonDetailViewController *detailViewController;
 }
 
 @property (assign, readwrite) LearnViewController *mainWindow;
