@@ -14,8 +14,6 @@
 		<dict>
 			<key>CFBundleIconFiles</key>
 			<array>
-				<string>2PC App Icon.png</string>
-				<string>2PC App Icon.57.png</string>
 				<string>Icon@2x.png</string>
 				<string>Icon.png</string>
 				<string>Default@2x.png</string>
@@ -48,8 +46,6 @@
 	<array>
 		<string>armv7</string>
 	</array>
-	<key>PlazaAlert</key>
-	<false/>
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
