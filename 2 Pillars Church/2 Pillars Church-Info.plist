@@ -16,8 +16,12 @@
 			<array>
 				<string>2PC App Icon.png</string>
 				<string>2PC App Icon.57.png</string>
+				<string>Icon@2x.png</string>
+				<string>Icon.png</string>
 				<string>Default@2x.png</string>
 			</array>
+			<key>UIPrerenderedIcon</key>
+			<true/>
 		</dict>
 	</dict>
 	<key>CFBundleIdentifier</key>
@@ -35,6 +39,10 @@
 	<key>CFBundleVersion</key>
 	<string>1.0</string>
 	<key>LSRequiresIPhoneOS</key>
+	<true/>
+	<key>PlazaAlert</key>
+	<false/>
+	<key>UIPrerenderedIcon</key>
 	<true/>
 	<key>UIRequiredDeviceCapabilities</key>
 	<array>
