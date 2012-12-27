@@ -30,8 +30,10 @@
     if (self) {
         self.tabBarItem.title = NSLocalizedString(@"Learn", @"Learn");
         self.tabBarItem.image = [UIImage imageNamed:@"Learn Icon"];
-        UIBarButtonItem *menuButton = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"menuButton.png"] style:UIBarButtonItemStylePlain target:self action:@selector(menuTapped)];
-        self.navigationItem.leftBarButtonItem = menuButton;
+        //UIBarButtonItem *menuButton = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"menuButton.png"] style:UIBarButtonItemStylePlain target:self action:@selector(menuTapped)];
+        //self.navigationItem.leftBarButtonItem = menuButton;
+        UIImage *image = [UIImage imageNamed:@"navbartitleuse.png"];
+        self.navigationItem.titleView = [[UIImageView alloc] initWithImage:image];
     }
     return self;
 }
