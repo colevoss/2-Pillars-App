@@ -21,12 +21,14 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     UITabBarController *tabBar = [[UITabBarController alloc] init];
     
+    [[UINavigationBar appearance] setTintColor:[UIColor colorWithRed:0.55686274509804 green:0.28627450980392 blue:0.01960784313725 alpha:1.0]];
     
     //Learn View Controller
     //
     LearnViewController *viewController1 = [[LearnViewController alloc] initWithNibName:@"LearnViewController" bundle:nil];
     UINavigationController *navController1 = [[UINavigationController alloc] initWithRootViewController:viewController1];
     navController1.navigationBar.barStyle = UIBarStyleBlack;
+    
     
     
     
