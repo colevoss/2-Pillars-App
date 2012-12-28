@@ -64,6 +64,12 @@
 		ED627B6F168CD92600CEE44B /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ED627B6E168CD92600CEE44B /* Icon@2x.png */; };
 		ED627B72168CD9E500CEE44B /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = ED627B71168CD9E500CEE44B /* Icon.png */; };
 		ED6E08A7168E072B000C3E14 /* navbartitledeepershadow2.png in Resources */ = {isa = PBXBuildFile; fileRef = ED6E08A6168E072B000C3E14 /* navbartitledeepershadow2.png */; };
+		ED6E08AB168E2F69000C3E14 /* TestimonialsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED6E08A9168E2F69000C3E14 /* TestimonialsViewController.m */; };
+		ED6E08AC168E2F69000C3E14 /* TestimonialsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED6E08AA168E2F69000C3E14 /* TestimonialsViewController.xib */; };
+		ED6E08B6168E3224000C3E14 /* TestimonyDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED6E08B5168E3224000C3E14 /* TestimonyDetailViewController.m */; };
+		ED6E08B8168E3240000C3E14 /* TestimonyDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED6E08B7168E3240000C3E14 /* TestimonyDetailViewController.xib */; };
+		ED6E08BA168E33DF000C3E14 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED6E08B9168E33DF000C3E14 /* MediaPlayer.framework */; };
+		ED6E08BD168E4A8F000C3E14 /* Anthony.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = ED6E08BC168E4A8F000C3E14 /* Anthony.mp4 */; };
 		ED9AE391168CE1E400910DDE /* navbartitle.png in Resources */ = {isa = PBXBuildFile; fileRef = ED9AE390168CE1E400910DDE /* navbartitle.png */; };
 		ED9AE396168CE37E00910DDE /* navbartitleuse.png in Resources */ = {isa = PBXBuildFile; fileRef = ED9AE395168CE37E00910DDE /* navbartitleuse.png */; };
 		EDAE664C167272AA00A80649 /* connected.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EDAE664B167272AA00A80649 /* connected.jpg */; };
@@ -76,7 +82,6 @@
 		D8220C331610D20700803763 /* LearnCustomCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LearnCustomCell.h; path = ../LearnCustomCell.h; sourceTree = "<group>"; };
 		D8220C341610D20700803763 /* LearnCustomCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LearnCustomCell.m; path = ../LearnCustomCell.m; sourceTree = "<group>"; };
 		D8220C391610D53100803763 /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
-		D8220C3B1610DC4600803763 /* Sermons.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Sermons.h; sourceTree = "<group>"; };
 		D8220C3C1610DC4600803763 /* Sermons.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Sermons.m; sourceTree = "<group>"; };
 		D827599E16307C9500BA8DB1 /* SermonParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SermonParser.h; sourceTree = "<group>"; };
 		D827599F16307C9500BA8DB1 /* SermonParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SermonParser.m; sourceTree = "<group>"; };
@@ -148,6 +153,14 @@
 		ED627B6E168CD92600CEE44B /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
 		ED627B71168CD9E500CEE44B /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
 		ED6E08A6168E072B000C3E14 /* navbartitledeepershadow2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = navbartitledeepershadow2.png; sourceTree = "<group>"; };
+		ED6E08A8168E2F69000C3E14 /* TestimonialsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestimonialsViewController.h; sourceTree = "<group>"; };
+		ED6E08A9168E2F69000C3E14 /* TestimonialsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestimonialsViewController.m; sourceTree = "<group>"; };
+		ED6E08AA168E2F69000C3E14 /* TestimonialsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TestimonialsViewController.xib; sourceTree = "<group>"; };
+		ED6E08B4168E3224000C3E14 /* TestimonyDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestimonyDetailViewController.h; sourceTree = "<group>"; };
+		ED6E08B5168E3224000C3E14 /* TestimonyDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestimonyDetailViewController.m; sourceTree = "<group>"; };
+		ED6E08B7168E3240000C3E14 /* TestimonyDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TestimonyDetailViewController.xib; sourceTree = "<group>"; };
+		ED6E08B9168E33DF000C3E14 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		ED6E08BC168E4A8F000C3E14 /* Anthony.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Anthony.mp4; sourceTree = "<group>"; };
 		ED9AE390168CE1E400910DDE /* navbartitle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = navbartitle.png; sourceTree = "<group>"; };
 		ED9AE395168CE37E00910DDE /* navbartitleuse.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = navbartitleuse.png; sourceTree = "<group>"; };
 		EDAE664B167272AA00A80649 /* connected.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = connected.jpg; sourceTree = "<group>"; };
@@ -158,6 +171,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED6E08BA168E33DF000C3E14 /* MediaPlayer.framework in Frameworks */,
 				D87D5382164CB1F700859AB8 /* CoreLocation.framework in Frameworks */,
 				D87D5380164CB1B400859AB8 /* MapKit.framework in Frameworks */,
 				D8E0BC6215D43C1F00B91F61 /* UIKit.framework in Frameworks */,
@@ -172,7 +186,7 @@
 		D8220C3E1610DC4B00803763 /* Data */ = {
 			isa = PBXGroup;
 			children = (
-				D8220C3B1610DC4600803763 /* Sermons.h */,
+				ED6E08BC168E4A8F000C3E14 /* Anthony.mp4 */,
 				D8220C3C1610DC4600803763 /* Sermons.m */,
 			);
 			name = Data;
@@ -265,6 +279,7 @@
 		D8E0BC6015D43C1F00B91F61 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				ED6E08B9168E33DF000C3E14 /* MediaPlayer.framework */,
 				D87D5381164CB1F700859AB8 /* CoreLocation.framework */,
 				D87D537F164CB1B400859AB8 /* MapKit.framework */,
 				D8E0BC6115D43C1F00B91F61 /* UIKit.framework */,
@@ -303,17 +318,13 @@
 			isa = PBXGroup;
 			children = (
 				D8A9BB37166FCDC50014C882 /* Learn Controller */,
-				D8E0BC7A15D43C1F00B91F61 /* ConnectViewController.h */,
-				D8E0BC7B15D43C1F00B91F61 /* ConnectViewController.m */,
-				D8736DAD1655B4B7002DB966 /* InformationControllerItems */,
+				ED6E08AD168E3088000C3E14 /* Connect Controller */,
 				D8E0BCAA15D5884500B91F61 /* MoreViewController.h */,
 				D8E0BCAB15D5884500B91F61 /* MoreViewController.m */,
 				D88DF44D161F66C30063809A /* SermonDetailViewController.h */,
 				D88DF44E161F66C30063809A /* SermonDetailViewController.m */,
 				D87D5387164CB54700859AB8 /* MapViewController.h */,
 				D87D5388164CB54700859AB8 /* MapViewController.m */,
-				D885BA14165566D700D2BE94 /* WebViewController.h */,
-				D885BA15165566D700D2BE94 /* WebViewController.m */,
 				D8F5CAE815DD920100EBC61A /* Xibs */,
 				D862D5EF160BEA970064F5E4 /* Cells */,
 			);
@@ -349,6 +360,7 @@
 		D8F5CAE815DD920100EBC61A /* Xibs */ = {
 			isa = PBXGroup;
 			children = (
+				ED6E08AA168E2F69000C3E14 /* TestimonialsViewController.xib */,
 				D8A9BB3C166FFE590014C882 /* LearnViewController.xib */,
 				D838C975167119C900A1D1DE /* SermonView.xib */,
 				D87D5389164CB54700859AB8 /* MapViewController.xib */,
@@ -358,6 +370,31 @@
 				D88DF44F161F66C30063809A /* SermonViewController.xib */,
 			);
 			name = Xibs;
+			sourceTree = "<group>";
+		};
+		ED6E08AD168E3088000C3E14 /* Connect Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D8E0BC7A15D43C1F00B91F61 /* ConnectViewController.h */,
+				D8E0BC7B15D43C1F00B91F61 /* ConnectViewController.m */,
+				D885BA14165566D700D2BE94 /* WebViewController.h */,
+				D885BA15165566D700D2BE94 /* WebViewController.m */,
+				ED6E08AE168E3095000C3E14 /* Testimonie items */,
+				D8736DAD1655B4B7002DB966 /* InformationControllerItems */,
+			);
+			name = "Connect Controller";
+			sourceTree = "<group>";
+		};
+		ED6E08AE168E3095000C3E14 /* Testimonie items */ = {
+			isa = PBXGroup;
+			children = (
+				ED6E08A8168E2F69000C3E14 /* TestimonialsViewController.h */,
+				ED6E08A9168E2F69000C3E14 /* TestimonialsViewController.m */,
+				ED6E08B4168E3224000C3E14 /* TestimonyDetailViewController.h */,
+				ED6E08B5168E3224000C3E14 /* TestimonyDetailViewController.m */,
+				ED6E08B7168E3240000C3E14 /* TestimonyDetailViewController.xib */,
+			);
+			name = "Testimonie items";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -446,6 +483,9 @@
 				ED9AE391168CE1E400910DDE /* navbartitle.png in Resources */,
 				ED9AE396168CE37E00910DDE /* navbartitleuse.png in Resources */,
 				ED6E08A7168E072B000C3E14 /* navbartitledeepershadow2.png in Resources */,
+				ED6E08AC168E2F69000C3E14 /* TestimonialsViewController.xib in Resources */,
+				ED6E08B8168E3240000C3E14 /* TestimonyDetailViewController.xib in Resources */,
+				ED6E08BD168E4A8F000C3E14 /* Anthony.mp4 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -475,6 +515,8 @@
 				D8A9BB33166FCAFB0014C882 /* BlogView.m in Sources */,
 				D8A9BB36166FCDBD0014C882 /* SideTabViewController.m in Sources */,
 				D8A9BB40166FFF190014C882 /* SermonViewController.m in Sources */,
+				ED6E08AB168E2F69000C3E14 /* TestimonialsViewController.m in Sources */,
+				ED6E08B6168E3224000C3E14 /* TestimonyDetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

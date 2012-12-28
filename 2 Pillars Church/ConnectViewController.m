@@ -12,6 +12,7 @@
 #import "Why2PCViewController.h"
 #import "MissionViewController.h"
 #import "LeadersViewController.h"
+#import "TestimonialsViewController.h"
 
 @interface ConnectViewController ()
 
@@ -165,6 +166,19 @@
         webNav.delegate = self;
         
         [self presentModalViewController:webNav animated:YES];
+    }
+    else if ([tableList objectAtIndex:indexPath.row] == @"Testimonials!")
+    {
+        [tableView deselectRowAtIndexPath:indexPath animated:YES];
+        
+        TestimonialsViewController *tvController = [[TestimonialsViewController alloc] initWithNibName:@"TestimonialsViewController"
+                                                                                                bundle:nil];
+        
+        UINavigationController *tvNav = [[UINavigationController alloc] initWithRootViewController:tvController];
+        tvNav.navigationBar.barStyle = UIBarStyleBlack;
+        tvNav.delegate = self;
+        
+        [self presentModalViewController:tvNav animated:YES];
     }
     else {
         //If an entry is not properly programmed, this alert will appear to prevent crashes
