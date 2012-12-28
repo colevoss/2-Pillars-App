@@ -19,7 +19,9 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    UITabBarController *tabBar = [[UITabBarController alloc] init];
+    UITabBarController *tabBarController = [[UITabBarController alloc] init];
+    [tabBarController.tabBar setTintColor:[UIColor colorWithRed:0.55686274509804 green:0.28627450980392 blue:0.01960784313725 alpha:0.88]];
+    [tabBarController.tabBar setSelectedImageTintColor:[UIColor whiteColor]];
     
     [[UINavigationBar appearance] setTintColor:[UIColor colorWithRed:0.55686274509804 green:0.28627450980392 blue:0.01960784313725 alpha:1.0]];
     
@@ -51,8 +53,8 @@
     
     
     
-    tabBar.viewControllers = @[navController1, navController2, navController3];
-    self.window.rootViewController = tabBar;
+    tabBarController.viewControllers = @[navController1, navController2, navController3];
+    self.window.rootViewController = tabBarController;
     [self.window makeKeyAndVisible];
     
     
