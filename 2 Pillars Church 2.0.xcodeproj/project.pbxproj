@@ -33,6 +33,7 @@
 		D87D538A164CB54700859AB8 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D87D5388164CB54700859AB8 /* MapViewController.m */; };
 		D87D538B164CB54700859AB8 /* MapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D87D5389164CB54700859AB8 /* MapViewController.xib */; };
 		D882639B168F4796006FB450 /* MoviePlayerController.m in Sources */ = {isa = PBXBuildFile; fileRef = D882639A168F4796006FB450 /* MoviePlayerController.m */; };
+		D882639D168F53D0006FB450 /* menuButton.png in Resources */ = {isa = PBXBuildFile; fileRef = D882639C168F53CF006FB450 /* menuButton.png */; };
 		D885BA16165566D700D2BE94 /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D885BA15165566D700D2BE94 /* WebViewController.m */; };
 		D88DF450161F66C30063809A /* SermonDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D88DF44E161F66C30063809A /* SermonDetailViewController.m */; };
 		D88DF451161F66C30063809A /* SermonViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D88DF44F161F66C30063809A /* SermonViewController.xib */; };
@@ -112,6 +113,7 @@
 		D87D5389164CB54700859AB8 /* MapViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MapViewController.xib; sourceTree = "<group>"; };
 		D8826399168F4796006FB450 /* MoviePlayerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoviePlayerController.h; sourceTree = "<group>"; };
 		D882639A168F4796006FB450 /* MoviePlayerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoviePlayerController.m; sourceTree = "<group>"; };
+		D882639C168F53CF006FB450 /* menuButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menuButton.png; sourceTree = "<group>"; };
 		D885BA14165566D700D2BE94 /* WebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
 		D885BA15165566D700D2BE94 /* WebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
 		D88DF44D161F66C30063809A /* SermonDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SermonDetailViewController.h; sourceTree = "<group>"; };
@@ -337,6 +339,7 @@
 		D8F5CAE715DD91EB00EBC61A /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				D882639C168F53CF006FB450 /* menuButton.png */,
 				ED30CD06168256620021CC2D /* 2PC App Lauch Screen_new.png */,
 				EDAE664B167272AA00A80649 /* connected.jpg */,
 				ED9AE390168CE1E400910DDE /* navbartitle.png */,
@@ -491,6 +494,7 @@
 				ED6E08AC168E2F69000C3E14 /* TestimonialsViewController.xib in Resources */,
 				ED6E08B8168E3240000C3E14 /* TestimonyDetailViewController.xib in Resources */,
 				ED6E08BD168E4A8F000C3E14 /* Anthony.mp4 in Resources */,
+				D882639D168F53D0006FB450 /* menuButton.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
