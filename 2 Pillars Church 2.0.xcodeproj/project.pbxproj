@@ -32,6 +32,7 @@
 		D87D5382164CB1F700859AB8 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D87D5381164CB1F700859AB8 /* CoreLocation.framework */; };
 		D87D538A164CB54700859AB8 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D87D5388164CB54700859AB8 /* MapViewController.m */; };
 		D87D538B164CB54700859AB8 /* MapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D87D5389164CB54700859AB8 /* MapViewController.xib */; };
+		D882639B168F4796006FB450 /* MoviePlayerController.m in Sources */ = {isa = PBXBuildFile; fileRef = D882639A168F4796006FB450 /* MoviePlayerController.m */; };
 		D885BA16165566D700D2BE94 /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D885BA15165566D700D2BE94 /* WebViewController.m */; };
 		D88DF450161F66C30063809A /* SermonDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D88DF44E161F66C30063809A /* SermonDetailViewController.m */; };
 		D88DF451161F66C30063809A /* SermonViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D88DF44F161F66C30063809A /* SermonViewController.xib */; };
@@ -109,6 +110,8 @@
 		D87D5387164CB54700859AB8 /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
 		D87D5388164CB54700859AB8 /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
 		D87D5389164CB54700859AB8 /* MapViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MapViewController.xib; sourceTree = "<group>"; };
+		D8826399168F4796006FB450 /* MoviePlayerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoviePlayerController.h; sourceTree = "<group>"; };
+		D882639A168F4796006FB450 /* MoviePlayerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoviePlayerController.m; sourceTree = "<group>"; };
 		D885BA14165566D700D2BE94 /* WebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
 		D885BA15165566D700D2BE94 /* WebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
 		D88DF44D161F66C30063809A /* SermonDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SermonDetailViewController.h; sourceTree = "<group>"; };
@@ -390,6 +393,8 @@
 			children = (
 				ED6E08A8168E2F69000C3E14 /* TestimonialsViewController.h */,
 				ED6E08A9168E2F69000C3E14 /* TestimonialsViewController.m */,
+				D8826399168F4796006FB450 /* MoviePlayerController.h */,
+				D882639A168F4796006FB450 /* MoviePlayerController.m */,
 				ED6E08B4168E3224000C3E14 /* TestimonyDetailViewController.h */,
 				ED6E08B5168E3224000C3E14 /* TestimonyDetailViewController.m */,
 				ED6E08B7168E3240000C3E14 /* TestimonyDetailViewController.xib */,
@@ -517,6 +522,7 @@
 				D8A9BB40166FFF190014C882 /* SermonViewController.m in Sources */,
 				ED6E08AB168E2F69000C3E14 /* TestimonialsViewController.m in Sources */,
 				ED6E08B6168E3224000C3E14 /* TestimonyDetailViewController.m in Sources */,
+				D882639B168F4796006FB450 /* MoviePlayerController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

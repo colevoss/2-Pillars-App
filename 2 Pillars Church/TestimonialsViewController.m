@@ -7,6 +7,7 @@
 //
 
 #import "TestimonialsViewController.h"
+#import "MoviePlayerController.h"
 
 @interface TestimonialsViewController ()
 
@@ -66,27 +67,12 @@
 {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     NSURL *movieURL = [[NSBundle mainBundle] URLForResource:@"Anthony" withExtension:@"mp4"];
-    player = [[MPMoviePlayerController alloc] initWithContentURL:movieURL];
-    [player prepareToPlay];
-    [player.view setFrame:self.view.bounds];
-    [self.view addSubview:player.view];
-    player.scalingMode = MPMovieScalingModeAspectFill;
-    
-    [[NSNotificationCenter defaultCenter] addObserver:self
-                                             selector:@selector(playerFinishedCallback:)
-                                                 name:MPMoviePlayerPlaybackDidFinishNotification
-                                               object:player];
-    
-    [player play];
+    MoviePlayerController *movie = [[MoviePlayerController alloc] initWithContentURL:movieURL];
+    [movie setModalTransitionStyle:UIModalTransitionStyleCrossDissolve];
+    [self presentMoviePlayerViewControllerAnimated:movie];
+
 }
 
-- (void) playerFinishedCallback:(NSNotification *)aNotification
-{
-    [[NSNotificationCenter defaultCenter] removeObserver:self
-                                                    name:MPMoviePlayerPlaybackDidFinishNotification
-                                                  object:player];
-    [player.view removeFromSuperview];
-    player = nil;
-}
+
 
 @end
