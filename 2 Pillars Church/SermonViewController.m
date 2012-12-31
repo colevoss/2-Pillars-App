@@ -18,6 +18,8 @@
 
 @implementation SermonViewController
 
+@synthesize detailViewController;
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil
@@ -40,7 +42,7 @@
 {
     [super viewDidUnload];
     tableList = nil;
-    detailViewController = nil;
+
 }
 
 
@@ -94,7 +96,8 @@ heightForRowAtIndexPath:(NSIndexPath *)indexPath
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    [self presentModalViewController:detailViewController animated:YES];
+    [self.mainWindow.navigationController pushViewController:detailViewController
+                                               animated:YES];
     [tableView deselectRowAtIndexPath:indexPath
                              animated:YES];
     NSLog(@"%@", [self presentedViewController]);

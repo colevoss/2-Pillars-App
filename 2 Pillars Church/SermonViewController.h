@@ -25,5 +25,5 @@
 }
 
 @property (assign, readwrite) LearnViewController *mainWindow;
-
+@property (strong, nonatomic) SermonDetailViewController *detailViewController;
 @end

@@ -35,7 +35,6 @@
         self.navigationItem.leftBarButtonItem = menuButton;
         UIImage *image = [UIImage imageNamed:@"navbartitledeepershadow2.png"];
         self.navigationItem.titleView = [[UIImageView alloc] initWithImage:image];
-
     }
     return self;
 }
@@ -46,11 +45,7 @@
     sideTab.mainWindow = self;
     sermonViewController = [[SermonViewController alloc]initWithNibName:@"SermonView" bundle:nil];
     sermonViewController.mainWindow = self;
-}
 
-- (void)viewDidDisappear:(BOOL)animated
-{
-    sermonViewController = nil;
 }
 
 #pragma mark 
@@ -89,12 +84,12 @@
 
 - (void)navMenuItemTapped:(int)row
 {
-    //Crash if you select the sermon, select a detail, tap to menu, select a sermon.
 
+    //row 1 is the Sermon in the sidetab
     if (row == 1){
-    [self.mainView addSubview:sermonViewController.view];
-    NSLog(@"%@", [sermonViewController description]);
-    [self menuTapped];
+        [self.mainView addSubview:sermonViewController.view];
+        NSLog(@"%@", [sermonViewController description]);
+        [self menuTapped];
     }
     
 }

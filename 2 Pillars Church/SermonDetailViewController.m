@@ -89,7 +89,7 @@ heightForRowAtIndexPath:(NSIndexPath *)indexPath
     }
     
     
-
+    
     [[cell sermonTitle] setText:[tableList objectAtIndex:indexPath.row]];
     [[cell sermonDate] setText:@"Oct. 12, 2012"];
     
