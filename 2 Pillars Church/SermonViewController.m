@@ -24,6 +24,7 @@
                            bundle:nibBundleOrNil];
     if (self){
         [self fetchEntries];
+        
     }
     return self;
 }
@@ -32,12 +33,14 @@
 {
     [super viewDidLoad];
     tableList = [[NSArray alloc] initWithObjects:@"Nehemiah", @"The Sermon On The Mount", @"The Story of God", @"The Gospel & ...", @"Vision Series", @"Miscellaneous", nil];
+    detailViewController = [[SermonDetailViewController alloc] initWithNibName:@"SermonViewController" bundle:nil];
 }
 
 - (void)viewDidUnload
 {
     [super viewDidUnload];
     tableList = nil;
+    detailViewController = nil;
 }
 
 
@@ -91,14 +94,10 @@ heightForRowAtIndexPath:(NSIndexPath *)indexPath
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    if (!detailViewController)
-    detailViewController = [[SermonDetailViewController alloc] initWithNibName:@"SermonViewController"
-                                                                                  bundle:nil];
     [self presentModalViewController:detailViewController animated:YES];
     [tableView deselectRowAtIndexPath:indexPath
                              animated:YES];
-
-
+    NSLog(@"%@", [self presentedViewController]);
 }
 
 #pragma mark

@@ -16,6 +16,7 @@
 {
     NSArray *tableList;
     LearnViewController *mainWindow;
+    UIAlertView *info;
 }
 
 @property (assign, readwrite) LearnViewController *mainWindow;

@@ -62,8 +62,38 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    [tableView deselectRowAtIndexPath:indexPath animated:YES];
-    [self.mainWindow navMenuItemTapped];
+    if ([tableList objectAtIndex:indexPath.row] == @"Sermons") {
+        [tableView deselectRowAtIndexPath:indexPath animated:YES];
+        //1 represents Sermons
+        [self.mainWindow navMenuItemTapped:1];
+    }
+    else {
+    //If an entry is not properly programmed, this alert will appear to prevent crashes
+        NSString *alertRow = [NSString stringWithFormat:@"'%@' has not been programmed yet", [tableList objectAtIndex:indexPath.row]];
+        UIAlertView *selectionIsNotProgrammedAlert = [[UIAlertView alloc]   initWithTitle:@"Woops!"
+                                                                            message:alertRow
+                                                                           delegate:self
+                                                                  cancelButtonTitle:@"Okay"
+                                                                  otherButtonTitles:nil];
+        [selectionIsNotProgrammedAlert show];
+        [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    }
+}
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
+{
+    if (alertView == info && buttonIndex == 1)
+    {
+        
+        //This needs work. We are setting the second button on the plaza alert to store a bool value to the plist
+        //so that the alert never comes back again.
+        NSString *plistFile = [[NSBundle mainBundle] pathForResource:@"2 Pillars Church-Info"
+                                                              ofType:@"plist"];
+        NSMutableDictionary *dict = [NSMutableDictionary dictionaryWithContentsOfFile:plistFile];
+        NSMutableDictionary *subDict = [[dict objectForKey:@"Plaza Alert"] mutableCopy];
+        [subDict setObject:[NSNumber numberWithBool:TRUE] forKey:@"Plaza Alert"];
+        [dict setObject:subDict forKey:@"Plaza Alert"];
+        NSLog(@"I don't think this is working.");
+    }
 }
 
 @end

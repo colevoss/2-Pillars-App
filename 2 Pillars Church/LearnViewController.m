@@ -35,6 +35,7 @@
         self.navigationItem.leftBarButtonItem = menuButton;
         UIImage *image = [UIImage imageNamed:@"navbartitledeepershadow2.png"];
         self.navigationItem.titleView = [[UIImageView alloc] initWithImage:image];
+
     }
     return self;
 }
@@ -43,13 +44,13 @@
 {
     //This sets the sideTab to send it's mainWindow messages to this instance of the LearnView.
     sideTab.mainWindow = self;
+    sermonViewController = [[SermonViewController alloc]initWithNibName:@"SermonView" bundle:nil];
     sermonViewController.mainWindow = self;
 }
 
-- (void)viewDidAppear:(BOOL)animated
+- (void)viewDidDisappear:(BOOL)animated
 {
-    //Sets the menu to be opened at launch.
-    [self menuTapped];
+    sermonViewController = nil;
 }
 
 #pragma mark 
@@ -79,36 +80,23 @@
     else
     {
         frame.origin.x = 105;
-        [self setMenuOpen:YES];
+        menuOpen = YES;
     }
     
     self.mainView.frame = frame;
     [UIView commitAnimations];
 }
 
-- (void)navMenuItemTapped
+- (void)navMenuItemTapped:(int)row
 {
     //Crash if you select the sermon, select a detail, tap to menu, select a sermon.
-    if (!sermonViewController)
-        sermonViewController = [[SermonViewController alloc] initWithNibName:@"SermonView"
-                                                                      bundle:nil];
+
+    if (row == 1){
     [self.mainView addSubview:sermonViewController.view];
     NSLog(@"%@", [sermonViewController description]);
     [self menuTapped];
-}
-
-//not using
-/*
-- (void)viewControllerSelectedToPush:(UIViewController*)view Animated:(BOOL)b
-{
-    if (!sermonDetailViewController) {
-        sermonDetailViewController = [[SermonDetailViewController alloc] initWithNibName:@"SermonViewController"
-                                                                                      bundle:nil];
     }
-    [self.navigationController pushViewController:sermonDetailViewController animated:YES];
-    if(menuOpen)
-        [self menuTapped];
     
-}*/
+}
 
 @end

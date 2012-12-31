@@ -13,11 +13,11 @@
     NSArray *tableList;
     UITableView *table;
     IBOutlet UIView *background;
-    
 
 }
 @property (strong, nonatomic) UIWindow *window;
 @property IBOutlet UILabel *sermonDescription;
 @property IBOutlet UIImageView *sermonImage;
+
 
 @end

@@ -31,7 +31,7 @@
 @property(nonatomic) BOOL *menuOpen;
 
 - (void)menuTapped;
-- (void)navMenuItemTapped;
+- (void)navMenuItemTapped:(int)row;
 //- (void)viewControllerSelectedToPush:(UIViewController*)view Animated:(BOOL)b;
 
 
