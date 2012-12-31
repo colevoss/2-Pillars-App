@@ -25,6 +25,9 @@
     //Views to present
     SermonViewController *sermonViewController;
     SermonDetailViewController *sermonDetailViewController;
+    
+    UISwipeGestureRecognizer *leftSwipe;
+    UISwipeGestureRecognizer *rightSwipe;
 }
 
 @property(nonatomic, retain) UIView *mainView;
