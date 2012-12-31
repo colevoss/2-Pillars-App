@@ -56,7 +56,8 @@
     tabBarController.viewControllers = @[navController1, navController2, navController3];
     self.window.rootViewController = tabBarController;
     [self.window makeKeyAndVisible];
-    
+    //This starts the app with the menu open.
+    [viewController1 menuTapped];
     
     
     return YES;
