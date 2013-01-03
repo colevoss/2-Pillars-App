@@ -68,7 +68,7 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    if ([tableList objectAtIndex:indexPath.row] == @"Directions here!")
+    if ([tableList objectAtIndex:indexPath.row] == @"Map")
     {
         [tableView deselectRowAtIndexPath:indexPath animated:YES];
         
