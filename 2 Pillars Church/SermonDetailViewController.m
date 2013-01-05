@@ -88,13 +88,6 @@ heightForRowAtIndexPath:(NSIndexPath *)indexPath
     
 <<<<<<< HEAD
 =======
-//    if (cell == nil){
-//        cell = [[SermonCustomCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
-//        
-//
-//    }
-    
-
         cell.backgroundView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"cell_back_full_solid.png"]];
 >>>>>>> New Cell Design in SermonCustomCell view
     
