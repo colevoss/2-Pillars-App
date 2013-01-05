@@ -20,6 +20,7 @@
 @implementation SermonViewController
 
 @synthesize detailViewController;
+@synthesize mainWindow = _mainWindow;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {

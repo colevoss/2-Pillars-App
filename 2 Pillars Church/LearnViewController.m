@@ -19,7 +19,7 @@
 
 @implementation LearnViewController
 
-@synthesize mainView, menuOpen;
+@synthesize mainView, menuOpen, rightSwipe, leftSwipe;
 
 #pragma mark - UIViewController
 
