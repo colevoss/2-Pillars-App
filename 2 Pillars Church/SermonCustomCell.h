@@ -16,4 +16,5 @@
 
 @property IBOutlet UILabel *sermonTitle;
 @property IBOutlet UILabel *sermonDate;
+@property IBOutlet UIImageView *backgroundImage;
 @end

@@ -23,7 +23,7 @@
 - (void)viewDidLoad
 {
     //Need to define what will be in this list.
-    tableList = [[NSArray alloc] initWithObjects:@"Nehemiah 1:11", @"Nehemiah 2:1", nil];
+    tableList = [[NSArray alloc] initWithObjects:@"Nehemiah 1:11", @"Nehemiah 2:1", @"Test", @"Test Again", @"More Testing",nil];
     
     background.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"backgroundMatte.jpeg"]];
     [sermonDescription setTextColor:[UIColor blackColor]];
@@ -43,7 +43,7 @@
 - (CGFloat)tableView:(UITableView *)tableView
 heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    return 61.2;
+    return 70;
 }
 
 
@@ -67,28 +67,36 @@ heightForRowAtIndexPath:(NSIndexPath *)indexPath
 }
 
 
+
 - (UITableViewCell *)tableView:(UITableView *)tableView
          cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     //I think later on, it may be cool to have the background be hosted
     //online, and retrieve that for each sermon view
 
+    
     static NSString *CellIdentifier = @"Cell";
     SermonCustomCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
-    tableView.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"bg_rust-circle.png"]];
+    //tableView.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"bg_rust-circle.png"]];
     
-    if (cell == nil){
-        NSArray *topLevelObjects = [[NSBundle mainBundle] loadNibNamed:@"SermonCell"
-                                                                 owner:nil
-                                                               options:nil];
-        for (id currentObject in topLevelObjects)
-        {
-            cell = (SermonCustomCell *)currentObject;
-            break;
-        }
+    if (cell == nil) {
+        NSArray *topLevelObjects = [[NSBundle mainBundle] loadNibNamed:@"SermonCustomCell" owner:self options:nil];
+        
+        cell = [topLevelObjects objectAtIndex:0];
     }
     
     
+<<<<<<< HEAD
+=======
+//    if (cell == nil){
+//        cell = [[SermonCustomCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
+//        
+//
+//    }
+    
+
+        cell.backgroundView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"cell_back_full_solid.png"]];
+>>>>>>> New Cell Design in SermonCustomCell view
     
     [[cell sermonTitle] setText:[tableList objectAtIndex:indexPath.row]];
     [[cell sermonDate] setText:@"Oct. 12, 2012"];

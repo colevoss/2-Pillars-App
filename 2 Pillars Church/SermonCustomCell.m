@@ -17,6 +17,10 @@
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
     if (self) {
         
+//        NSArray *topLevelObjects = [[NSBundle mainBundle] loadNibNamed:@"SermonCustomCell.xib"
+//                                                                   owner:self
+//                                                               options:nil];
+    
     }
     return self;
 }

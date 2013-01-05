@@ -11,6 +11,7 @@
 #import "LearnViewController.h"
 #import "SermonParser.h"
 #import "SermonDetailViewController.h"
+#import "SermonCustomCell.h"
 
 @interface SermonViewController ()
 

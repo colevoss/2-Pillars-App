@@ -19,7 +19,6 @@
 		D838C976167119C900A1D1DE /* SermonView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D838C975167119C900A1D1DE /* SermonView.xib */; };
 		D85050951625F7F6003C5597 /* backgroundMatte.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = D85050941625F7F6003C5597 /* backgroundMatte.jpeg */; };
 		D850509816260132003C5597 /* SermonCustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D850509716260132003C5597 /* SermonCustomCell.m */; };
-		D850509A16260184003C5597 /* SermonCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D850509916260184003C5597 /* SermonCell.xib */; };
 		D862D5E9160BE00A0064F5E4 /* DarkBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = D862D5E8160BE00A0064F5E4 /* DarkBackground.png */; };
 		D862D5EB160BE0100064F5E4 /* LightBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = D862D5EA160BE0100064F5E4 /* LightBackground.png */; };
 		D8736DAA16558369002DB966 /* InfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8736DA816558369002DB966 /* InfoViewController.m */; };
@@ -65,6 +64,7 @@
 		ED30CD07168256620021CC2D /* 2PC App Lauch Screen_new.png in Resources */ = {isa = PBXBuildFile; fileRef = ED30CD06168256620021CC2D /* 2PC App Lauch Screen_new.png */; };
 		ED627B6F168CD92600CEE44B /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ED627B6E168CD92600CEE44B /* Icon@2x.png */; };
 		ED627B72168CD9E500CEE44B /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = ED627B71168CD9E500CEE44B /* Icon.png */; };
+		ED6A581C169218CF00E3BCF3 /* cell_back.png in Resources */ = {isa = PBXBuildFile; fileRef = ED6A581B169218CF00E3BCF3 /* cell_back.png */; };
 		ED6E08A7168E072B000C3E14 /* navbartitledeepershadow2.png in Resources */ = {isa = PBXBuildFile; fileRef = ED6E08A6168E072B000C3E14 /* navbartitledeepershadow2.png */; };
 		ED6E08AB168E2F69000C3E14 /* TestimonialsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED6E08A9168E2F69000C3E14 /* TestimonialsViewController.m */; };
 		ED6E08AC168E2F69000C3E14 /* TestimonialsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED6E08AA168E2F69000C3E14 /* TestimonialsViewController.xib */; };
@@ -75,6 +75,13 @@
 		ED9AE391168CE1E400910DDE /* navbartitle.png in Resources */ = {isa = PBXBuildFile; fileRef = ED9AE390168CE1E400910DDE /* navbartitle.png */; };
 		ED9AE396168CE37E00910DDE /* navbartitleuse.png in Resources */ = {isa = PBXBuildFile; fileRef = ED9AE395168CE37E00910DDE /* navbartitleuse.png */; };
 		EDAE664C167272AA00A80649 /* connected.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EDAE664B167272AA00A80649 /* connected.jpg */; };
+		EDCFD4821692828C0096B778 /* cell_background.png in Resources */ = {isa = PBXBuildFile; fileRef = EDCFD4811692828C0096B778 /* cell_background.png */; };
+		EDCFD49316928FB50096B778 /* SermonCustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EDCFD49216928FB50096B778 /* SermonCustomCell.xib */; };
+		EDDB1A8916974525004F28D2 /* cell_back_full.png in Resources */ = {isa = PBXBuildFile; fileRef = EDDB1A8816974525004F28D2 /* cell_back_full.png */; };
+		EDDB1A8C1697871F004F28D2 /* cell_back_full_opp.png in Resources */ = {isa = PBXBuildFile; fileRef = EDDB1A8B1697871F004F28D2 /* cell_back_full_opp.png */; };
+		EDFD7F5A1697FB0E0047AB90 /* cell_back_full_test.png in Resources */ = {isa = PBXBuildFile; fileRef = EDFD7F591697FB0E0047AB90 /* cell_back_full_test.png */; };
+		EDFD7F5D1697FC790047AB90 /* cell_back_full_grad.png in Resources */ = {isa = PBXBuildFile; fileRef = EDFD7F5C1697FC790047AB90 /* cell_back_full_grad.png */; };
+		EDFD7F5F1697FD100047AB90 /* cell_back_full_solid.png in Resources */ = {isa = PBXBuildFile; fileRef = EDFD7F5E1697FD100047AB90 /* cell_back_full_solid.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -94,7 +101,6 @@
 		D85050941625F7F6003C5597 /* backgroundMatte.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = backgroundMatte.jpeg; sourceTree = "<group>"; };
 		D850509616260132003C5597 /* SermonCustomCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SermonCustomCell.h; sourceTree = "<group>"; };
 		D850509716260132003C5597 /* SermonCustomCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SermonCustomCell.m; sourceTree = "<group>"; };
-		D850509916260184003C5597 /* SermonCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SermonCell.xib; sourceTree = "<group>"; };
 		D862D5E8160BE00A0064F5E4 /* DarkBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DarkBackground.png; sourceTree = "<group>"; };
 		D862D5EA160BE0100064F5E4 /* LightBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LightBackground.png; sourceTree = "<group>"; };
 		D8736DA716558369002DB966 /* InfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfoViewController.h; sourceTree = "<group>"; };
@@ -157,6 +163,7 @@
 		ED30CD06168256620021CC2D /* 2PC App Lauch Screen_new.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "2PC App Lauch Screen_new.png"; sourceTree = "<group>"; };
 		ED627B6E168CD92600CEE44B /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
 		ED627B71168CD9E500CEE44B /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		ED6A581B169218CF00E3BCF3 /* cell_back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cell_back.png; sourceTree = "<group>"; };
 		ED6E08A6168E072B000C3E14 /* navbartitledeepershadow2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = navbartitledeepershadow2.png; sourceTree = "<group>"; };
 		ED6E08A8168E2F69000C3E14 /* TestimonialsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestimonialsViewController.h; sourceTree = "<group>"; };
 		ED6E08A9168E2F69000C3E14 /* TestimonialsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestimonialsViewController.m; sourceTree = "<group>"; };
@@ -169,6 +176,13 @@
 		ED9AE390168CE1E400910DDE /* navbartitle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = navbartitle.png; sourceTree = "<group>"; };
 		ED9AE395168CE37E00910DDE /* navbartitleuse.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = navbartitleuse.png; sourceTree = "<group>"; };
 		EDAE664B167272AA00A80649 /* connected.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = connected.jpg; sourceTree = "<group>"; };
+		EDCFD4811692828C0096B778 /* cell_background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cell_background.png; sourceTree = "<group>"; };
+		EDCFD49216928FB50096B778 /* SermonCustomCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SermonCustomCell.xib; sourceTree = "<group>"; };
+		EDDB1A8816974525004F28D2 /* cell_back_full.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cell_back_full.png; sourceTree = "<group>"; };
+		EDDB1A8B1697871F004F28D2 /* cell_back_full_opp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cell_back_full_opp.png; sourceTree = "<group>"; };
+		EDFD7F591697FB0E0047AB90 /* cell_back_full_test.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cell_back_full_test.png; sourceTree = "<group>"; };
+		EDFD7F5C1697FC790047AB90 /* cell_back_full_grad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cell_back_full_grad.png; sourceTree = "<group>"; };
+		EDFD7F5E1697FD100047AB90 /* cell_back_full_solid.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cell_back_full_solid.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -214,7 +228,7 @@
 				D8220C341610D20700803763 /* LearnCustomCell.m */,
 				D850509616260132003C5597 /* SermonCustomCell.h */,
 				D850509716260132003C5597 /* SermonCustomCell.m */,
-				D850509916260184003C5597 /* SermonCell.xib */,
+				EDCFD49216928FB50096B778 /* SermonCustomCell.xib */,
 			);
 			name = Cells;
 			sourceTree = "<group>";
@@ -342,21 +356,28 @@
 				D882639C168F53CF006FB450 /* menuButton.png */,
 				ED30CD06168256620021CC2D /* 2PC App Lauch Screen_new.png */,
 				EDAE664B167272AA00A80649 /* connected.jpg */,
+				ED6A581B169218CF00E3BCF3 /* cell_back.png */,
 				ED9AE390168CE1E400910DDE /* navbartitle.png */,
+				EDFD7F5E1697FD100047AB90 /* cell_back_full_solid.png */,
 				D8D86198161F6ACB00EFE852 /* Nehemiahs-Wall.jpeg */,
 				ED6E08A6168E072B000C3E14 /* navbartitledeepershadow2.png */,
 				D82DF7191613A937004D5170 /* bg_rust-circle.png */,
 				D85050941625F7F6003C5597 /* backgroundMatte.jpeg */,
 				ED9AE395168CE37E00910DDE /* navbartitleuse.png */,
 				D8220C391610D53100803763 /* 1.png */,
+				EDDB1A8816974525004F28D2 /* cell_back_full.png */,
 				D8F5C9F615DC6B1B00EBC61A /* Default@2x.png */,
 				D862D5EA160BE0100064F5E4 /* LightBackground.png */,
 				D8F5C9F415DC6B1300EBC61A /* Default.png */,
+				EDDB1A8B1697871F004F28D2 /* cell_back_full_opp.png */,
 				D8F5C9EC15DC1A2800EBC61A /* 2PC App Icon.png */,
 				D862D5E8160BE00A0064F5E4 /* DarkBackground.png */,
+				EDFD7F5C1697FC790047AB90 /* cell_back_full_grad.png */,
 				D8F5C9EA15DC19F900EBC61A /* 2PC App Icon.57.png */,
+				EDFD7F591697FB0E0047AB90 /* cell_back_full_test.png */,
 				D8F5CAE315DD677D00EBC61A /* Learn Icon.png */,
 				D8E0BCA815D587F000B91F61 /* L.png */,
+				EDCFD4811692828C0096B778 /* cell_background.png */,
 				D8E0BCAF15D5895200B91F61 /* i.png */,
 				D8E0BC7615D43C1F00B91F61 /* first.png */,
 			);
@@ -475,7 +496,6 @@
 				D88DF451161F66C30063809A /* SermonViewController.xib in Resources */,
 				D8D86199161F6ACB00EFE852 /* Nehemiahs-Wall.jpeg in Resources */,
 				D85050951625F7F6003C5597 /* backgroundMatte.jpeg in Resources */,
-				D850509A16260184003C5597 /* SermonCell.xib in Resources */,
 				D89189C11627416D00AAEA59 /* Default-568h@2x.png in Resources */,
 				D87D538B164CB54700859AB8 /* MapViewController.xib in Resources */,
 				D8736DAB16558369002DB966 /* InfoViewController.xib in Resources */,
@@ -495,6 +515,14 @@
 				ED6E08B8168E3240000C3E14 /* TestimonyDetailViewController.xib in Resources */,
 				ED6E08BD168E4A8F000C3E14 /* Anthony.mp4 in Resources */,
 				D882639D168F53D0006FB450 /* menuButton.png in Resources */,
+				ED6A581C169218CF00E3BCF3 /* cell_back.png in Resources */,
+				EDCFD4821692828C0096B778 /* cell_background.png in Resources */,
+				EDCFD49316928FB50096B778 /* SermonCustomCell.xib in Resources */,
+				EDDB1A8916974525004F28D2 /* cell_back_full.png in Resources */,
+				EDDB1A8C1697871F004F28D2 /* cell_back_full_opp.png in Resources */,
+				EDFD7F5A1697FB0E0047AB90 /* cell_back_full_test.png in Resources */,
+				EDFD7F5D1697FC790047AB90 /* cell_back_full_grad.png in Resources */,
+				EDFD7F5F1697FD100047AB90 /* cell_back_full_solid.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
