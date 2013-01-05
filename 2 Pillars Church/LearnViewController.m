@@ -45,15 +45,6 @@
     sideTab.mainWindow = self;
     sermonViewController = [[SermonViewController alloc]initWithNibName:@"SermonView" bundle:nil];
     sermonViewController.mainWindow = self;
-    leftSwipe = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(handleLeftSwipe)];
-    [leftSwipe setDirection:(UISwipeGestureRecognizerDirectionLeft)];
-    [self.mainView addGestureRecognizer:leftSwipe];
-    
-    rightSwipe = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(handleRightSwipe)];
-    [leftSwipe setDirection:(UISwipeGestureRecognizerDirectionRight)];
-    [self.mainView addGestureRecognizer:rightSwipe];
-   
-
 }
 
 #pragma mark 
@@ -102,17 +93,16 @@
     
 }
 
-- (void)handleLeftSwipe
-{
-    //This does not work.
-    [self menuTapped];
-}
+#pragma mark
+#pragma mark - Gesture Recognizers
 
-- (void)handleRightSwipe
-{
-    //This works
-    if (menuOpen == NO)
+- (IBAction)handleLeftSwipe:(UISwipeGestureRecognizer *)sender {
+    if (menuOpen == YES)
         [self menuTapped];
 }
 
+- (IBAction)handleRightSwipe:(UISwipeGestureRecognizer *)sender {
+    if (menuOpen == NO)
+        [self menuTapped];
+}
 @end

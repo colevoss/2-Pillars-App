@@ -30,12 +30,14 @@
     UISwipeGestureRecognizer *rightSwipe;
 }
 
+- (IBAction)handleLeftSwipe:(UISwipeGestureRecognizer *)sender;
+- (IBAction)handleRightSwipe:(UISwipeGestureRecognizer *)sender;
 @property(nonatomic, retain) UIView *mainView;
 @property(nonatomic) BOOL *menuOpen;
 
 - (void)menuTapped;
 - (void)navMenuItemTapped:(int)row;
-//- (void)viewControllerSelectedToPush:(UIViewController*)view Animated:(BOOL)b;
+
 
 
 @end
