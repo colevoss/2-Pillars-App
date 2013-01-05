@@ -43,7 +43,7 @@
 - (CGFloat)tableView:(UITableView *)tableView
 heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    return 70;
+    return 55;
 }
 
 
@@ -86,10 +86,8 @@ heightForRowAtIndexPath:(NSIndexPath *)indexPath
     }
     
     
-<<<<<<< HEAD
-=======
         cell.backgroundView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"cell_back_full_solid.png"]];
->>>>>>> New Cell Design in SermonCustomCell view
+
     
     [[cell sermonTitle] setText:[tableList objectAtIndex:indexPath.row]];
     [[cell sermonDate] setText:@"Oct. 12, 2012"];
