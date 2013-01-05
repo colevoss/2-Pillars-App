@@ -34,6 +34,8 @@
 - (IBAction)handleRightSwipe:(UISwipeGestureRecognizer *)sender;
 @property(nonatomic, retain) UIView *mainView;
 @property(nonatomic) BOOL *menuOpen;
+@property(nonatomic) IBOutlet UISwipeGestureRecognizer *leftSwipe;
+@property(nonatomic) IBOutlet UISwipeGestureRecognizer *rightSwipe;
 
 - (void)menuTapped;
 - (void)navMenuItemTapped:(int)row;

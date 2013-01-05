@@ -45,6 +45,8 @@
     sideTab.mainWindow = self;
     sermonViewController = [[SermonViewController alloc]initWithNibName:@"SermonView" bundle:nil];
     sermonViewController.mainWindow = self;
+    [self.view addGestureRecognizer:self.leftSwipe];
+    [self.view addGestureRecognizer:self.rightSwipe];
 }
 
 #pragma mark 
