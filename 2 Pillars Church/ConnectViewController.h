@@ -15,6 +15,6 @@
 }
 
 @property (strong, nonatomic) UIWindow *window;
-@property BOOL *plazaAlertHasBeenShown;
+@property BOOL plazaAlertHasBeenShown;
 
 @end

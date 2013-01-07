@@ -98,7 +98,7 @@
                                              otherButtonTitles:@"Stop this message", nil];
             [info setDelegate:self];
             [info show];
-            [self setPlazaAlertHasBeenShown:YES];
+            plazaAlertHasBeenShown = YES;
         }
     }
 

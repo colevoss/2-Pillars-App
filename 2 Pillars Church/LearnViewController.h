@@ -17,7 +17,7 @@
 @interface LearnViewController :  UIViewController 
 {
     //Side-tab ivars
-    BOOL *menuOpen;
+    BOOL menuOpen;
     IBOutlet UIView *mainView;
     IBOutlet SideTabViewController *sideTab;
     
@@ -33,7 +33,7 @@
 - (IBAction)handleLeftSwipe:(UISwipeGestureRecognizer *)sender;
 - (IBAction)handleRightSwipe:(UISwipeGestureRecognizer *)sender;
 @property(nonatomic, retain) UIView *mainView;
-@property(nonatomic) BOOL *menuOpen;
+@property(nonatomic) BOOL menuOpen;
 @property(nonatomic) IBOutlet UISwipeGestureRecognizer *leftSwipe;
 @property(nonatomic) IBOutlet UISwipeGestureRecognizer *rightSwipe;
 
