@@ -11,6 +11,7 @@
 @class LearnCustomCell;
 @class SermonParser;
 @class SermonViewController;
+@class SermonaViewController;
 @class BlogViewController;
 @class MusicViewController;
 
@@ -22,6 +23,7 @@
     
     //Views to present
     SermonViewController *sermonController;
+    SermonaViewController *sermonaController;
     BlogViewController *blogController;
     MusicViewController *musicController;
     

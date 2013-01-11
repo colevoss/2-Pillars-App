@@ -13,6 +13,7 @@
 @synthesize sermonTitle = _sermonTitle;
 @synthesize byWho = _byWho;
 @synthesize date = _date;
+@synthesize sermonImage = _sermonImage;
 
 - (void)parser:(NSXMLParser *)parser
 didStartElement:(NSString *)elementName

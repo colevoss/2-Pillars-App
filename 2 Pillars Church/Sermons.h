@@ -11,6 +11,12 @@
 @interface Sermons : NSObject <NSXMLParserDelegate>
 {
     NSMutableString *currentString;
+    
+    NSString *seriesTitle;
+    NSString *sermonTitle;
+    NSString *byWho;
+    NSString *date;
+    UIImage *sermonImage;
 }
 
 @property (nonatomic, weak) id parentParserDelegate;
@@ -19,6 +25,6 @@
 @property NSString *sermonTitle;
 @property NSString *byWho;
 @property NSString *date;
-//@property UIImage *sermonImage;
+@property UIImage *sermonImage;
 
 @end

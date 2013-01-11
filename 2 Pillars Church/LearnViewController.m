@@ -9,6 +9,7 @@
 #import "LearnViewController.h"
 #import <CoreGraphics/CoreGraphics.h>
 #import "SermonViewController.h"
+#import "SermonaViewController.h"
 #import "BlogViewController.h"
 #import "MusicViewController.h"
 
@@ -17,6 +18,8 @@
 @end
 
 @implementation LearnViewController
+
+BOOL sermonSelection;
 
 @synthesize mainView, menuOpen, upSwipe, downSwipe;
 
@@ -47,8 +50,10 @@
                                                           bundle:nil];
     musicController = [[MusicViewController alloc] initWithNibName:@"MusicViewController"
                                                             bundle:nil];
+    sermonaController = [[SermonaViewController alloc] init];
 
     //This sets each controller to allow this controller to manage their views.
+    sermonaController.mainWindow = self;
     sermonController.mainWindow = self;
     blogController.mainWindow = self;
     musicController.mainWindow = self;
@@ -107,8 +112,16 @@
 - (IBAction)buttonPressed:(UIButton*)sender {
     //tag 0 == Sermons
     if (sender.tag == 0){
-        [self.mainView addSubview:sermonController.view];
-        [self menuTapped];
+        //This is so we can test differnt things.
+        if (sermonSelection == YES){
+            [self.mainView addSubview:sermonaController.view];
+            [self menuTapped];
+            sermonSelection = NO;
+        } else {
+            [self.mainView addSubview:sermonController.view];
+            [self menuTapped];
+            sermonSelection = YES;
+        }
     }
     //tag 1 == Blog
     else if (sender.tag == 1){

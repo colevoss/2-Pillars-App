@@ -43,6 +43,10 @@
 		D8B0CA89169F9DC800270D93 /* BlogViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D8B0CA87169F9DC800270D93 /* BlogViewController.xib */; };
 		D8B0CA8D169F9F6E00270D93 /* MusicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8B0CA8B169F9F6E00270D93 /* MusicViewController.m */; };
 		D8B0CA8E169F9F6E00270D93 /* MusicViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D8B0CA8C169F9F6E00270D93 /* MusicViewController.xib */; };
+		D8B0CA96169FA5B600270D93 /* SermonaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8B0CA94169FA5B600270D93 /* SermonaViewController.m */; };
+		D8B0CA97169FA5B600270D93 /* SermonaViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D8B0CA95169FA5B600270D93 /* SermonaViewController.xib */; };
+		D8B0CAA0169FB2DB00270D93 /* cellView.m in Sources */ = {isa = PBXBuildFile; fileRef = D8B0CA9F169FB2DB00270D93 /* cellView.m */; };
+		D8B0CAA4169FC88700270D93 /* cellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D8B0CAA3169FC88600270D93 /* cellView.xib */; };
 		D8D86199161F6ACB00EFE852 /* Nehemiahs-Wall.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = D8D86198161F6ACB00EFE852 /* Nehemiahs-Wall.jpeg */; };
 		D8E0BC6215D43C1F00B91F61 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8E0BC6115D43C1F00B91F61 /* UIKit.framework */; };
 		D8E0BC6415D43C1F00B91F61 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8E0BC6315D43C1F00B91F61 /* Foundation.framework */; };
@@ -137,6 +141,13 @@
 		D8B0CA8A169F9F6E00270D93 /* MusicViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MusicViewController.h; sourceTree = "<group>"; };
 		D8B0CA8B169F9F6E00270D93 /* MusicViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MusicViewController.m; sourceTree = "<group>"; };
 		D8B0CA8C169F9F6E00270D93 /* MusicViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MusicViewController.xib; sourceTree = "<group>"; };
+		D8B0CA93169FA5B600270D93 /* SermonaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SermonaViewController.h; sourceTree = "<group>"; };
+		D8B0CA94169FA5B600270D93 /* SermonaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SermonaViewController.m; sourceTree = "<group>"; };
+		D8B0CA95169FA5B600270D93 /* SermonaViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SermonaViewController.xib; sourceTree = "<group>"; };
+		D8B0CA99169FAC3400270D93 /* Sermons.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Sermons.h; sourceTree = "<group>"; };
+		D8B0CA9E169FB2DB00270D93 /* cellView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cellView.h; sourceTree = "<group>"; };
+		D8B0CA9F169FB2DB00270D93 /* cellView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = cellView.m; sourceTree = "<group>"; };
+		D8B0CAA3169FC88600270D93 /* cellView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = cellView.xib; sourceTree = "<group>"; };
 		D8D86198161F6ACB00EFE852 /* Nehemiahs-Wall.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Nehemiahs-Wall.jpeg"; sourceTree = "<group>"; };
 		D8E0BC5D15D43C1F00B91F61 /* 2 Pillars Church.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "2 Pillars Church.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8E0BC6115D43C1F00B91F61 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -210,6 +221,7 @@
 			isa = PBXGroup;
 			children = (
 				ED6E08BC168E4A8F000C3E14 /* Anthony.mp4 */,
+				D8B0CA99169FAC3400270D93 /* Sermons.h */,
 				D8220C3C1610DC4600803763 /* Sermons.m */,
 			);
 			name = Data;
@@ -267,10 +279,17 @@
 		D8A9BB37166FCDC50014C882 /* Learn Controller */ = {
 			isa = PBXGroup;
 			children = (
+				D88DF44D161F66C30063809A /* SermonDetailViewController.h */,
+				D88DF44E161F66C30063809A /* SermonDetailViewController.m */,
 				D8E0BC7315D43C1F00B91F61 /* LearnViewController.h */,
 				D8E0BC7415D43C1F00B91F61 /* LearnViewController.m */,
 				D8A9BB3E166FFF190014C882 /* SermonViewController.h */,
 				D8A9BB3F166FFF190014C882 /* SermonViewController.m */,
+				D8B0CA93169FA5B600270D93 /* SermonaViewController.h */,
+				D8B0CA94169FA5B600270D93 /* SermonaViewController.m */,
+				D8B0CA9E169FB2DB00270D93 /* cellView.h */,
+				D8B0CAA3169FC88600270D93 /* cellView.xib */,
+				D8B0CA9F169FB2DB00270D93 /* cellView.m */,
 				D8B0CA85169F9DC800270D93 /* BlogViewController.h */,
 				D8B0CA86169F9DC800270D93 /* BlogViewController.m */,
 				D8B0CA8A169F9F6E00270D93 /* MusicViewController.h */,
@@ -344,8 +363,6 @@
 				ED6E08AD168E3088000C3E14 /* Connect Controller */,
 				D8E0BCAA15D5884500B91F61 /* MoreViewController.h */,
 				D8E0BCAB15D5884500B91F61 /* MoreViewController.m */,
-				D88DF44D161F66C30063809A /* SermonDetailViewController.h */,
-				D88DF44E161F66C30063809A /* SermonDetailViewController.m */,
 				D87D5387164CB54700859AB8 /* MapViewController.h */,
 				D87D5388164CB54700859AB8 /* MapViewController.m */,
 				D8F5CAE815DD920100EBC61A /* Xibs */,
@@ -391,6 +408,7 @@
 		D8F5CAE815DD920100EBC61A /* Xibs */ = {
 			isa = PBXGroup;
 			children = (
+				D8B0CA95169FA5B600270D93 /* SermonaViewController.xib */,
 				D8B0CA8C169F9F6E00270D93 /* MusicViewController.xib */,
 				ED6E08AA168E2F69000C3E14 /* TestimonialsViewController.xib */,
 				D8B0CA87169F9DC800270D93 /* BlogViewController.xib */,
@@ -531,6 +549,8 @@
 				EDFD7F5F1697FD100047AB90 /* cell_back_full_solid.png in Resources */,
 				D8B0CA89169F9DC800270D93 /* BlogViewController.xib in Resources */,
 				D8B0CA8E169F9F6E00270D93 /* MusicViewController.xib in Resources */,
+				D8B0CA97169FA5B600270D93 /* SermonaViewController.xib in Resources */,
+				D8B0CAA4169FC88700270D93 /* cellView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -563,6 +583,8 @@
 				D882639B168F4796006FB450 /* MoviePlayerController.m in Sources */,
 				D8B0CA88169F9DC800270D93 /* BlogViewController.m in Sources */,
 				D8B0CA8D169F9F6E00270D93 /* MusicViewController.m in Sources */,
+				D8B0CA96169FA5B600270D93 /* SermonaViewController.m in Sources */,
+				D8B0CAA0169FB2DB00270D93 /* cellView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
