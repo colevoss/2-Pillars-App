@@ -37,10 +37,12 @@
 		D88DF450161F66C30063809A /* SermonDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D88DF44E161F66C30063809A /* SermonDetailViewController.m */; };
 		D88DF451161F66C30063809A /* SermonViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D88DF44F161F66C30063809A /* SermonViewController.xib */; };
 		D89189C11627416D00AAEA59 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D89189C01627416D00AAEA59 /* Default-568h@2x.png */; };
-		D8A9BB33166FCAFB0014C882 /* BlogView.m in Sources */ = {isa = PBXBuildFile; fileRef = D8A9BB32166FCAFB0014C882 /* BlogView.m */; };
-		D8A9BB36166FCDBD0014C882 /* SideTabViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8A9BB35166FCDBD0014C882 /* SideTabViewController.m */; };
 		D8A9BB3D166FFE590014C882 /* LearnViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D8A9BB3C166FFE590014C882 /* LearnViewController.xib */; };
 		D8A9BB40166FFF190014C882 /* SermonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8A9BB3F166FFF190014C882 /* SermonViewController.m */; };
+		D8B0CA88169F9DC800270D93 /* BlogViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8B0CA86169F9DC800270D93 /* BlogViewController.m */; };
+		D8B0CA89169F9DC800270D93 /* BlogViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D8B0CA87169F9DC800270D93 /* BlogViewController.xib */; };
+		D8B0CA8D169F9F6E00270D93 /* MusicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8B0CA8B169F9F6E00270D93 /* MusicViewController.m */; };
+		D8B0CA8E169F9F6E00270D93 /* MusicViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D8B0CA8C169F9F6E00270D93 /* MusicViewController.xib */; };
 		D8D86199161F6ACB00EFE852 /* Nehemiahs-Wall.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = D8D86198161F6ACB00EFE852 /* Nehemiahs-Wall.jpeg */; };
 		D8E0BC6215D43C1F00B91F61 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8E0BC6115D43C1F00B91F61 /* UIKit.framework */; };
 		D8E0BC6415D43C1F00B91F61 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8E0BC6315D43C1F00B91F61 /* Foundation.framework */; };
@@ -126,13 +128,15 @@
 		D88DF44E161F66C30063809A /* SermonDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SermonDetailViewController.m; sourceTree = "<group>"; };
 		D88DF44F161F66C30063809A /* SermonViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SermonViewController.xib; sourceTree = "<group>"; };
 		D89189C01627416D00AAEA59 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		D8A9BB31166FCAFB0014C882 /* BlogView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlogView.h; sourceTree = "<group>"; };
-		D8A9BB32166FCAFB0014C882 /* BlogView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlogView.m; sourceTree = "<group>"; };
-		D8A9BB34166FCDBD0014C882 /* SideTabViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SideTabViewController.h; sourceTree = "<group>"; };
-		D8A9BB35166FCDBD0014C882 /* SideTabViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SideTabViewController.m; sourceTree = "<group>"; };
 		D8A9BB3C166FFE590014C882 /* LearnViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LearnViewController.xib; path = ../LearnViewController.xib; sourceTree = "<group>"; };
 		D8A9BB3E166FFF190014C882 /* SermonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SermonViewController.h; sourceTree = "<group>"; };
 		D8A9BB3F166FFF190014C882 /* SermonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SermonViewController.m; sourceTree = "<group>"; };
+		D8B0CA85169F9DC800270D93 /* BlogViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BlogViewController.h; path = ../BlogViewController.h; sourceTree = "<group>"; };
+		D8B0CA86169F9DC800270D93 /* BlogViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BlogViewController.m; path = ../BlogViewController.m; sourceTree = "<group>"; };
+		D8B0CA87169F9DC800270D93 /* BlogViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = BlogViewController.xib; path = ../BlogViewController.xib; sourceTree = "<group>"; };
+		D8B0CA8A169F9F6E00270D93 /* MusicViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MusicViewController.h; sourceTree = "<group>"; };
+		D8B0CA8B169F9F6E00270D93 /* MusicViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MusicViewController.m; sourceTree = "<group>"; };
+		D8B0CA8C169F9F6E00270D93 /* MusicViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MusicViewController.xib; sourceTree = "<group>"; };
 		D8D86198161F6ACB00EFE852 /* Nehemiahs-Wall.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Nehemiahs-Wall.jpeg"; sourceTree = "<group>"; };
 		D8E0BC5D15D43C1F00B91F61 /* 2 Pillars Church.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "2 Pillars Church.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8E0BC6115D43C1F00B91F61 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -263,14 +267,14 @@
 		D8A9BB37166FCDC50014C882 /* Learn Controller */ = {
 			isa = PBXGroup;
 			children = (
-				D8A9BB34166FCDBD0014C882 /* SideTabViewController.h */,
-				D8A9BB35166FCDBD0014C882 /* SideTabViewController.m */,
 				D8E0BC7315D43C1F00B91F61 /* LearnViewController.h */,
 				D8E0BC7415D43C1F00B91F61 /* LearnViewController.m */,
 				D8A9BB3E166FFF190014C882 /* SermonViewController.h */,
 				D8A9BB3F166FFF190014C882 /* SermonViewController.m */,
-				D8A9BB31166FCAFB0014C882 /* BlogView.h */,
-				D8A9BB32166FCAFB0014C882 /* BlogView.m */,
+				D8B0CA85169F9DC800270D93 /* BlogViewController.h */,
+				D8B0CA86169F9DC800270D93 /* BlogViewController.m */,
+				D8B0CA8A169F9F6E00270D93 /* MusicViewController.h */,
+				D8B0CA8B169F9F6E00270D93 /* MusicViewController.m */,
 			);
 			name = "Learn Controller";
 			sourceTree = "<group>";
@@ -387,7 +391,9 @@
 		D8F5CAE815DD920100EBC61A /* Xibs */ = {
 			isa = PBXGroup;
 			children = (
+				D8B0CA8C169F9F6E00270D93 /* MusicViewController.xib */,
 				ED6E08AA168E2F69000C3E14 /* TestimonialsViewController.xib */,
+				D8B0CA87169F9DC800270D93 /* BlogViewController.xib */,
 				D8A9BB3C166FFE590014C882 /* LearnViewController.xib */,
 				D838C975167119C900A1D1DE /* SermonView.xib */,
 				D87D5389164CB54700859AB8 /* MapViewController.xib */,
@@ -523,6 +529,8 @@
 				EDFD7F5A1697FB0E0047AB90 /* cell_back_full_test.png in Resources */,
 				EDFD7F5D1697FC790047AB90 /* cell_back_full_grad.png in Resources */,
 				EDFD7F5F1697FD100047AB90 /* cell_back_full_solid.png in Resources */,
+				D8B0CA89169F9DC800270D93 /* BlogViewController.xib in Resources */,
+				D8B0CA8E169F9F6E00270D93 /* MusicViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -549,12 +557,12 @@
 				D8736DB21655B4FB002DB966 /* Why2PCViewController.m in Sources */,
 				D8736DB71655BB7A002DB966 /* MissionViewController.m in Sources */,
 				D80B0F51165FFA9000818419 /* LeadersViewController.m in Sources */,
-				D8A9BB33166FCAFB0014C882 /* BlogView.m in Sources */,
-				D8A9BB36166FCDBD0014C882 /* SideTabViewController.m in Sources */,
 				D8A9BB40166FFF190014C882 /* SermonViewController.m in Sources */,
 				ED6E08AB168E2F69000C3E14 /* TestimonialsViewController.m in Sources */,
 				ED6E08B6168E3224000C3E14 /* TestimonyDetailViewController.m in Sources */,
 				D882639B168F4796006FB450 /* MoviePlayerController.m in Sources */,
+				D8B0CA88169F9DC800270D93 /* BlogViewController.m in Sources */,
+				D8B0CA8D169F9F6E00270D93 /* MusicViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

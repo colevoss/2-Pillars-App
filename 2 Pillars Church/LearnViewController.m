@@ -9,9 +9,8 @@
 #import "LearnViewController.h"
 #import <CoreGraphics/CoreGraphics.h>
 #import "SermonViewController.h"
-#import "BlogView.h"
-#import "SideTabViewController.h"
-#import "SermonDetailViewController.h"
+#import "BlogViewController.h"
+#import "MusicViewController.h"
 
 @interface LearnViewController ()
 
@@ -19,7 +18,7 @@
 
 @implementation LearnViewController
 
-@synthesize mainView, menuOpen, rightSwipe, leftSwipe;
+@synthesize mainView, menuOpen, upSwipe, downSwipe;
 
 #pragma mark - UIViewController
 
@@ -32,7 +31,7 @@
         self.tabBarItem.image = [UIImage imageNamed:@"Learn Icon"];
         
         UIBarButtonItem *menuButton = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"menuButton.png"] style:UIBarButtonItemStylePlain target:self action:@selector(menuTapped)];
-        self.navigationItem.leftBarButtonItem = menuButton;
+        self.navigationItem.rightBarButtonItem = menuButton;
         UIImage *image = [UIImage imageNamed:@"navbartitledeepershadow2.png"];
         self.navigationItem.titleView = [[UIImageView alloc] initWithImage:image];
     }
@@ -41,12 +40,34 @@
 
 - (void)viewDidLoad
 {
-    //This sets the sideTab to send it's mainWindow messages to this instance of the LearnView.
-    sideTab.mainWindow = self;
-    sermonViewController = [[SermonViewController alloc]initWithNibName:@"SermonView" bundle:nil];
-    sermonViewController.mainWindow = self;
-    [self.view addGestureRecognizer:self.leftSwipe];
-    [self.view addGestureRecognizer:self.rightSwipe];
+
+    //Views that we display
+    sermonController = [[SermonViewController alloc]initWithNibName:@"SermonView" bundle:nil];
+    blogController = [[BlogViewController alloc] initWithNibName:@"BlogViewController"
+                                                          bundle:nil];
+    musicController = [[MusicViewController alloc] initWithNibName:@"MusicViewController"
+                                                            bundle:nil];
+
+    //This sets each controller to allow this controller to manage their views.
+    sermonController.mainWindow = self;
+    blogController.mainWindow = self;
+    musicController.mainWindow = self;
+    
+
+    //Gesture Recognizers
+    [self.view addGestureRecognizer:self.upSwipe];
+    [self.view addGestureRecognizer:self.downSwipe];
+    
+}
+
+- (void)viewDidUnload
+{
+    sermonController = nil;
+    blogController = nil;
+    musicController = nil;
+    upSwipe = nil;
+    downSwipe = nil;
+    [super viewDidUnload];
 }
 
 #pragma mark 
@@ -70,12 +91,12 @@
     [UIView beginAnimations:@"slideMenu" context:(__bridge void *)(self.mainView)];
     
     if(menuOpen) {
-        frame.origin.x = 0;
+        frame.origin.y = 0;
         menuOpen = NO;
     }
     else
     {
-        frame.origin.x = 105;
+        frame.origin.y = 44;
         menuOpen = YES;
     }
     
@@ -83,27 +104,34 @@
     [UIView commitAnimations];
 }
 
-- (void)navMenuItemTapped:(int)row
-{
-
-    //row 1 is the Sermon in the sidetab
-    if (row == 1){
-        [self.mainView addSubview:sermonViewController.view];
-        NSLog(@"%@", [sermonViewController description]);
+- (IBAction)buttonPressed:(UIButton*)sender {
+    //tag 0 == Sermons
+    if (sender.tag == 0){
+        [self.mainView addSubview:sermonController.view];
         [self menuTapped];
     }
-    
+    //tag 1 == Blog
+    else if (sender.tag == 1){
+        [self.mainView addSubview:blogController.view];
+        [self menuTapped];
+    }
+    //tag 2 == Music
+    else if (sender.tag == 2){
+        [self.mainView addSubview:musicController.view];
+        [self menuTapped];
+    }
+    NSLog(@"%@", self.mainView.subviews.debugDescription);
 }
 
 #pragma mark
 #pragma mark - Gesture Recognizers
 
-- (IBAction)handleLeftSwipe:(UISwipeGestureRecognizer *)sender {
+- (IBAction)handleUpSwipe:(UISwipeGestureRecognizer *)sender {
     if (menuOpen == YES)
         [self menuTapped];
 }
 
-- (IBAction)handleRightSwipe:(UISwipeGestureRecognizer *)sender {
+- (IBAction)handleDownSwipe:(UISwipeGestureRecognizer *)sender {
     if (menuOpen == NO)
         [self menuTapped];
 }

@@ -27,8 +27,7 @@
     self = [super initWithNibName:nibNameOrNil
                            bundle:nibBundleOrNil];
     if (self){
-        [self fetchEntries];
-        
+//        [self fetchEntries];
     }
     return self;
 }
@@ -44,7 +43,6 @@
 {
     [super viewDidUnload];
     tableList = nil;
-
 }
 
 
@@ -99,10 +97,9 @@ heightForRowAtIndexPath:(NSIndexPath *)indexPath
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     [self.mainWindow.navigationController pushViewController:detailViewController
-                                               animated:YES];
+                                                    animated:YES];
     [tableView deselectRowAtIndexPath:indexPath
                              animated:YES];
-    NSLog(@"%@", [self presentedViewController]);
 }
 
 #pragma mark

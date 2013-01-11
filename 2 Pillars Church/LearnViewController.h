@@ -10,35 +10,37 @@
 
 @class LearnCustomCell;
 @class SermonParser;
-@class SideTabViewController;
 @class SermonViewController;
-@class SermonDetailViewController;
+@class BlogViewController;
+@class MusicViewController;
 
 @interface LearnViewController :  UIViewController 
 {
-    //Side-tab ivars
+    //Menu ivars
     BOOL menuOpen;
     IBOutlet UIView *mainView;
-    IBOutlet SideTabViewController *sideTab;
-    
     
     //Views to present
-    SermonViewController *sermonViewController;
-    SermonDetailViewController *sermonDetailViewController;
+    SermonViewController *sermonController;
+    BlogViewController *blogController;
+    MusicViewController *musicController;
     
-    UISwipeGestureRecognizer *leftSwipe;
-    UISwipeGestureRecognizer *rightSwipe;
+    //Swipes
+    UISwipeGestureRecognizer *upSwipe;
+    UISwipeGestureRecognizer *downSwipe;
 }
 
-- (IBAction)handleLeftSwipe:(UISwipeGestureRecognizer *)sender;
-- (IBAction)handleRightSwipe:(UISwipeGestureRecognizer *)sender;
+- (IBAction)handleUpSwipe:(UISwipeGestureRecognizer *)sender;
+- (IBAction)handleDownSwipe:(UISwipeGestureRecognizer *)sender;
+@property(nonatomic) IBOutlet UISwipeGestureRecognizer *upSwipe;
+@property(nonatomic) IBOutlet UISwipeGestureRecognizer *downSwipe;
+
 @property(nonatomic, retain) UIView *mainView;
 @property(nonatomic) BOOL menuOpen;
-@property(nonatomic) IBOutlet UISwipeGestureRecognizer *leftSwipe;
-@property(nonatomic) IBOutlet UISwipeGestureRecognizer *rightSwipe;
 
 - (void)menuTapped;
-- (void)navMenuItemTapped:(int)row;
+
+- (IBAction)buttonPressed:(id)sender;
 
 
 
