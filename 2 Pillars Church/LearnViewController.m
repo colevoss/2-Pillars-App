@@ -72,6 +72,8 @@
 
 - (void)viewDidAppear:(BOOL)animated
 {
+    //Allows the swipe gestures to work properly
+    //When changing tabs.
     CGRect frame = self.mainView.frame;
     if (frame.origin.y == 0)
         menuOpen = NO;

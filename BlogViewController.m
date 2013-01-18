@@ -14,6 +14,8 @@
 
 @implementation BlogViewController
 
+@synthesize mainWindow = _mainWindow;
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
