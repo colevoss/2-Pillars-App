@@ -46,6 +46,8 @@
 	<array>
 		<string>armv7</string>
 	</array>
+	<key>sermonSeriesLayout</key>
+	<string>Collection</string>
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>

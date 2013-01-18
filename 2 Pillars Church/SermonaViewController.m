@@ -68,7 +68,6 @@ NSString *kcellID = @"cellID";
     [cell setBackgroundColor:[UIColor scrollViewTexturedBackgroundColor]];
     cell.image.image = [UIImage imageNamed:@"1.png"];
     [cell.contentView addSubview:cell.image];
-    NSLog(@"1");
     return cell;
 
 }

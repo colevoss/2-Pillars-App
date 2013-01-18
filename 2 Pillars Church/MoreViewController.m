@@ -9,6 +9,7 @@
 #import "MoreViewController.h"
 #import "MapViewController.h"
 #import "WebViewController.h"
+#import "PreferencesViewController.h"
 
 @interface MoreViewController ()
 
@@ -20,7 +21,7 @@
 
 - (void)viewDidLoad
 {
-    tableList = [[NSArray alloc] initWithObjects:@"Map", nil];
+    tableList = [[NSArray alloc] initWithObjects:@"Map", @"Preferences", nil];
     [super viewDidLoad];
 }
 
@@ -76,11 +77,25 @@
                                                                          bundle:nil];
         UINavigationController *mapNav = [[UINavigationController alloc] initWithRootViewController:mapView];
         mapNav.delegate = self;
-        mapNav.navigationBar.barStyle = UIBarStyleBlack;
         
         [self presentModalViewController:mapNav animated:YES];
         mapNav.delegate = nil;
     }
+    
+
+    else if ([tableList objectAtIndex:indexPath.row] == @"Preferences")
+    {
+        [tableView deselectRowAtIndexPath:indexPath animated:YES];
+        
+        PreferencesViewController *prefView = [[PreferencesViewController alloc] initWithNibName:@"PreferencesViewController"
+                                                                                          bundle:nil];
+        UINavigationController *prefNav = [[UINavigationController alloc] initWithRootViewController:prefView];
+        prefNav.delegate = self;
+        
+        [self presentModalViewController:prefNav animated:YES];
+        prefNav.delegate = nil;
+    }
+
 
 /*
     Add other selections here before the else statement.

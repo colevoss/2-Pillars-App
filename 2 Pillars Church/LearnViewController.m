@@ -37,6 +37,7 @@ BOOL sermonSelection;
         self.navigationItem.rightBarButtonItem = menuButton;
         UIImage *image = [UIImage imageNamed:@"navbartitledeepershadow2.png"];
         self.navigationItem.titleView = [[UIImageView alloc] initWithImage:image];
+
     }
     return self;
 }
@@ -117,24 +118,33 @@ BOOL sermonSelection;
 }
 
 - (IBAction)buttonPressed:(UIButton*)sender {
+    
     //tag 0 == Sermons
     if (sender.tag == 0){
-        //This is so we can test differnt things.
-        if (sermonSelection == YES){
+    
+        //This will load whatever is set as the preference for sermon series style
+        NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
+        NSString *sermonStyle = [prefs stringForKey:@"sermonSeriesLayout"];
+        NSLog(@"%@", [prefs objectForKey:@"sermonSeriesLayout"]);
+        NSLog(@"%@", [sermonStyle stringByAppendingString:sermonStyle]);
+        if (sermonStyle == @"Collection"){
             [self.mainView addSubview:sermonaController.view];
             [self menuTapped];
             sermonSelection = NO;
-        } else {
+        } else if (sermonStyle == @"Table"){
             [self.mainView addSubview:sermonController.view];
             [self menuTapped];
             sermonSelection = YES;
         }
+        
     }
+    
     //tag 1 == Blog
     else if (sender.tag == 1){
         [self.mainView addSubview:blogController.view];
         [self menuTapped];
     }
+    
     //tag 2 == Music
     else if (sender.tag == 2){
         [self.mainView addSubview:musicController.view];

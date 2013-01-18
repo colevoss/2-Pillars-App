@@ -50,6 +50,7 @@
     //set style of navController1 to black solid
     navController3.navigationBar.barStyle = UIBarStyleBlack;
     
+
     
     
     
