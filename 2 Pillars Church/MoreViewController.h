@@ -11,9 +11,7 @@
 @interface MoreViewController : UIViewController <UITableViewDelegate, UITableViewDataSource, UINavigationControllerDelegate>
 {
     NSArray *tableList;
-    UITableView *table;
 }
-//@property (strong, nonatomic) UIWindow *window;
 @property (nonatomic, strong) WebViewController *webViewController;
 
 @end

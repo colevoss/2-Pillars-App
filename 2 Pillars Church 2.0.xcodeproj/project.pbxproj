@@ -264,9 +264,22 @@
 			name = Xibs;
 			sourceTree = "<group>";
 		};
-		D8A9BB37166FCDC50014C882 /* Learn Controller */ = {
+		D883802E16A9BBA000424C4C /* More Tab */ = {
 			isa = PBXGroup;
 			children = (
+				D8E0BCAA15D5884500B91F61 /* MoreViewController.h */,
+				D8E0BCAB15D5884500B91F61 /* MoreViewController.m */,
+				D87D5387164CB54700859AB8 /* MapViewController.h */,
+				D87D5388164CB54700859AB8 /* MapViewController.m */,
+			);
+			name = "More Tab";
+			sourceTree = "<group>";
+		};
+		D8A9BB37166FCDC50014C882 /* Learn Tab */ = {
+			isa = PBXGroup;
+			children = (
+				D88DF44D161F66C30063809A /* SermonDetailViewController.h */,
+				D88DF44E161F66C30063809A /* SermonDetailViewController.m */,
 				D8E0BC7315D43C1F00B91F61 /* LearnViewController.h */,
 				D8E0BC7415D43C1F00B91F61 /* LearnViewController.m */,
 				D8A9BB3E166FFF190014C882 /* SermonViewController.h */,
@@ -276,7 +289,7 @@
 				D8B0CA8A169F9F6E00270D93 /* MusicViewController.h */,
 				D8B0CA8B169F9F6E00270D93 /* MusicViewController.m */,
 			);
-			name = "Learn Controller";
+			name = "Learn Tab";
 			sourceTree = "<group>";
 		};
 		D8E0BC5215D43C1E00B91F61 = {
@@ -340,14 +353,9 @@
 		D8F5CAE615DD91D900EBC61A /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				D8A9BB37166FCDC50014C882 /* Learn Controller */,
-				ED6E08AD168E3088000C3E14 /* Connect Controller */,
-				D8E0BCAA15D5884500B91F61 /* MoreViewController.h */,
-				D8E0BCAB15D5884500B91F61 /* MoreViewController.m */,
-				D88DF44D161F66C30063809A /* SermonDetailViewController.h */,
-				D88DF44E161F66C30063809A /* SermonDetailViewController.m */,
-				D87D5387164CB54700859AB8 /* MapViewController.h */,
-				D87D5388164CB54700859AB8 /* MapViewController.m */,
+				D8A9BB37166FCDC50014C882 /* Learn Tab */,
+				ED6E08AD168E3088000C3E14 /* Connect Tab */,
+				D883802E16A9BBA000424C4C /* More Tab */,
 				D8F5CAE815DD920100EBC61A /* Xibs */,
 				D862D5EF160BEA970064F5E4 /* Cells */,
 			);
@@ -405,7 +413,7 @@
 			name = Xibs;
 			sourceTree = "<group>";
 		};
-		ED6E08AD168E3088000C3E14 /* Connect Controller */ = {
+		ED6E08AD168E3088000C3E14 /* Connect Tab */ = {
 			isa = PBXGroup;
 			children = (
 				D8E0BC7A15D43C1F00B91F61 /* ConnectViewController.h */,
@@ -415,7 +423,7 @@
 				ED6E08AE168E3095000C3E14 /* Testimonie items */,
 				D8736DAD1655B4B7002DB966 /* InformationControllerItems */,
 			);
-			name = "Connect Controller";
+			name = "Connect Tab";
 			sourceTree = "<group>";
 		};
 		ED6E08AE168E3095000C3E14 /* Testimonie items */ = {

@@ -20,7 +20,7 @@
 
 - (void)viewDidLoad
 {
-    tableList = [[NSArray alloc] initWithObjects:@"Map", nil];
+    tableList = [[NSArray alloc] initWithObjects:@"Map", @"Preferences", nil];
     [super viewDidLoad];
 }
 
