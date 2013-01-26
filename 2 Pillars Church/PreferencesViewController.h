@@ -13,6 +13,7 @@
 @interface PreferencesViewController : UIViewController
 {
     IBOutlet UISegmentedControl *segmentedSermonSeriesPref;
+    IBOutlet UISwitch *plazaSwitch;
     SermonaViewController *collectionPrefDelegate;
     
     NSUserDefaults *prefs;

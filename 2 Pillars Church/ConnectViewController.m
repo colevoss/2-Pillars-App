@@ -87,10 +87,10 @@
         [webView setWebsiteURL:@"http://www.2pillars.onthecity.org/plaza"];
         [webView setViewTitle:@"The Plaza"];
         UINavigationController *webNav = [[UINavigationController alloc] initWithRootViewController:webView];
-        webNav.navigationBar.barStyle = UIBarStyleBlack;
         webNav.delegate = self;
         
         [self presentModalViewController:webNav animated:YES];
+        
         if ([prefs boolForKey:@"PlazaAlert"] == NO)
         {
             if (plazaAlertHasBeenShown == NO)
@@ -185,7 +185,9 @@
         
         [self presentModalViewController:tvNav animated:YES];
     }
-    else {
+    else
+    {
+       
         //If an entry is not properly programmed, this alert will appear to prevent crashes
         NSString *alertRow = [NSString stringWithFormat:@"'%@' has not been programmed yet", [tableList objectAtIndex:indexPath.row]];
         UIAlertView *selectionIsNotProgrammedAlert = [[UIAlertView alloc] initWithTitle:@"Woops!"
@@ -202,6 +204,7 @@
 {
     if (alertView == info && buttonIndex == 1)
     {
+        //Makes the alert no longer appear when choosing the second button.
         [prefs setBool:YES forKey:@"PlazaAlert"];
     }
 }

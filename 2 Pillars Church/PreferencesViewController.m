@@ -36,7 +36,16 @@
                         forControlEvents:UIControlEventValueChanged];
     
     prefs = [NSUserDefaults standardUserDefaults];
-
+    
+    [plazaSwitch addTarget:self
+                    action:@selector(handlePlazaChange)
+          forControlEvents:UIControlEventValueChanged];
+    //Loads the UISwitch with the correct on off pref.
+    if ([prefs boolForKey:@"PlazaAlert"] == NO)
+        [plazaSwitch setOn:YES];
+    else [plazaSwitch setOn:NO];
+    
+    
     //if iOS 5, Table view is the only option because it doesn't respond to collections
     if([collectionPrefDelegate respondsToSelector:@selector(collectionView)])
     {
@@ -63,6 +72,14 @@
         [prefs setBool:YES forKey:@"sermonSeriesLayout"];
         [prefs synchronize];
     }
-
 }
+
+- (void)handlePlazaChange
+{
+    if (plazaSwitch.on == NO)
+        [prefs setBool:YES forKey:@"PlazaAlert"];
+    else
+        [prefs setBool:NO forKey:@"PlazaAlert"];
+}
+
 @end
