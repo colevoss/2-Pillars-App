@@ -44,6 +44,8 @@
     if (self) {
         self.title = NSLocalizedString(@"Connect", @"Connect");
         self.tabBarItem.image = [UIImage imageNamed:@"i"];
+        
+        prefs = [NSUserDefaults standardUserDefaults];
     }
     return self;
 }
@@ -89,16 +91,19 @@
         webNav.delegate = self;
         
         [self presentModalViewController:webNav animated:YES];
-        if (plazaAlertHasBeenShown == NO)
+        if ([prefs boolForKey:@"PlazaAlert"] == NO)
         {
-            info = [[UIAlertView alloc] initWithTitle:@"The Plaza!"
+            if (plazaAlertHasBeenShown == NO)
+            {
+                info = [[UIAlertView alloc] initWithTitle:@"The Plaza!"
                                                        message:@"Welcome to our online event calendar. Please check out any upcoming events!"
                                                       delegate:self
                                              cancelButtonTitle:@"Okay!"
                                              otherButtonTitles:@"Stop this message", nil];
-            [info setDelegate:self];
-            [info show];
-            plazaAlertHasBeenShown = YES;
+                [info setDelegate:self];
+                [info show];
+                plazaAlertHasBeenShown = YES;
+            }
         }
     }
 
@@ -197,16 +202,7 @@
 {
     if (alertView == info && buttonIndex == 1)
     {
-        
-        //This needs work. We are setting the second button on the plaza alert to store a bool value to the plist
-        //so that the alert never comes back again.
-        NSString *plistFile = [[NSBundle mainBundle] pathForResource:@"2 Pillars Church-Info"
-                                                         ofType:@"plist"];
-        NSMutableDictionary *dict = [NSMutableDictionary dictionaryWithContentsOfFile:plistFile];
-        NSMutableDictionary *subDict = [[dict objectForKey:@"Plaza Alert"] mutableCopy];
-        [subDict setObject:[NSNumber numberWithBool:TRUE] forKey:@"Plaza Alert"];
-        [dict setObject:subDict forKey:@"Plaza Alert"];
-        NSLog(@"I don't think this is working.");
+        [prefs setBool:YES forKey:@"PlazaAlert"];
     }
 }
 
