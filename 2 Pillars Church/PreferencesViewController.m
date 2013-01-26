@@ -7,6 +7,7 @@
 //
 
 #import "PreferencesViewController.h"
+#import "SermonaViewController.h"
 
 @interface PreferencesViewController ()
 
@@ -31,27 +32,33 @@
     [segmentedSermonSeriesPref addTarget:self
                                   action:@selector(handleSegment)
                         forControlEvents:UIControlEventValueChanged];
-    NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
-    NSString *sermonStyle = [prefs objectForKey:@"sermonSeriesLayout"];
-    if (sermonStyle == @"Collection")
+    
+    prefs = [NSUserDefaults standardUserDefaults];
+
+    //if iOS 5, Table view is the only option because it doesn't respond to collections
+    if([collectionPrefDelegate respondsToSelector:@selector(collectionView)])
     {
-        segmentedSermonSeriesPref.selectedSegmentIndex = 1;
+        segmentedSermonSeriesPref.selectedSegmentIndex = 0;
+        [segmentedSermonSeriesPref setEnabled:NO];
     }
-    else segmentedSermonSeriesPref.selectedSegmentIndex = 0;
+    else {
+        if ([prefs boolForKey:@"sermonSeriesLayout"] == YES)
+        {
+            segmentedSermonSeriesPref.selectedSegmentIndex = 1;
+        }
+        else segmentedSermonSeriesPref.selectedSegmentIndex = 0;
+    }
+    
 }
 
 - (void)handleSegment
 {
-    NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
     if (segmentedSermonSeriesPref.selectedSegmentIndex == 0){
-        
-        [prefs setObject:@"Table" forKey:@"sermonSeriesLayout"];
+        [prefs setBool:NO forKey:@"sermonSeriesLayout"];
         [prefs synchronize];
-        NSLog(@"%@", [prefs objectForKey:@"sermonSeriesLayout"]);
     }
     else if (segmentedSermonSeriesPref.selectedSegmentIndex == 1){
-        NSLog(@"set plist item to collection");
-        [prefs setObject:@"Collection" forKey:@"sermonSeriesLayout"];
+        [prefs setBool:YES forKey:@"sermonSeriesLayout"];
         [prefs synchronize];
     }
 

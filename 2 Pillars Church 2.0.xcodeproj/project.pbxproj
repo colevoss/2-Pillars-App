@@ -35,6 +35,7 @@
 		D882639D168F53D0006FB450 /* menuButton.png in Resources */ = {isa = PBXBuildFile; fileRef = D882639C168F53CF006FB450 /* menuButton.png */; };
 		D883803816A9CBF900424C4C /* PreferencesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D883803616A9CBF900424C4C /* PreferencesViewController.m */; };
 		D883803916A9CBF900424C4C /* PreferencesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D883803716A9CBF900424C4C /* PreferencesViewController.xib */; };
+		D885679216B4363600437101 /* userDefaults.plist in Resources */ = {isa = PBXBuildFile; fileRef = D885679116B4363600437101 /* userDefaults.plist */; };
 		D885BA16165566D700D2BE94 /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D885BA15165566D700D2BE94 /* WebViewController.m */; };
 		D88DF450161F66C30063809A /* SermonDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D88DF44E161F66C30063809A /* SermonDetailViewController.m */; };
 		D88DF451161F66C30063809A /* SermonViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D88DF44F161F66C30063809A /* SermonViewController.xib */; };
@@ -131,6 +132,7 @@
 		D883803516A9CBF900424C4C /* PreferencesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PreferencesViewController.h; sourceTree = "<group>"; };
 		D883803616A9CBF900424C4C /* PreferencesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PreferencesViewController.m; sourceTree = "<group>"; };
 		D883803716A9CBF900424C4C /* PreferencesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PreferencesViewController.xib; sourceTree = "<group>"; };
+		D885679116B4363600437101 /* userDefaults.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = userDefaults.plist; sourceTree = "<group>"; };
 		D885BA14165566D700D2BE94 /* WebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
 		D885BA15165566D700D2BE94 /* WebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
 		D88DF44D161F66C30063809A /* SermonDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SermonDetailViewController.h; sourceTree = "<group>"; };
@@ -367,6 +369,7 @@
 			isa = PBXGroup;
 			children = (
 				D8E0BC6915D43C1F00B91F61 /* 2 Pillars Church-Info.plist */,
+				D885679116B4363600437101 /* userDefaults.plist */,
 				D8E0BC6A15D43C1F00B91F61 /* InfoPlist.strings */,
 				D8E0BC6D15D43C1F00B91F61 /* main.m */,
 				D8E0BC6F15D43C1F00B91F61 /* 2 Pillars Church-Prefix.pch */,
@@ -568,6 +571,7 @@
 				D8B0CA97169FA5B600270D93 /* SermonaViewController.xib in Resources */,
 				D8B0CAA4169FC88700270D93 /* cellView.xib in Resources */,
 				D883803916A9CBF900424C4C /* PreferencesViewController.xib in Resources */,
+				D885679216B4363600437101 /* userDefaults.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

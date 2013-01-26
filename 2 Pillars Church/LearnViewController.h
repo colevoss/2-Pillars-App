@@ -30,6 +30,9 @@
     //Swipes
     UISwipeGestureRecognizer *upSwipe;
     UISwipeGestureRecognizer *downSwipe;
+    
+    //Prefs
+    NSUserDefaults *prefs;
 }
 
 - (IBAction)handleUpSwipe:(UISwipeGestureRecognizer *)sender;

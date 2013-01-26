@@ -12,6 +12,7 @@
 #import "SermonaViewController.h"
 #import "BlogViewController.h"
 #import "MusicViewController.h"
+#import "PreferencesViewController.h"
 
 @interface LearnViewController ()
 
@@ -37,7 +38,9 @@ BOOL sermonSelection;
         self.navigationItem.rightBarButtonItem = menuButton;
         UIImage *image = [UIImage imageNamed:@"navbartitledeepershadow2.png"];
         self.navigationItem.titleView = [[UIImageView alloc] initWithImage:image];
-
+        
+        //Load the prefs
+        prefs = [NSUserDefaults standardUserDefaults];
     }
     return self;
 }
@@ -58,7 +61,7 @@ BOOL sermonSelection;
     sermonController.mainWindow = self;
     blogController.mainWindow = self;
     musicController.mainWindow = self;
-    
+
 
     //Gesture Recognizers
     [self.view addGestureRecognizer:self.upSwipe];
@@ -121,17 +124,13 @@ BOOL sermonSelection;
     
     //tag 0 == Sermons
     if (sender.tag == 0){
-    
-        //This will load whatever is set as the preference for sermon series style
-        NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
-        NSString *sermonStyle = [prefs stringForKey:@"sermonSeriesLayout"];
-        NSLog(@"%@", [prefs objectForKey:@"sermonSeriesLayout"]);
-        NSLog(@"%@", [sermonStyle stringByAppendingString:sermonStyle]);
-        if (sermonStyle == @"Collection"){
+        [prefs boolForKey:@"sermonSeriesLayout"];
+        // sermonSeriesLayout pref, 1 = Collection 0 = table.
+        if ([prefs boolForKey:@"sermonSeriesLayout"] == YES){
             [self.mainView addSubview:sermonaController.view];
             [self menuTapped];
             sermonSelection = NO;
-        } else if (sermonStyle == @"Table"){
+        } else if ([prefs boolForKey:@"sermonSeriesLayout"] == NO){
             [self.mainView addSubview:sermonController.view];
             [self menuTapped];
             sermonSelection = YES;
@@ -150,7 +149,6 @@ BOOL sermonSelection;
         [self.mainView addSubview:musicController.view];
         [self menuTapped];
     }
-    NSLog(@"%@", self.mainView.subviews.debugDescription);
 }
 
 #pragma mark

@@ -8,9 +8,16 @@
 
 #import <UIKit/UIKit.h>
 
+@class SermonaViewController;
+
 @interface PreferencesViewController : UIViewController
 {
     IBOutlet UISegmentedControl *segmentedSermonSeriesPref;
+    SermonaViewController *collectionPrefDelegate;
+    
+    NSUserDefaults *prefs;
 }
+
+@property (assign, readwrite) SermonaViewController *collectionPrefDelegate;
 
 @end
