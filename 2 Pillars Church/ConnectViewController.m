@@ -20,7 +20,7 @@
 
 @implementation ConnectViewController
 
-@synthesize window, plazaAlertHasBeenShown;
+@synthesize window;
 
 #pragma mark -
 
@@ -96,7 +96,7 @@
                 info = [[UIAlertView alloc] initWithTitle:@"The Plaza!"
                                                        message:@"Welcome to our online event calendar. Please check out any upcoming events!"
                                                       delegate:self
-                                             cancelButtonTitle:@"Okay"
+                                             cancelButtonTitle:@"Stop this message."
                                              otherButtonTitles:nil];
                 [info setDelegate:self];
                 [info show];
