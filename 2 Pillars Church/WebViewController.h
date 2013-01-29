@@ -16,6 +16,7 @@
 @property (nonatomic, retain) IBOutlet UIWebView *web;
 @property (nonatomic, strong) NSString *websiteURL;
 @property NSString *viewTitle;
+@property (nonatomic) UIActivityIndicatorView *loadSpinner;
 
 
 @end
