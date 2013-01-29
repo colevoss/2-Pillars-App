@@ -93,17 +93,14 @@
         
         if ([prefs boolForKey:@"PlazaAlert"] == NO)
         {
-            if (plazaAlertHasBeenShown == NO)
-            {
                 info = [[UIAlertView alloc] initWithTitle:@"The Plaza!"
                                                        message:@"Welcome to our online event calendar. Please check out any upcoming events!"
                                                       delegate:self
-                                             cancelButtonTitle:@"Okay!"
-                                             otherButtonTitles:@"Stop this message", nil];
+                                             cancelButtonTitle:@"Okay"
+                                             otherButtonTitles:nil];
                 [info setDelegate:self];
                 [info show];
-                plazaAlertHasBeenShown = YES;
-            }
+                [prefs setBool:YES forKey:@"PlazaAlert"];
         }
     }
 
@@ -200,6 +197,7 @@
     }
 }
 
+/* Turn this back on if we want to reactivate the second button on the plaza alert
 - (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
 {
     if (alertView == info && buttonIndex == 1)
@@ -208,5 +206,5 @@
         [prefs setBool:YES forKey:@"PlazaAlert"];
     }
 }
-
+*/
 @end
