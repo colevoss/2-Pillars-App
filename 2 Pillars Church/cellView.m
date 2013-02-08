@@ -8,17 +8,28 @@
 
 #import "cellView.h"
 
+
 @implementation cellView
 
 - (id)initWithFrame:(CGRect)frame
 {
     self = [super initWithFrame:frame];
     if (self) {
-        NSLog(@"%@", _image);
-        UIView *view = [[UIView alloc] initWithFrame:CGRectMake(2.5, 2.5, 95, 95)];
-        [view addSubview:_image];
-//        _image.image = [UIImage imageNamed:@"1.png"];
-        [self.contentView addSubview:view];
+        //black frame
+        self.backgroundColor = [UIColor blackColor];
+
+        //orange background
+        UIView *frame = [[UIView alloc] initWithFrame:CGRectMake(2.5, 2.5, 95, 95)];
+        frame.backgroundColor = [UIColor colorWithRed:0.55686274509804 green:0.28627450980392 blue:0.01960784313725 alpha:0.88];
+        [self addSubview:frame];
+
+
+        //Image
+        _image = [[UIImageView alloc] init];
+        [self addSubview:_image];
+        [_image setFrame:CGRectMake(5, 5, 90, 90)];
+
+        [_image setImage:[UIImage imageNamed:@"1"]];
     }
     return self;
 }

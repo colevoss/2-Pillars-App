@@ -65,9 +65,7 @@ NSString *kcellID = @"cellID";
                   cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     cellView *cell = (cellView *)[cv dequeueReusableCellWithReuseIdentifier:kcellID
                                                                forIndexPath:indexPath];
-    [cell setBackgroundColor:[UIColor scrollViewTexturedBackgroundColor]];
-    cell.image.image = [UIImage imageNamed:@"1.png"];
-    [cell.contentView addSubview:cell.image];
+
     return cell;
 
 }
@@ -89,21 +87,5 @@ NSString *kcellID = @"cellID";
     [collectionView deselectItemAtIndexPath:indexPath animated:YES];
 }
 
-
-
-#pragma mark – UICollectionViewDelegateFlowLayout
-
-//// 1
-//- (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath {
-//    
-//    CGSize retval = CGSizeMake(150, 150);
-//    return retval;
-//}
-//
-//- (UIEdgeInsets)collectionView:
-//(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout insetForSectionAtIndex:(NSInteger)section {
-//    return UIEdgeInsetsMake(10, 1, 1, 1);
-//
-//}
 
 @end
