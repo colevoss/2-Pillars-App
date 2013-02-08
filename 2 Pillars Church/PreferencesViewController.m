@@ -23,7 +23,6 @@
     if (self) {
         self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Back" style:UIBarButtonItemStylePlain target:self action:@selector(dismissModalViewControllerAnimated:)];
         self.navigationItem.title = @"Preferences";
-        
     }
     return self;
 }
@@ -31,15 +30,18 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    prefs = [NSUserDefaults standardUserDefaults];
+    
+    //Sermon style preference.
     [segmentedSermonSeriesPref addTarget:self
                                   action:@selector(handleSegment)
                         forControlEvents:UIControlEventValueChanged];
     
-    prefs = [NSUserDefaults standardUserDefaults];
-    
+    //Plaza alert preference
     [plazaSwitch addTarget:self
                     action:@selector(handlePlazaChange)
           forControlEvents:UIControlEventValueChanged];
+    
     //Loads the UISwitch with the correct on off pref.
     if ([prefs boolForKey:@"PlazaAlert"] == NO)
         [plazaSwitch setOn:YES];
@@ -76,10 +78,13 @@
 
 - (void)handlePlazaChange
 {
-    if (plazaSwitch.on == NO)
+    if (plazaSwitch.on == NO){
         [prefs setBool:YES forKey:@"PlazaAlert"];
-    else
+        [prefs synchronize];
+    } else {
         [prefs setBool:NO forKey:@"PlazaAlert"];
+        [prefs synchronize];
+    }
 }
 
 @end
