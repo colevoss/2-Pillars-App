@@ -78,7 +78,7 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     //** THE PLAZA **//
-    if ([tableList objectAtIndex:indexPath.row] == @"The Plaza!")
+    if ([[tableList objectAtIndex:indexPath.row] isEqual: @"The Plaza!"])
     {
         [tableView deselectRowAtIndexPath:indexPath animated:YES];
         
@@ -105,7 +105,7 @@
     }
 
     //** INFORMATION **//
-    else if ([tableList objectAtIndex:indexPath.row] == @"Information!")
+    else if ([[tableList objectAtIndex:indexPath.row] isEqual: @"Information!"])
     {
         
         [tableView deselectRowAtIndexPath:indexPath animated:YES];
@@ -154,7 +154,7 @@
         leadersView = nil;
         
     }
-    else if ([tableList objectAtIndex:indexPath.row] == @"The City!")
+    else if ([[tableList objectAtIndex:indexPath.row] isEqual: @"The City!"])
     {
         [tableView deselectRowAtIndexPath:indexPath animated:YES];
         
@@ -169,7 +169,7 @@
         
         [self presentModalViewController:webNav animated:YES];
     }
-    else if ([tableList objectAtIndex:indexPath.row] == @"Testimonials!")
+    else if ([[tableList objectAtIndex:indexPath.row] isEqual: @"Testimonials!"])
     {
         [tableView deselectRowAtIndexPath:indexPath animated:YES];
         

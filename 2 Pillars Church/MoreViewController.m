@@ -68,7 +68,7 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    if ([tableList objectAtIndex:indexPath.row] == @"Map")
+    if ([[tableList objectAtIndex:indexPath.row] isEqual: @"Map"])
     {
         [tableView deselectRowAtIndexPath:indexPath animated:YES];
         
@@ -82,7 +82,7 @@
     }
     
 
-    else if ([tableList objectAtIndex:indexPath.row] == @"Preferences")
+    else if ([[tableList objectAtIndex:indexPath.row] isEqual: @"Preferences"])
     {
         [tableView deselectRowAtIndexPath:indexPath animated:YES];
         
