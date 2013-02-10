@@ -6,16 +6,16 @@
 //
 //
 
-#import "InfoViewController.h"
+#import "AboutViewController.h"
 
-@implementation InfoViewController
+@implementation AboutViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Back" style:UIBarButtonItemStylePlain target:self action:@selector(dismissModalViewControllerAnimated:)];
-        self.title = NSLocalizedString(@"Information", @"Information");
+        self.title = @"About Us";
         self.tabBarItem.image = [UIImage imageNamed:@"i"];
     }
     return self;

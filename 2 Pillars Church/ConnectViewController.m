@@ -1,14 +1,14 @@
 //
-//  SecondViewController.m
+//  ConnectViewController.m
 //  2 Pillars Church
 //
 //  Created by Blaine Kasten on 8/9/12.
-//  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
+//  Copyright (c) 2012 vkdevs. All rights reserved.
 //
 
 #import "ConnectViewController.h"
 #import "WebViewController.h"
-#import "InfoViewController.h"
+#import "AboutViewController.h"
 #import "Why2PCViewController.h"
 #import "MissionViewController.h"
 #import "LeadersViewController.h"
@@ -112,8 +112,8 @@
         
         
         //** Main Info Tab **//
-        InfoViewController *infoView = [[InfoViewController alloc] init];
-        UINavigationController *infoNav = [[UINavigationController alloc] initWithRootViewController:infoView];
+        AboutViewController *aboutView = [[AboutViewController alloc] init];
+        UINavigationController *infoNav = [[UINavigationController alloc] initWithRootViewController:aboutView];
         infoNav.navigationBar.barStyle = UIBarStyleBlack;
         infoNav.delegate = self;
         
@@ -145,7 +145,7 @@
         [self presentModalViewController:tabBar animated:YES];
         tabButtonArray = nil;
         infoNav = nil;
-        infoView = nil;
+        aboutView = nil;
         why2PCView = nil;
         whyNav = nil;
         missionView = nil;
