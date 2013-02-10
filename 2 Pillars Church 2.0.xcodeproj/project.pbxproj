@@ -281,20 +281,13 @@
 			name = Xibs;
 			sourceTree = "<group>";
 		};
-<<<<<<< HEAD
-		D883802E16A9BBA000424C4C /* More Tab */ = {
-=======
 		D883803316A9CBC300424C4C /* More Tab */ = {
->>>>>>> Learn-Tab-Collection-View
 			isa = PBXGroup;
 			children = (
 				D8E0BCAA15D5884500B91F61 /* MoreViewController.h */,
 				D8E0BCAB15D5884500B91F61 /* MoreViewController.m */,
-<<<<<<< HEAD
-=======
 				D883803516A9CBF900424C4C /* PreferencesViewController.h */,
 				D883803616A9CBF900424C4C /* PreferencesViewController.m */,
->>>>>>> Learn-Tab-Collection-View
 				D87D5387164CB54700859AB8 /* MapViewController.h */,
 				D87D5388164CB54700859AB8 /* MapViewController.m */,
 			);
@@ -386,11 +379,7 @@
 			children = (
 				D8A9BB37166FCDC50014C882 /* Learn Tab */,
 				ED6E08AD168E3088000C3E14 /* Connect Tab */,
-<<<<<<< HEAD
-				D883802E16A9BBA000424C4C /* More Tab */,
-=======
 				D883803316A9CBC300424C4C /* More Tab */,
->>>>>>> Learn-Tab-Collection-View
 				D8F5CAE815DD920100EBC61A /* Xibs */,
 				D862D5EF160BEA970064F5E4 /* Cells */,
 			);

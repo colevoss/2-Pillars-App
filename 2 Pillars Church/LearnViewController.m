@@ -79,8 +79,15 @@ BOOL sermonSelection;
     [super viewDidUnload];
 }
 
+- (void)viewDidAppear:(BOOL)animated
+{
+    CGRect frame = self.mainView.frame;
+    if (frame.origin.y == 0)
+        menuOpen = NO;
+}
 
-#pragma mark 
+
+#pragma mark
 #pragma mark - Side Tab
 
 -(void)animationDidStop:(NSString *)animationID
