@@ -12,9 +12,11 @@
 {
     NSArray *tableList;
     UIAlertView *info;
+    
+    // Prefs.
+    NSUserDefaults *prefs;
 }
 
 @property (strong, nonatomic) UIWindow *window;
-@property BOOL plazaAlertHasBeenShown;
 
 @end

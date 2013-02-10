@@ -18,6 +18,15 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    // load the default values for the user defaults
+    NSString *userDefaultsValuesPath = [[NSBundle mainBundle] pathForResource:@"userDefaults" ofType:@"plist"];
+    NSDictionary *userDefaultsValuesDict = [NSDictionary dictionaryWithContentsOfFile:userDefaultsValuesPath];
+    
+    // set them in the standard user defaults
+    [[NSUserDefaults standardUserDefaults] registerDefaults:userDefaultsValuesDict];
+    
+    NSLog(@"%@", userDefaultsValuesDict);
+    
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     UITabBarController *tabBarController = [[UITabBarController alloc] init];
     [tabBarController.tabBar setTintColor:[UIColor colorWithRed:0.55686274509804 green:0.28627450980392 blue:0.01960784313725 alpha:0.88]];
@@ -50,6 +59,7 @@
     //set style of navController1 to black solid
     navController3.navigationBar.barStyle = UIBarStyleBlack;
     
+
     
     
     

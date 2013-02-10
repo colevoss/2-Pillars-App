@@ -79,6 +79,17 @@ BOOL sermonSelection;
     [super viewDidUnload];
 }
 
+- (void)viewDidAppear:(BOOL)animated
+{
+<<<<<<< HEAD
+    //Allows the swipe gestures to work properly
+    //When changing tabs.
+=======
+>>>>>>> Learn-Tab-Collection-View
+    CGRect frame = self.mainView.frame;
+    if (frame.origin.y == 0)
+        menuOpen = NO;
+}
 
 #pragma mark 
 #pragma mark - Side Tab

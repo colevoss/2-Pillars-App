@@ -9,18 +9,14 @@
 #import "LearnViewController.h"
 #import <CoreGraphics/CoreGraphics.h>
 #import "SermonViewController.h"
-#import "SermonaViewController.h"
 #import "BlogViewController.h"
 #import "MusicViewController.h"
-#import "PreferencesViewController.h"
 
 @interface LearnViewController ()
 
 @end
 
 @implementation LearnViewController
-
-BOOL sermonSelection;
 
 @synthesize mainView, menuOpen, upSwipe, downSwipe;
 
@@ -38,9 +34,6 @@ BOOL sermonSelection;
         self.navigationItem.rightBarButtonItem = menuButton;
         UIImage *image = [UIImage imageNamed:@"navbartitledeepershadow2.png"];
         self.navigationItem.titleView = [[UIImageView alloc] initWithImage:image];
-        
-        //Load the prefs
-        prefs = [NSUserDefaults standardUserDefaults];
     }
     return self;
 }
@@ -54,14 +47,12 @@ BOOL sermonSelection;
                                                           bundle:nil];
     musicController = [[MusicViewController alloc] initWithNibName:@"MusicViewController"
                                                             bundle:nil];
-    sermonaController = [[SermonaViewController alloc] init];
 
     //This sets each controller to allow this controller to manage their views.
-    sermonaController.mainWindow = self;
     sermonController.mainWindow = self;
     blogController.mainWindow = self;
     musicController.mainWindow = self;
-
+    
 
     //Gesture Recognizers
     [self.view addGestureRecognizer:self.upSwipe];
@@ -79,6 +70,14 @@ BOOL sermonSelection;
     [super viewDidUnload];
 }
 
+- (void)viewDidAppear:(BOOL)animated
+{
+    //Allows the swipe gestures to work properly
+    //When changing tabs.
+    CGRect frame = self.mainView.frame;
+    if (frame.origin.y == 0)
+        menuOpen = NO;
+}
 
 #pragma mark 
 #pragma mark - Side Tab
@@ -115,34 +114,22 @@ BOOL sermonSelection;
 }
 
 - (IBAction)buttonPressed:(UIButton*)sender {
-    
     //tag 0 == Sermons
     if (sender.tag == 0){
-        [prefs boolForKey:@"sermonSeriesLayout"];
-        // sermonSeriesLayout pref, 1 = Collection 0 = table.
-        if ([prefs boolForKey:@"sermonSeriesLayout"] == YES){
-            [self.mainView addSubview:sermonaController.view];
-            [self menuTapped];
-            sermonSelection = NO;
-        } else if ([prefs boolForKey:@"sermonSeriesLayout"] == NO){
-            [self.mainView addSubview:sermonController.view];
-            [self menuTapped];
-            sermonSelection = YES;
-        }
-        
+        [self.mainView addSubview:sermonController.view];
+        [self menuTapped];
     }
-    
     //tag 1 == Blog
     else if (sender.tag == 1){
         [self.mainView addSubview:blogController.view];
         [self menuTapped];
     }
-    
     //tag 2 == Music
     else if (sender.tag == 2){
         [self.mainView addSubview:musicController.view];
         [self menuTapped];
     }
+    NSLog(@"%@", self.mainView.subviews.debugDescription);
 }
 
 #pragma mark
